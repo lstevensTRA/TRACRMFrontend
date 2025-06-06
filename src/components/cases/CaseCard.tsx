@@ -1,7 +1,7 @@
-import { Case } from '../../types/case';
+import { TRACase } from '../../types/traCase';
 
 interface CaseCardProps {
-  case: Case;
+  case: TRACase;
   onClick?: () => void;
 }
 
@@ -19,10 +19,10 @@ export const CaseCard = ({ case: caseItem, onClick }: CaseCardProps) => {
       </p>
       <div className="flex items-center justify-between">
         <span className="text-sm text-gray-500 dark:text-gray-400">
-          Status: {caseItem.status}
+          Status: {caseItem.statecode}
         </span>
         <span className="text-sm text-gray-500 dark:text-gray-400">
-          Priority: {caseItem.priority}
+          Priority: {caseItem.prioritycode}
         </span>
       </div>
     </div>

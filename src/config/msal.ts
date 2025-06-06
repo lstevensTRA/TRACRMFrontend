@@ -1,21 +1,23 @@
-import { PublicClientApplication, LogLevel } from '@azure/msal-browser';
+import { Configuration, LogLevel, PublicClientApplication } from '@azure/msal-browser';
 
+// Define the environment variables type
+interface ImportMetaEnv {
+  VITE_AZURE_CLIENT_ID: string;
+  VITE_AZURE_AUTHORITY: string;
+}
+
+// Declare the env property on ImportMeta
 declare global {
   interface ImportMeta {
-    env: {
-      VITE_AZURE_CLIENT_ID: string;
-      VITE_AZURE_AUTHORITY: string;
-    }
+    readonly env: ImportMetaEnv;
   }
 }
 
-const clientId = import.meta.env.VITE_AZURE_CLIENT_ID;
-const authority = import.meta.env.VITE_AZURE_AUTHORITY;
-
-export const msalConfig = {
+// MSAL configuration
+export const msalConfig: Configuration = {
   auth: {
-    clientId,
-    authority,
+    clientId: import.meta.env.VITE_AZURE_CLIENT_ID,
+    authority: import.meta.env.VITE_AZURE_AUTHORITY,
     redirectUri: window.location.origin,
   },
   cache: {
@@ -24,13 +26,31 @@ export const msalConfig = {
   },
   system: {
     loggerOptions: {
-      loggerCallback: (message: string) => {
-        console.log(message);
+      loggerCallback: (level: LogLevel, message: string, containsPii: boolean) => {
+        if (containsPii) {
+          return;
+        }
+        switch (level) {
+          case LogLevel.Error:
+            console.error(message);
+            return;
+          case LogLevel.Info:
+            console.info(message);
+            return;
+          case LogLevel.Verbose:
+            console.debug(message);
+            return;
+          case LogLevel.Warning:
+            console.warn(message);
+            return;
+          default:
+            return;
+        }
       },
-      logLevel: LogLevel.Info,
-      piiLoggingEnabled: false,
-    },
-  },
+      logLevel: LogLevel.Verbose,
+      piiLoggingEnabled: false
+    }
+  }
 };
 
 export const msalInstance = new PublicClientApplication(msalConfig);

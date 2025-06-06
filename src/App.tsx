@@ -7,7 +7,7 @@ import { ConfigTest } from './components/auth/ConfigTest';
 import { Login } from './components/auth/Login';
 import { ThemeProvider } from './context/ThemeContext';
 import { TRACasesListPage } from './pages/TRACasesListPage';
-import CasesListBasic from './components/cases/CasesListBasic';
+import { CasesListBasic } from './components/cases/CasesListBasic';
 
 const msalInstance = new PublicClientApplication(msalConfig);
 const queryClient = new QueryClient();
