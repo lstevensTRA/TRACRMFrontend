@@ -1,5 +1,3 @@
-import { useEffect } from 'react';
-import { useQuery } from '@tanstack/react-query';
 import { TRACase } from '../../types/traCase';
 import { CaseCard } from './CaseCard';
 
