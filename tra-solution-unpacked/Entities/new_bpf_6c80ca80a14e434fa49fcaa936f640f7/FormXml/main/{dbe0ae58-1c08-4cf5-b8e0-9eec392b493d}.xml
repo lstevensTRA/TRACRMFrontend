@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{dbe0ae58-1c08-4cf5-b8e0-9eec392b493d}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab verticallayout="true" id="{cbc41dfd-1f80-4728-9385-c9c60d5f7205}" name="StageStep5" locklevel="0" expanded="true" visible="false" labelid="{a2351a83-61c1-49cd-9e7f-430cd5b8241d}">
+          <labels>
+            <label description="Qualify" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showbar="false" columns="1" id="{a88d6913-e09b-05ea-3630-b972783cb58f}" name="StageStep5_section1" labelid="{45facb7b-c8e6-43cb-b163-e34d90406638}">
+                  <labels>
+                    <label description="Qualify" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{58a9fce5-eebc-437b-b431-9860dd1aae40}" showlabel="true" visible="true" labelid="{5ec642e4-f171-49f5-9ff0-ef48eccb7ff2}">
+                        <labels>
+                          <label description="Existing Contact?" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_lead_new_bpf_6c80ca80a14e434fa49fcaa936f640f7:parentcontactid" classid="{270bd3db-d9af-4782-9025-509e298dec0a}" datafieldname="parentcontactid" disabled="false" relationship="bpf_lead_new_bpf_6c80ca80a14e434fa49fcaa936f640f7" isrequired="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{0f4c6cb5-beb4-4775-93c8-22e92b94fb5e}" showlabel="true" visible="true" labelid="{8490d890-1b3d-41b5-856f-2dad87d77498}">
+                        <labels>
+                          <label description="Existing Account?" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_lead_new_bpf_6c80ca80a14e434fa49fcaa936f640f7:parentaccountid" classid="{270bd3db-d9af-4782-9025-509e298dec0a}" datafieldname="parentaccountid" disabled="false" relationship="bpf_lead_new_bpf_6c80ca80a14e434fa49fcaa936f640f7" isrequired="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{1869eb31-f292-4577-ae02-03e02d04fc84}" showlabel="true" visible="true" labelid="{e96842c0-8fff-4a81-88c5-c43295f33952}">
+                        <labels>
+                          <label description="Identify Decision Maker" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_lead_new_bpf_6c80ca80a14e434fa49fcaa936f640f7:decisionmaker" classid="{67fac785-cd58-4f9f-abb3-4b7ddc6ed5ed}" datafieldname="decisionmaker" disabled="false" relationship="bpf_lead_new_bpf_6c80ca80a14e434fa49fcaa936f640f7" isrequired="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{82d8a5f0-17e7-4c44-912a-7fe4fd22911f}" showlabel="true" visible="true" labelid="{d458e483-f2d2-483f-9de2-9ec09bfb3fc1}">
+                        <labels>
+                          <label description="Capture Summary" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_lead_new_bpf_6c80ca80a14e434fa49fcaa936f640f7:description" classid="{e0dece4b-6fc8-4a8f-a065-082708572369}" datafieldname="description" disabled="false" relationship="bpf_lead_new_bpf_6c80ca80a14e434fa49fcaa936f640f7" isrequired="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab verticallayout="true" id="{7844cbf9-3ab7-4e86-8847-b3b2b4d0f65b}" name="StageStep15" locklevel="0" expanded="true" visible="false" labelid="{975cb250-73ff-4541-bb44-1df7efc065a9}">
+          <labels>
+            <label description="Interview" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showbar="false" columns="1" id="{381660f2-c12f-824f-1485-fe37e9bd2c62}" name="StageStep15_section1" labelid="{b0a1d547-b78c-4f35-88ce-63e43cc14aa1}">
+                  <labels>
+                    <label description="Interview" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{a6a96119-aa7d-400e-aa4d-fb30d67a9674}" showlabel="true" visible="true" labelid="{efc6ab4f-09f9-4a27-a37a-7c628f5a20ae}">
+                        <labels>
+                          <label description="Alright and what is your tax problem?" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_opportunity_new_bpf_6c80ca80a14e434fa49fcaa936f640f7:tra_alrightandwhatisyourtaxproblem" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="tra_alrightandwhatisyourtaxproblem" disabled="false" relationship="bpf_opportunity_new_bpf_6c80ca80a14e434fa49fcaa936f640f7" isrequired="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{fb50ee22-2e6d-41cd-bcd4-86bfba59fde8}" showlabel="true" visible="true" labelid="{d88b9322-5231-400d-b3f0-50933246b1f0}">
+                        <labels>
+                          <label description="And would that be Federal or State taxes?" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_opportunity_new_bpf_6c80ca80a14e434fa49fcaa936f640f7:tra_andwouldthatbefederalorstatetaxes" classid="{3ef39988-22bb-4f0b-bbbe-64b5a3748aee}" datafieldname="tra_andwouldthatbefederalorstatetaxes" disabled="false" relationship="bpf_opportunity_new_bpf_6c80ca80a14e434fa49fcaa936f640f7" isrequired="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{2dcea91a-3bed-406c-8a89-1ce3e93fe922}" showlabel="true" visible="true" labelid="{d866b088-5755-4cbc-966c-07f7b52dc625}">
+                        <labels>
+                          <label description="And is that Business or Personal?" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_opportunity_new_bpf_6c80ca80a14e434fa49fcaa936f640f7:tra_andisthatbusinessorpersonal" classid="{67fac785-cd58-4f9f-abb3-4b7ddc6ed5ed}" datafieldname="tra_andisthatbusinessorpersonal" disabled="false" relationship="bpf_opportunity_new_bpf_6c80ca80a14e434fa49fcaa936f640f7" isrequired="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab verticallayout="true" id="{98ed0d76-8c59-4bec-9cfd-6c13fb325c27}" name="StageStep23" locklevel="0" expanded="true" visible="false" labelid="{1c2146bd-143e-4e0d-9211-0905f3b43d09}">
+          <labels>
+            <label description="Case" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showbar="false" columns="1" id="{18edd9e0-af06-21e4-dfa1-072daae95d16}" name="StageStep23_section1" labelid="{4cbfbf40-e70b-431a-aace-49039199528f}">
+                  <labels>
+                    <label description="Case" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{577e171b-37e1-4850-a764-e287b15d3d76}" showlabel="true" visible="true" labelid="{bb938d80-db6c-4a31-afd1-d41a00814b53}">
+                        <labels>
+                          <label description="Parent Case" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_incident_new_bpf_6c80ca80a14e434fa49fcaa936f640f7:parentcaseid" classid="{270bd3db-d9af-4782-9025-509e298dec0a}" datafieldname="parentcaseid" relationship="bpf_incident_new_bpf_6c80ca80a14e434fa49fcaa936f640f7" isrequired="false" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

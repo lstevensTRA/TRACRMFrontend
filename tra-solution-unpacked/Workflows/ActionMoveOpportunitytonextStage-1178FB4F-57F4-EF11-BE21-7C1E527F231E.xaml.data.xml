@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Workflow WorkflowId="{1178fb4f-57f4-ef11-be21-7c1e527f231e}" Name="Action : Move Opportunity to next Stage" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <XamlFileName>/Workflows/ActionMoveOpportunitytonextStage-1178FB4F-57F4-EF11-BE21-7C1E527F231E.xaml</XamlFileName>
+  <Type>1</Type>
+  <Subprocess>0</Subprocess>
+  <Category>3</Category>
+  <Mode>0</Mode>
+  <Scope>4</Scope>
+  <OnDemand>1</OnDemand>
+  <TriggerOnCreate>0</TriggerOnCreate>
+  <TriggerOnDelete>0</TriggerOnDelete>
+  <AsyncAutodelete>0</AsyncAutodelete>
+  <SyncWorkflowLogOnFailure>1</SyncWorkflowLogOnFailure>
+  <StateCode>1</StateCode>
+  <StatusCode>2</StatusCode>
+  <CreateStage>40</CreateStage>
+  <RunAs>1</RunAs>
+  <SdkMessageId>{555cfd55-57f4-ef11-be21-7c1e527f231e}</SdkMessageId>
+  <UniqueName>MoveOpportunitytonextStage</UniqueName>
+  <IsTransacted>1</IsTransacted>
+  <IntroducedVersion>1.0.0.0</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <BusinessProcessType>0</BusinessProcessType>
+  <FormId>{7a74360f-7068-4972-8506-ad95e7563e84}</FormId>
+  <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+  <PrimaryEntity>new_bpf_6c80ca80a14e434fa49fcaa936f640f7</PrimaryEntity>
+  <LocalizedNames>
+    <LocalizedName languagecode="1033" description="Action : Move Opportunity to next Stage" />
+  </LocalizedNames>
+</Workflow>

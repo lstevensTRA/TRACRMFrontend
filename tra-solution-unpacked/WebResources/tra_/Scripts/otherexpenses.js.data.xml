@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebResource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <WebResourceId>{7b91ca25-dfe9-ef11-a730-000d3a136541}</WebResourceId>
+  <Name>tra_/scripts/otherexpenses.js</Name>
+  <DisplayName>tra_/Scripts/otherExpenses.js</DisplayName>
+  <LanguageCode>0</LanguageCode>
+  <WebResourceType>3</WebResourceType>
+  <IntroducedVersion>1.0.0.0</IntroducedVersion>
+  <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+  <IsAvailableForMobileOffline>0</IsAvailableForMobileOffline>
+  <DependencyXml>&lt;Dependencies&gt;&lt;Dependency componentType="WebResource"&gt;&lt;Library libraryUniqueId="{92b0a7f6-eaba-ef11-b8e8-00224828b785}" name="tra_/Scripts/MasterCommonV9.js" displayName="tra_/Scripts/MasterCommonV9.js" /&gt;&lt;/Dependency&gt;&lt;/Dependencies&gt;</DependencyXml>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>1</CanBeDeleted>
+  <IsHidden>0</IsHidden>
+  <FileName>/WebResources/tra_scriptsotherexpensesjs7B91CA25-DFE9-EF11-A730-000D3A136541</FileName>
+</WebResource>

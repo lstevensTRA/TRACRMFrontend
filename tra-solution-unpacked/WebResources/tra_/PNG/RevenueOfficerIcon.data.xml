@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebResource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <WebResourceId>{d8591e56-c1d7-ef11-a730-000d3a8fa29f}</WebResourceId>
+  <Name>tra_/PNG/RevenueOfficerIcon</Name>
+  <DisplayName>tra_/PNG/RevenueOfficerIcon</DisplayName>
+  <WebResourceType>5</WebResourceType>
+  <IntroducedVersion>1.0.0.0</IntroducedVersion>
+  <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+  <IsAvailableForMobileOffline>0</IsAvailableForMobileOffline>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>1</CanBeDeleted>
+  <IsHidden>0</IsHidden>
+  <FileName>/WebResources/tra_PNGRevenueOfficerIconD8591E56-C1D7-EF11-A730-000D3A8FA29F</FileName>
+</WebResource>

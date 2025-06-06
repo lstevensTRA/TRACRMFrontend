@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{9eae2e4c-e6f5-4555-bd09-70cf9c8999be}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="tra_name" select="1" icon="1" preview="1">
+        <row name="result" id="tra_marketingid">
+          <cell name="tra_name" width="300" />
+          <cell name="tra_ytelcompaign" width="150" />
+          <cell name="tra_tttokentd" width="150" />
+          <cell name="tra_listsource" width="150" />
+          <cell name="tra_listsource2" width="150" />
+          <cell name="tra_originalroso" width="150" />
+          <cell name="tra_calledclient" width="150" />
+          <cell name="tra_sotvsocialorradiostation" width="150" />
+          <cell name="tra_soreferrernameandcasenumber" width="150" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="tra_marketing">
+          <attribute name="tra_marketingid" />
+          <attribute name="tra_name" />
+          <attribute name="createdon" />
+          <order attribute="tra_name" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="tra_ytelcompaign" />
+          <attribute name="tra_tttokentd" />
+          <attribute name="tra_listsource" />
+          <attribute name="tra_listsource2" />
+          <attribute name="tra_originalroso" />
+          <attribute name="tra_calledclient" />
+          <attribute name="tra_sotvsocialorradiostation" />
+          <attribute name="tra_soreferrernameandcasenumber" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Marketings" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

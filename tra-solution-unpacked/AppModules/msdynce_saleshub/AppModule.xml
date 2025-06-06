@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AppModule>
+  <UniqueName>msdynce_saleshub</UniqueName>
+  <IntroducedVersion>9.1.0.0</IntroducedVersion>
+  <WebResourceId>7de3c845-1eda-ef11-a730-7c1e521884ca</WebResourceId>
+  <OptimizedFor></OptimizedFor>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+  <FormFactor>1</FormFactor>
+  <ClientType>4</ClientType>
+  <NavigationType>0</NavigationType>
+  <AppModuleComponents>
+    <AppModuleComponent type="1" schemaName="actioncard" solutionaction="Added" />
+    <AppModuleComponent type="1" schemaName="new_bpf_6c80ca80a14e434fa49fcaa936f640f7" solutionaction="Added" />
+    <AppModuleComponent type="1" schemaName="sharepointdocument" solutionaction="Added" />
+    <AppModuleComponent type="1" schemaName="tra_business" solutionaction="Added" />
+    <AppModuleComponent type="1" schemaName="tra_category" solutionaction="Added" />
+    <AppModuleComponent type="1" schemaName="tra_clientaccount" solutionaction="Added" />
+    <AppModuleComponent type="1" schemaName="tra_county" solutionaction="Added" />
+    <AppModuleComponent type="1" schemaName="tra_dependent" solutionaction="Added" />
+    <AppModuleComponent type="1" schemaName="tra_employer" solutionaction="Added" />
+    <AppModuleComponent type="1" schemaName="tra_financialaccount" solutionaction="Added" />
+    <AppModuleComponent type="1" schemaName="tra_financials" solutionaction="Added" />
+    <AppModuleComponent type="1" schemaName="tra_housingandutilities" solutionaction="Added" />
+    <AppModuleComponent type="1" schemaName="tra_irsstandard" solutionaction="Added" />
+    <AppModuleComponent type="1" schemaName="tra_irsstandardforownershipcosts" solutionaction="Added" />
+    <AppModuleComponent type="1" schemaName="tra_monthlybusinessexpenses" solutionaction="Added" />
+    <AppModuleComponent type="1" schemaName="tra_monthlybusinessincome" solutionaction="Added" />
+    <AppModuleComponent type="1" schemaName="tra_monthlyexpenses" solutionaction="Added" />
+    <AppModuleComponent type="1" schemaName="tra_msa" solutionaction="Added" />
+    <AppModuleComponent type="1" schemaName="tra_otherassets" solutionaction="Added" />
+    <AppModuleComponent type="1" schemaName="tra_otherexpenses" solutionaction="Added" />
+    <AppModuleComponent type="1" schemaName="tra_realproperty" solutionaction="Added" />
+    <AppModuleComponent type="1" schemaName="tra_revenueofficerdetails" solutionaction="Added" />
+    <AppModuleComponent type="1" schemaName="tra_state" solutionaction="Added" />
+    <AppModuleComponent type="1" schemaName="tra_taxyears" solutionaction="Added" />
+    <AppModuleComponent type="1" schemaName="tra_trastageprocess" solutionaction="Added" />
+    <AppModuleComponent type="1" schemaName="tra_vehicle" solutionaction="Added" />
+    <AppModuleComponent type="1" schemaName="tra_virtualcurrency" solutionaction="Added" />
+    <AppModuleComponent type="1" schemaName="tra_years" solutionaction="Added" />
+    <AppModuleComponent type="29" id="{089a611c-481c-f011-9989-6045bdd3cad7}" solutionaction="Added" />
+    <AppModuleComponent type="29" id="{6c80ca80-a14e-434f-a49f-caa936f640f7}" solutionaction="Added" />
+    <AppModuleComponent type="29" id="{919e14d1-6489-4852-abd0-a63a6ecaac5d}" solutionaction="Removed" />
+    <AppModuleComponent type="60" id="{cc54335b-8ec2-ef11-b8e8-00224828b785}" solutionaction="Added" />
+    <AppModuleComponent type="60" id="{e4eb3ed2-d50e-f011-9989-002248304216}" solutionaction="Added" />
+    <AppModuleComponent type="60" id="{0f462d7e-d415-f011-998a-002248304216}" solutionaction="Added" />
+    <AppModuleComponent type="60" id="{cdbb9298-3b2e-41f3-8f4a-0168d6b09fc4}" solutionaction="Added" />
+    <AppModuleComponent type="60" id="{d228d73e-e56e-48b3-ab95-0a06b1397b03}" solutionaction="Added" />
+    <AppModuleComponent type="60" id="{d880c3cf-80e2-42f3-82f9-24d040d09f17}" solutionaction="Added" />
+    <AppModuleComponent type="60" id="{e3c588ee-8e11-49da-a5fe-3800f3f683de}" solutionaction="Added" />
+    <AppModuleComponent type="60" id="{449faa0e-f471-48ec-87d0-4719909546d2}" solutionaction="Added" />
+    <AppModuleComponent type="60" id="{7bb87dfd-ec3e-4ed9-8e3e-5725d3067295}" solutionaction="Added" />
+    <AppModuleComponent type="60" id="{661157fe-2fc9-4eaa-835f-5bfa2f7b64f7}" solutionaction="Added" />
+    <AppModuleComponent type="60" id="{f3b707fb-3b5f-45f9-9c6b-5e573bb5d19e}" solutionaction="Added" />
+    <AppModuleComponent type="60" id="{29065ec8-22b9-ef11-b8e8-6045bdf0540a}" solutionaction="Added" />
+    <AppModuleComponent type="60" id="{6ad598b2-9426-f011-8c4e-7c1e520b713c}" solutionaction="Added" />
+    <AppModuleComponent type="60" id="{d8bb3939-24b9-ef11-b8e8-7c1e5248511a}" solutionaction="Added" />
+    <AppModuleComponent type="60" id="{8dee0241-91c2-ef11-b8e8-7c1e5248511a}" solutionaction="Added" />
+    <AppModuleComponent type="60" id="{f6c7b48f-c8c2-ef11-b8e8-7c1e5248511a}" solutionaction="Added" />
+    <AppModuleComponent type="60" id="{bdb0ae1c-32fa-4374-b637-8dafe107bc44}" solutionaction="Added" />
+    <AppModuleComponent type="60" id="{24b5ce86-1811-44c3-b1ad-90f7ea02d2d7}" solutionaction="Added" />
+    <AppModuleComponent type="60" id="{aa7c154f-e2f8-45db-b780-a9a8a96332fe}" solutionaction="Added" />
+    <AppModuleComponent type="60" id="{5194a156-576a-4fa1-bf1a-abf7a41b0e8c}" solutionaction="Added" />
+    <AppModuleComponent type="60" id="{05ea391a-d034-43fe-849b-b4fa3213a2b2}" solutionaction="Added" />
+    <AppModuleComponent type="60" id="{29de27bc-a257-4f29-99cf-bab4a84e688f}" solutionaction="Added" />
+    <AppModuleComponent type="60" id="{3d22ab88-96c8-4b3f-a533-d4827e2925c9}" solutionaction="Added" />
+    <AppModuleComponent type="60" id="{707fc57b-c5e6-471b-a180-e37ed28a38e2}" solutionaction="Added" />
+    <AppModuleComponent type="60" id="{95192c4e-f96e-4771-b10a-e6421c908533}" solutionaction="Added" />
+  </AppModuleComponents>
+  <AppModuleRoleMaps>
+    <Role id="{236750cd-45ae-4939-ab12-b24b920ced93}" solutionaction="Added" />
+    <Role id="{a41fc308-6e40-f011-b4cb-6045bdd3cad7}" solutionaction="Added" />
+    <Role id="{20f97f4f-5c40-f011-b4cb-0022482c89ef}" solutionaction="Added" />
+  </AppModuleRoleMaps>
+  <EventHandlers>
+    <EventHandler eventname="onload" functionname="Mscrm.LeadHygiene.DuplicateLeadNotificationLibrary.setupFormOnLoad" libraryname="LeadHygiene/Lead/leadhygiene_form_notification_library.js" parameters="" enable="true" />
+    <EventHandler eventname="onload" functionname="ProjectSophiaPackage.TriggerLicenseCheck.trigger" libraryname="msdyn_TriggerLicenseCheck.js" parameters="" enable="true" />
+  </EventHandlers>
+  <LocalizedNames>
+    <LocalizedName description="Sales Hub" languagecode="1033" />
+  </LocalizedNames>
+  <Descriptions>
+    <Description description="Easy-to-use sales tools, with AI-generated insights from Copilot." languagecode="1033" />
+  </Descriptions>
+  <appelements>
+    <appelement uniquename="tra_msdynce_saleshub_canvasappid_tra_interviewscript_e0a3e">
+      <canvasappid>
+        <name>tra_interviewscript_e0a3e</name>
+      </canvasappid>
+      <iscustomizable>1</iscustomizable>
+      <name>tra_msdynce_saleshub_canvasappid_tra_interviewscript_e0a3e</name>
+    </appelement>
+    <appelement uniquename="tra_msdynce_saleshub_canvasappid_tra_interviewscript2_fb8aa">
+      <canvasappid>
+        <name>tra_interviewscript2_fb8aa</name>
+      </canvasappid>
+      <iscustomizable>1</iscustomizable>
+      <name>tra_msdynce_saleshub_canvasappid_tra_interviewscript2_fb8aa</name>
+    </appelement>
+    <appelement uniquename="tra_msdynce_saleshub_canvasappid_tra_saleshubdefaultcommandlibrary_41da1">
+      <canvasappid>
+        <name>tra_saleshubdefaultcommandlibrary_41da1</name>
+      </canvasappid>
+      <iscustomizable>1</iscustomizable>
+      <name>tra_msdynce_saleshub_canvasappid_tra_saleshubdefaultcommandlibrary_41da1</name>
+    </appelement>
+  </appelements>
+  <appsettings>
+    <appsetting settingdefinitionid.uniquename="appcopilotenabled">
+      <iscustomizable>1</iscustomizable>
+      <value>1</value>
+    </appsetting>
+    <appsetting settingdefinitionid.uniquename="IsSmartEmailAddressValidationControlEnabled">
+      <iscustomizable>1</iscustomizable>
+      <value>true</value>
+    </appsetting>
+    <appsetting settingdefinitionid.uniquename="msdyn_enablertecopilot">
+      <iscustomizable>1</iscustomizable>
+      <value>true</value>
+    </appsetting>
+    <appsetting settingdefinitionid.uniquename="msdyn_rtecopilotdefaultonruncompleted">
+      <iscustomizable>1</iscustomizable>
+      <value>true</value>
+    </appsetting>
+    <appsetting settingdefinitionid.uniquename="msdyn_TimelineModernization">
+      <iscustomizable>1</iscustomizable>
+      <value>true</value>
+    </appsetting>
+    <appsetting settingdefinitionid.uniquename="NewLookOptOut">
+      <iscustomizable>1</iscustomizable>
+      <value>true</value>
+    </appsetting>
+  </appsettings>
+</AppModule>

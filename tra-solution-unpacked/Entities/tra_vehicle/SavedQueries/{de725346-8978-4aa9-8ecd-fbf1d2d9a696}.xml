@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{de725346-8978-4aa9-8ecd-fbf1d2d9a696}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="tra_name" select="1" icon="1" preview="1">
+        <row name="result" id="tra_vehicleid">
+          <cell name="tra_name" width="100" />
+          <cell name="tra_yearid" width="100" />
+          <cell name="tra_make" width="100" />
+          <cell name="tra_model" width="100" />
+          <cell name="tra_mileage" width="100" />
+          <cell name="tra_bluebookvalue" width="136" />
+          <cell name="tra_purchaseprice" width="123" />
+          <cell name="tra_loanbalance" width="118" />
+          <cell name="tra_monthlypayment" width="141" />
+          <cell name="tra_monthlyinsurance" width="147" />
+          <cell name="tra_monthlygaschargingfee" width="193" />
+          <cell name="tra_typeofvehicle" width="129" />
+          <cell name="tra_fairmarketvalue" width="141" />
+          <cell name="tra_opportunityid" width="109" />
+          <cell name="statecode" width="100" />
+          <cell name="createdby" width="104" />
+          <cell name="createdon" width="105" />
+          <cell name="modifiedby" width="112" />
+          <cell name="modifiedon" width="113" />
+          <cell name="ownerid" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="tra_vehicle">
+          <attribute name="tra_vehicleid" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="tra_yearid" />
+          <attribute name="tra_make" />
+          <attribute name="tra_model" />
+          <attribute name="tra_mileage" />
+          <attribute name="tra_monthlypayment" />
+          <attribute name="tra_loanbalance" />
+          <attribute name="tra_bluebookvalue" />
+          <attribute name="tra_purchaseprice" />
+          <attribute name="tra_monthlyinsurance" />
+          <attribute name="tra_monthlygaschargingfee" />
+          <attribute name="tra_typeofvehicle" />
+          <attribute name="tra_name" />
+          <attribute name="tra_fairmarketvalue" />
+          <attribute name="tra_opportunityid" />
+          <attribute name="statecode" />
+          <attribute name="createdby" />
+          <attribute name="createdon" />
+          <attribute name="modifiedby" />
+          <attribute name="modifiedon" />
+          <attribute name="ownerid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Vehicles" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

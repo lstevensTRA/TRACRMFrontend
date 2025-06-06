@@ -1,0 +1,624 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{5657de65-0321-f011-998a-002248304216}</formid>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form headerdensity="HighWithControls">
+      <tabs>
+        <tab name="tra_tabmonthlyincome" id="66e4f289-caa5-4568-9a75-e7e8e0fec734" IsUserDefined="0" locklevel="0" showlabel="true" labelid="{2a51fd1b-8728-48dc-961d-3692ffd75c2a}">
+          <labels>
+            <label description="Monthly Income" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="tra_secprimarytaxpayer" id="8a85d260-24a0-4c26-a7bc-657b0ff6efff" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1111" labelwidth="115" labelid="{2d040a09-8dd8-4689-afda-24b157d4ef04}">
+                  <labels>
+                    <label description="Primary Taxpayer" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell locklevel="0" id="{8a2fc726-52d6-4002-9f0b-dad9ab65d200}" labelid="{fc231586-7041-4641-9688-9507ada600f7}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell locklevel="0" id="{bee31fe4-ec82-4960-9bc2-16891eccc96b}" labelid="{a73cfbd1-f066-428f-9854-967ef776cd86}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell locklevel="0" id="{7fe365d8-b2a4-4731-98ec-812a83dd27d0}" labelid="{6bcaaf96-a3c4-4a87-b046-b6e494cf2e1a}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell locklevel="0" id="{244327ed-4d4f-4822-a76a-83c1240893ae}" labelid="{02a95f7e-56c0-4718-8a59-a2c9213bed95}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{0c8b43ba-489d-4bb8-acef-23f566854dba}" locklevel="0" colspan="1" rowspan="1" labelid="{90aecda6-ccf4-4f75-a391-58067ab20c50}">
+                        <labels>
+                          <label description="Wages" languagecode="1033" />
+                        </labels>
+                        <control id="tra_primarytaxpayerwages" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="tra_primarytaxpayerwages" disabled="false" />
+                      </cell>
+                      <cell id="{085a76b0-0090-4611-bbb2-9e5813056d35}" locklevel="0" colspan="1" rowspan="1" labelid="{56a7e6d0-bd2a-4479-88c0-41c7c3d70869}">
+                        <labels>
+                          <label description="Social Security" languagecode="1033" />
+                        </labels>
+                        <control id="tra_primarytaxpayersocialsecurity" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="tra_primarytaxpayersocialsecurity" disabled="false" />
+                      </cell>
+                      <cell id="{4b5039a8-13d8-4202-89d4-f00f0bff52af}" locklevel="0" colspan="1" rowspan="1" labelid="{486754fa-748f-4580-a351-e5e6261fe2a6}">
+                        <labels>
+                          <label description="Pension(s)" languagecode="1033" />
+                        </labels>
+                        <control id="tra_primarytaxpayerpensions" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="tra_primarytaxpayerpensions" disabled="false" />
+                      </cell>
+                      <cell id="{09d4f23e-2350-478c-bdd4-4f6208c17b46}" locklevel="0" colspan="1" rowspan="1" labelid="{799be73a-b9e8-4052-96f5-1f741cdd0789}">
+                        <labels>
+                          <label description="Monthly" languagecode="1033" />
+                        </labels>
+                        <control id="tra_primarytaxpayermonthly" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="tra_primarytaxpayermonthly" disabled="true" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="tra_secspousecontributionhousehold" id="b413b1dc-28e1-4ef9-81f9-077fe437d50e" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1111" labelwidth="115" labelid="{586a1570-ccf3-4c4c-a90e-3312cf2ebb69}">
+                  <labels>
+                    <label description="Spouse/Other contributors to the household" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell locklevel="0" id="{ece4bc40-5243-4210-985d-eeb20aecbd2b}" labelid="{1ce42cdb-963b-4038-affe-bf198026291c}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell locklevel="0" id="{3ed1dd1f-3fde-42b3-930d-95244b0e6521}" labelid="{6df3971c-3058-437a-af50-880ff78f5c34}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell locklevel="0" id="{2399c6b3-8c97-464c-817b-4fda77325382}" labelid="{f6bff947-ac59-4de6-bb70-7876c73220b4}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell locklevel="0" id="{952a9e3b-7320-44af-97e4-7c8f8c02a8a7}" labelid="{f40d61a0-7057-47d5-9d46-65f907be7211}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{007a90d8-0c41-45ee-9cc8-083749982309}" locklevel="0" colspan="1" rowspan="1" labelid="{54a5b0c1-c4f7-4411-872b-391ac5b34f51}">
+                        <labels>
+                          <label description="Wages" languagecode="1033" />
+                        </labels>
+                        <control id="tra_spousecontributorswages" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="tra_spousecontributorswages" disabled="false" />
+                      </cell>
+                      <cell id="{3a94fb47-a889-4259-8191-6400bcf4d1c3}" locklevel="0" colspan="1" rowspan="1" labelid="{0aec94c9-ef2c-4b22-9bce-bae264d2747c}">
+                        <labels>
+                          <label description="Social Security" languagecode="1033" />
+                        </labels>
+                        <control id="tra_spousecontributorssocialsecurity" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="tra_spousecontributorssocialsecurity" disabled="false" />
+                      </cell>
+                      <cell id="{25b56a1b-2854-452d-b137-6ba8e89fa1a8}" locklevel="0" colspan="1" rowspan="1" labelid="{dd9f76d7-bb32-4a64-9844-af1f96b728a7}">
+                        <labels>
+                          <label description="Pension(s)" languagecode="1033" />
+                        </labels>
+                        <control id="tra_spousecontributorspensions" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="tra_spousecontributorspensions" disabled="false" />
+                      </cell>
+                      <cell id="{d108990d-8fcc-4d09-8246-98f52e5b7060}" locklevel="0" colspan="1" rowspan="1" labelid="{660b2e72-ab52-43de-ba52-1814698019a4}">
+                        <labels>
+                          <label description="Monthly" languagecode="1033" />
+                        </labels>
+                        <control id="tra_spousecontributorsmonthly" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="tra_spousecontributorsmonthly" disabled="true" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="tra_secdividendsinterest" id="b636dc08-ec53-4400-a4a7-cfc0303febff" IsUserDefined="0" locklevel="0" showlabel="false" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1111" labelwidth="115" labelid="{96f8d8e7-267b-494b-9969-87ce46d0e01e}">
+                  <labels>
+                    <label description="Dividends - Interest" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell locklevel="0" id="{61528a17-80f6-46fb-b5be-232f73182186}" labelid="{0155de66-3959-4395-84f4-5737c54d7b45}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell locklevel="0" id="{f29969ca-bf03-400e-9dc3-567916ad6e5f}" labelid="{336b5e53-ca2f-4f0a-b550-8c3f13967d73}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell locklevel="0" id="{dbc34d80-4d74-46c2-adfa-584af08e9936}" labelid="{a280e9f0-971b-48db-bb7c-0a68599fdaa8}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell locklevel="0" id="{4b9fe9c7-f770-4825-bc22-1802812b280f}" labelid="{6ff9fad8-ff37-4c78-93ac-299d4309af12}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell locklevel="0" id="{3bd35c06-31d3-4a06-a5de-9d09f1654476}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell locklevel="0" id="{9c2338b0-5afd-4f39-af12-486791eed9ad}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell locklevel="0" id="{3748989b-58a6-4056-9b6b-2ac380b746bb}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{50809990-d420-4d81-9735-fc10075621eb}" locklevel="0" colspan="1" rowspan="1" labelid="{6aab2c1b-f99f-4ca7-a442-de2d4a030dca}">
+                        <labels>
+                          <label description="Dividends - Interests" languagecode="1033" />
+                        </labels>
+                        <control id="tra_dividendsinterests" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="tra_dividendsinterests" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="tra_secnetbusinessincomefrombusinesssection" id="844c3c03-f2c3-43f5-8866-792aa2faf778" IsUserDefined="0" locklevel="0" showlabel="false" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1111" labelwidth="115" labelid="{2620fba8-e5f2-4b54-9308-b1bfd1d4f061}">
+                  <labels>
+                    <label description="Net Business Income (from business section)" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell locklevel="0" id="{bbef8bc8-de43-4e9c-be4b-d31cfe10e860}" labelid="{edd4abfb-2de4-4fd0-9850-f64cc53dfa69}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell locklevel="0" id="{34253956-82c6-49aa-a445-ea03635bc09d}" labelid="{c7f754f3-0aeb-4b99-b549-4b50eeb2ad1f}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell locklevel="0" id="{81169ecd-9dba-4424-a782-fa2ee67b141f}" labelid="{2b8b55fb-73d4-46b2-8b08-b2711889b4b9}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell locklevel="0" id="{b40623a8-892a-4be2-9990-745581f05eab}" labelid="{7e5c31cc-5f07-4cf7-8015-82e6c4f8643f}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell locklevel="0" id="{17422dc6-0aac-453d-935b-2e212e740d9d}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell locklevel="0" id="{84ee3ed3-583d-4fca-a47f-e83e90d06224}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell locklevel="0" id="{eaac81f8-220c-414f-b9e1-0490540bc35e}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{b6a51b81-c55d-460a-bc52-4b60d578e589}" locklevel="0" colspan="1" rowspan="1" labelid="{e000d34f-1d08-450f-ab9d-7c69350675d3}">
+                        <labels>
+                          <label description="Net Business Income (from business section)" languagecode="1033" />
+                        </labels>
+                        <control id="tra_netbusinessincome" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="tra_netbusinessincome" disabled="true" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="tra_secrental" id="fb6c327b-bac7-4ee7-8cf7-a45020e20ca4" IsUserDefined="0" locklevel="0" showlabel="false" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1111" labelwidth="115" labelid="{37e12220-16be-4fcf-b1bd-8fec67e91d25}">
+                  <labels>
+                    <label description="Rental" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell locklevel="0" id="{b3e33d1c-2a5f-496f-a5b5-43775beefe67}" labelid="{e617e5d8-97be-4d68-a84c-bc10252fb541}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell locklevel="0" id="{cfa03015-d441-40dc-a600-495d083f855c}" labelid="{6c7f2580-cb2f-4591-8c07-fa1bdd0e0bba}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell locklevel="0" id="{4297d0a5-5d2f-4d7c-84b1-11c20e23cc91}" labelid="{0dc656f7-d6c5-4efd-b032-4abd01033170}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell locklevel="0" id="{5a158ffe-cb36-4e8a-bfed-df2ca64cf59b}" labelid="{d82921c6-0812-4d5b-af83-65456eb424fc}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell locklevel="0" id="{10929cc3-f2a5-441e-809e-dbd7eed704d4}" labelid="{26987e77-a371-44f8-bd6d-58c6c4dd9ed8}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell locklevel="0" id="{915fb1af-3c97-4e45-a613-a97c132a45b9}" labelid="{e2a5ea58-7341-4211-80f5-8425623f2cc3}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell locklevel="0" id="{25927001-c32b-4a4b-852c-f5db9255be7d}" labelid="{e936b261-d4ba-4d42-a57e-121df52245f7}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{cce583bb-7a28-4ef3-9625-02917fc95efb}" locklevel="0" colspan="1" rowspan="1" labelid="{664a7be6-4f59-4837-8f34-a7b083a97713}">
+                        <labels>
+                          <label description="Rental Income - Expense : Monthly" languagecode="1033" />
+                        </labels>
+                        <control id="tra_rentalincomeexpensemonthly" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="tra_rentalincomeexpensemonthly" disabled="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{d524d49b-adbc-41f3-be5e-268104c982b8}" locklevel="0" colspan="1" rowspan="1" labelid="{24b50da2-0d68-4d84-a551-7d92bda4da0b}">
+                        <labels>
+                          <label description="Rental Income" languagecode="1033" />
+                        </labels>
+                        <control id="tra_rentalincome" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="tra_rentalincome" disabled="false" />
+                      </cell>
+                      <cell id="{e686581e-326e-4fc4-88af-957250e93483}" locklevel="0" colspan="1" rowspan="1" labelid="{04141bd5-d2ce-40d1-b51d-b44f5847d0d8}">
+                        <labels>
+                          <label description="Rental Expenses" languagecode="1033" />
+                        </labels>
+                        <control id="tra_rentalexpenses" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="tra_rentalexpenses" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="tra_secothermonthlyincomesec" id="0c1f2d3d-bfa8-4ead-8578-7c3da5063897" IsUserDefined="0" locklevel="0" showlabel="false" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1111" labelwidth="115" labelid="{df7e2318-f937-4755-a9a7-9eb7fbcc5bad}">
+                  <labels>
+                    <label description="Other Monthly Income Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell locklevel="0" id="{96944e20-fc12-4647-b243-bc18f9af393a}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell locklevel="0" id="{9f36e678-31d0-4e7a-b3fc-7ecf985bc820}" labelid="{3c5050d9-c283-4462-aab6-4c701996d43c}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell locklevel="0" id="{737d0bf5-dc47-4324-9548-dc32853053e7}" labelid="{bc74843d-e89d-4163-9f3e-b2a1161fdf29}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{5a03e2ca-5f54-4a21-acc0-ee2f1382e894}" locklevel="0" colspan="1" rowspan="1" labelid="{ab73d94c-e5e8-41e0-af2e-a007bee817a3}">
+                        <labels>
+                          <label description="Distributions(k - 1) : Monthly" languagecode="1033" />
+                        </labels>
+                        <control id="tra_distributionsk1monthly" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="tra_distributionsk1monthly" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell locklevel="0" id="{bf48ebbf-4a68-4fba-b0f8-871d0eb4df91}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell locklevel="0" id="{4260efe4-0170-49a2-b8ca-599ee38d6eb0}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell locklevel="0" id="{cf2779b0-4707-4e1d-827a-8d9394cf780e}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{b8f370cd-11eb-4f6b-9a19-8c8d0afea1fc}" locklevel="0" colspan="1" rowspan="1" labelid="{9579aefe-0bb1-494c-9efe-ccf0eac774b3}">
+                        <labels>
+                          <label description="Alimony: Monthly" languagecode="1033" />
+                        </labels>
+                        <control id="tra_alimonymonthly" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="tra_alimonymonthly" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell locklevel="0" id="{de3402a8-1a6f-4666-b51a-e8fd0fc8ab40}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell locklevel="0" id="{987c1c70-9670-4c0e-bfba-df704d6b63ef}" labelid="{bfb70b4e-b945-468b-b03e-3f4882a622d3}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell locklevel="0" id="{a0434982-548c-4ebc-83d8-97b87e4c9a39}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{5a7f5993-799c-40c8-92c6-d8b0f148e8ab}" locklevel="0" colspan="1" rowspan="1" labelid="{4da3cd81-3129-4355-9948-5ab62f38d2f3}">
+                        <labels>
+                          <label description="Child Support: Monthly" languagecode="1033" />
+                        </labels>
+                        <control id="tra_childsupportmonthly" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="tra_childsupportmonthly" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell locklevel="0" id="{1cb74c81-75d8-4bf0-830f-874bb1c39e34}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell locklevel="0" id="{4eee6f40-8a55-4588-ba00-4cc0bf0d3e80}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell locklevel="0" id="{f64f41fc-3e00-48db-b580-681a54d0b8df}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{e0e5ece5-b9b9-4926-a95e-bb1a62d457d9}" locklevel="0" colspan="1" rowspan="1" labelid="{ce8d062d-0e3c-4067-94d7-2b84eabd8b08}">
+                        <labels>
+                          <label description="Other(Rent Subsidy,Oil Credit etc.) : Monthly" languagecode="1033" />
+                        </labels>
+                        <control id="tra_otherrentsubsidyoilcreditetcmonthly" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="tra_otherrentsubsidyoilcreditetcmonthly" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell locklevel="0" id="{e9fe519c-5c19-43e7-8faa-07cc4f69a204}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell locklevel="0" id="{f8491633-f0e1-4e53-9573-fa22875a0304}" labelid="{8f5f191c-ec42-46b5-8eb2-f1f6b3459191}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell locklevel="0" id="{6995a874-6641-47db-b828-38d129efbfb8}" labelid="{276a4bac-b20b-4e11-8bb5-27754dd02847}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{0d3aed89-68c6-4f96-ba74-75a113ff6fc4}" locklevel="0" colspan="1" rowspan="1" labelid="{63ce92b6-b56e-4b19-8b94-d4a060ac18e2}">
+                        <labels>
+                          <label description="Other Income : Monthly" languagecode="1033" />
+                        </labels>
+                        <control id="tra_otherincomemonthly" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="tra_otherincomemonthly" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell locklevel="0" id="{d24ccbeb-5c88-45a9-aa8e-844d9b467767}" labelid="{da4e3c3c-cc3c-4511-9621-18ffd52317fb}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell locklevel="0" id="{fdc49469-ec13-4b03-8853-82b8a0774b84}" labelid="{56d1f4bd-d25b-4e4f-8258-d4ff410ed52c}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell locklevel="0" id="{e26daf56-8c50-4bbb-8950-48eb00c62b35}" labelid="{ce5dc03a-3136-411a-a92f-b929e3c83067}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{205f1163-a09d-4063-a1bf-9acf7e05f606}" locklevel="0" colspan="1" rowspan="1" labelid="{47d1a4d8-18ae-4792-944f-f5e6413ccf2e}">
+                        <labels>
+                          <label description="Total Monthly Income" languagecode="1033" />
+                        </labels>
+                        <control id="tra_totalmonthlyincome" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="tra_totalmonthlyincome" disabled="true" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{ea730053-7367-4ed8-876a-fde2756b405b}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{db79d16b-8139-4b40-9496-4a75fe56159d}" showlabel="false" labelid="{0ec8c881-b954-44a1-a671-f2bfe328f533}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{e9919180-c315-4f8c-8c60-99e75fd3c138}" showlabel="false" labelid="{08ad4747-b085-4a5f-b6c4-88d6e44431b8}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{1f5e47af-2c57-4852-a8a4-cd7756c3a0b5}" showlabel="false" labelid="{2deccdff-b508-4fac-8462-edfa6a0c3490}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{5e5506a7-35df-4137-a676-ebec456830c9}" visible="false" labelid="{4368b82e-f52f-4427-9d6f-a359e8cd85e9}" colspan="1" rowspan="1">
+              <labels>
+                <label description="Owner" languagecode="1033" />
+              </labels>
+              <control id="header_ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{2def42e7-5685-40c5-8035-9d4359344a7a}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{a78eeb23-03a1-473c-bdc7-33b54400c0b8}" showlabel="false" labelid="{c02ac15d-f05e-467b-88c7-a386a2669a8b}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{9c1e04a9-50f7-4831-8a0d-2ff8664f460b}" showlabel="false" labelid="{5a217309-2eee-4971-b608-0887e0787fdc}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{cfcf321d-00ff-4279-b4bd-b34521fb713e}" showlabel="false" labelid="{6ab6019d-f844-4cfa-8228-858483f3dbae}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <DisplayConditions Order="6" FallbackForm="true">
+        <Role Id="{627090ff-40a3-4053-8790-584edc5be201}" />
+        <Role Id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+      </DisplayConditions>
+      <formLibraries>
+        <Library name="tra_/scripts/financials.js" libraryUniqueId="{bc5d61d3-1906-4c27-937e-1e1612f3ee11}" />
+        <Library name="tra_/scripts/otherexpenses.js" libraryUniqueId="{fa89c875-fe2a-4543-ba0f-5ab34026bb98}" />
+      </formLibraries>
+      <events>
+        <event name="onload" application="false" active="false">
+          <Handlers>
+            <Handler functionName="CrmJS.FinancialsFunctions.onLoad" libraryName="tra_/scripts/financials.js" handlerUniqueId="{b0a0c4af-cf44-43fb-a664-7a0933c10bb1}" enabled="true" parameters="" passExecutionContext="true" />
+          </Handlers>
+        </event>
+        <event name="onchange" application="false" active="false" attribute="tra_primarytaxpayerpensions">
+          <Handlers>
+            <Handler functionName="CrmJS.FinancialsFunctions.OnPrimaryTaxpayerChange" libraryName="tra_/scripts/financials.js" handlerUniqueId="{37156cfe-1fd8-4ecf-9ace-17c2428b9b01}" enabled="true" parameters="" passExecutionContext="true" />
+            <Handler functionName="CrmJS.FinancialsFunctions.OnMonthlyExpenseTabMonthlyValueChange" libraryName="tra_/scripts/financials.js" handlerUniqueId="{0aa41757-6ddf-4d4a-85fa-363f84aff5e0}" enabled="true" parameters="" passExecutionContext="true" />
+          </Handlers>
+        </event>
+        <event name="onchange" application="false" active="false" attribute="tra_primarytaxpayersocialsecurity">
+          <Handlers>
+            <Handler functionName="CrmJS.FinancialsFunctions.OnPrimaryTaxpayerChange" libraryName="tra_/scripts/financials.js" handlerUniqueId="{01b13b7f-cb5f-4cb6-a53e-9b4c8d3edffa}" enabled="true" parameters="" passExecutionContext="true" />
+            <Handler functionName="CrmJS.FinancialsFunctions.OnMonthlyExpenseTabMonthlyValueChange" libraryName="tra_/scripts/financials.js" handlerUniqueId="{48cb3473-e297-4813-93a8-062fe373bcfc}" enabled="true" parameters="" passExecutionContext="true" />
+          </Handlers>
+        </event>
+        <event name="onchange" application="false" active="false" attribute="tra_primarytaxpayerwages">
+          <Handlers>
+            <Handler functionName="CrmJS.FinancialsFunctions.OnPrimaryTaxpayerChange" libraryName="tra_/scripts/financials.js" handlerUniqueId="{b1915ca8-2173-4bb2-a0f5-601ad58cb4c9}" enabled="true" parameters="" passExecutionContext="true" />
+            <Handler functionName="CrmJS.FinancialsFunctions.OnMonthlyExpenseTabMonthlyValueChange" libraryName="tra_/scripts/financials.js" handlerUniqueId="{9185395c-48a3-4a48-a253-0a7cc8a60c06}" enabled="true" parameters="" passExecutionContext="true" />
+          </Handlers>
+        </event>
+        <event name="onchange" application="false" active="false" attribute="tra_spousecontributorswages">
+          <Handlers>
+            <Handler functionName="CrmJS.FinancialsFunctions.OnSpouseOtherContributorsHouseholdChange" libraryName="tra_/scripts/financials.js" handlerUniqueId="{2c8750c6-a51e-4b5b-be84-e9a09cf89322}" enabled="true" parameters="" passExecutionContext="true" />
+            <Handler functionName="CrmJS.FinancialsFunctions.OnMonthlyExpenseTabMonthlyValueChange" libraryName="tra_/scripts/financials.js" handlerUniqueId="{27e02b3e-6efd-480f-8e66-3ce9113af7ef}" enabled="true" parameters="" passExecutionContext="true" />
+          </Handlers>
+        </event>
+        <event name="onchange" application="false" active="false" attribute="tra_spousecontributorssocialsecurity">
+          <Handlers>
+            <Handler functionName="CrmJS.FinancialsFunctions.OnSpouseOtherContributorsHouseholdChange" libraryName="tra_/scripts/financials.js" handlerUniqueId="{4206a08e-db8c-4983-8bd0-352780a882ca}" enabled="true" parameters="" passExecutionContext="true" />
+            <Handler functionName="CrmJS.FinancialsFunctions.OnMonthlyExpenseTabMonthlyValueChange" libraryName="tra_/scripts/financials.js" handlerUniqueId="{dca94bbe-e9f7-44e5-89d4-604d0bd908a0}" enabled="true" parameters="" passExecutionContext="true" />
+          </Handlers>
+        </event>
+        <event name="onchange" application="false" active="false" attribute="tra_spousecontributorspensions">
+          <Handlers>
+            <Handler functionName="CrmJS.FinancialsFunctions.OnSpouseOtherContributorsHouseholdChange" libraryName="tra_/scripts/financials.js" handlerUniqueId="{f5aa6366-25cc-4c19-8547-a0cfaf28df4c}" enabled="true" parameters="" passExecutionContext="true" />
+            <Handler functionName="CrmJS.FinancialsFunctions.OnMonthlyExpenseTabMonthlyValueChange" libraryName="tra_/scripts/financials.js" handlerUniqueId="{ac0df16a-a4c7-4304-8d08-42991b7442a3}" enabled="true" parameters="" passExecutionContext="true" />
+          </Handlers>
+        </event>
+        <event name="onchange" application="false" active="false" attribute="tra_rentalincome">
+          <Handlers>
+            <Handler functionName="CrmJS.FinancialsFunctions.OnRentalSectionCalculationChange" libraryName="tra_/scripts/financials.js" handlerUniqueId="{707fe021-a195-4f93-94c3-ebc6a94bf23d}" enabled="true" parameters="" passExecutionContext="true" />
+            <Handler functionName="CrmJS.FinancialsFunctions.OnMonthlyExpenseTabMonthlyValueChange" libraryName="tra_/scripts/financials.js" handlerUniqueId="{1d4ffdd5-7d89-4495-9242-085e99f90f6f}" enabled="true" parameters="" passExecutionContext="true" />
+          </Handlers>
+        </event>
+        <event name="onchange" application="false" active="false" attribute="tra_rentalexpenses">
+          <Handlers>
+            <Handler functionName="CrmJS.FinancialsFunctions.OnRentalSectionCalculationChange" libraryName="tra_/scripts/financials.js" handlerUniqueId="{ea1f1d78-2c22-43f9-8749-e2702c37a3bc}" enabled="true" parameters="" passExecutionContext="true" />
+            <Handler functionName="CrmJS.FinancialsFunctions.OnMonthlyExpenseTabMonthlyValueChange" libraryName="tra_/scripts/financials.js" handlerUniqueId="{c37e043a-2f19-4e81-9022-d9bf2a795e4d}" enabled="true" parameters="" passExecutionContext="true" />
+          </Handlers>
+        </event>
+        <event name="onchange" application="false" active="false" attribute="tra_distributionsk1monthly">
+          <Handlers>
+            <Handler functionName="CrmJS.FinancialsFunctions.OnMonthlyExpenseTabMonthlyValueChange" libraryName="tra_/scripts/financials.js" handlerUniqueId="{f829e51d-78b7-47f1-95f6-ceabdfe8c660}" enabled="true" parameters="" passExecutionContext="true" />
+          </Handlers>
+        </event>
+        <event name="onchange" application="false" active="false" attribute="tra_alimonymonthly">
+          <Handlers>
+            <Handler functionName="CrmJS.FinancialsFunctions.OnMonthlyExpenseTabMonthlyValueChange" libraryName="tra_/scripts/financials.js" handlerUniqueId="{6c2d3920-a54f-482e-a55d-4316d787ce3f}" enabled="true" parameters="" passExecutionContext="true" />
+          </Handlers>
+        </event>
+        <event name="onchange" application="false" active="false" attribute="tra_childsupportmonthly">
+          <Handlers>
+            <Handler functionName="CrmJS.FinancialsFunctions.OnMonthlyExpenseTabMonthlyValueChange" libraryName="tra_/scripts/financials.js" handlerUniqueId="{f339bfc4-0209-44f2-9abb-d6c3a8658c7d}" enabled="true" parameters="" passExecutionContext="true" />
+          </Handlers>
+        </event>
+        <event name="onchange" application="false" active="false" attribute="tra_otherrentsubsidyoilcreditetcmonthly">
+          <Handlers>
+            <Handler functionName="CrmJS.FinancialsFunctions.OnMonthlyExpenseTabMonthlyValueChange" libraryName="tra_/scripts/financials.js" handlerUniqueId="{c24aee69-fea8-43a3-b77a-85d10b25ac89}" enabled="true" parameters="" passExecutionContext="true" />
+          </Handlers>
+        </event>
+        <event name="onchange" application="false" active="false" attribute="tra_otherincomemonthly">
+          <Handlers>
+            <Handler functionName="CrmJS.FinancialsFunctions.OnMonthlyExpenseTabMonthlyValueChange" libraryName="tra_/scripts/financials.js" handlerUniqueId="{99aa2799-810b-4435-b905-2196c39743c6}" enabled="true" parameters="" passExecutionContext="true" />
+          </Handlers>
+        </event>
+        <event name="onchange" application="false" active="false" attribute="tra_spousecontributorsmonthly">
+          <Handlers>
+            <Handler functionName="CrmJS.FinancialsFunctions.OnMonthlyExpenseTabMonthlyValueChange" libraryName="tra_/scripts/financials.js" handlerUniqueId="{b68ddc71-994b-4018-a0b4-d269b38e2f41}" enabled="true" parameters="" passExecutionContext="true" />
+          </Handlers>
+        </event>
+        <event name="onchange" application="false" active="false" attribute="tra_dividendsinterests">
+          <Handlers>
+            <Handler functionName="CrmJS.FinancialsFunctions.OnMonthlyExpenseTabMonthlyValueChange" libraryName="tra_/scripts/financials.js" handlerUniqueId="{256c560c-da4d-4d4b-92f3-578a3af930f8}" enabled="true" parameters="" passExecutionContext="true" />
+          </Handlers>
+        </event>
+        <event name="onchange" application="false" active="false" attribute="tra_netbusinessincome">
+          <Handlers>
+            <Handler functionName="CrmJS.FinancialsFunctions.OnMonthlyExpenseTabMonthlyValueChange" libraryName="tra_/scripts/financials.js" handlerUniqueId="{db66eef8-e1fe-41b6-9809-a157202e9f9a}" enabled="true" parameters="" passExecutionContext="true" />
+          </Handlers>
+        </event>
+        <event name="onchange" application="false" active="false" attribute="tra_primarytaxpayermonthly">
+          <Handlers>
+            <Handler functionName="CrmJS.FinancialsFunctions.OnMonthlyExpenseTabMonthlyValueChange" libraryName="tra_/scripts/financials.js" handlerUniqueId="{7b1f5fe8-554e-43dd-9e31-37e2187ba249}" enabled="false" parameters="" passExecutionContext="false" />
+          </Handlers>
+        </event>
+        <event name="onchange" application="false" active="false" attribute="tra_rentalincomeexpensemonthly">
+          <Handlers>
+            <Handler functionName="CrmJS.FinancialsFunctions.OnMonthlyExpenseTabMonthlyValueChange" libraryName="tra_/scripts/financials.js" handlerUniqueId="{e57d899a-a87d-49a6-9805-d9e3eb18cf22}" enabled="false" parameters="" passExecutionContext="false" />
+          </Handlers>
+        </event>
+        <event name="onsave" application="false" active="false">
+          <Handlers>
+            <Handler functionName="CrmJS.FinancialsFunctions.onSave" libraryName="tra_/scripts/financials.js" handlerUniqueId="{35777ac6-9f4e-45df-9904-01562b0f5869}" enabled="true" parameters="" passExecutionContext="true" />
+          </Handlers>
+        </event>
+      </events>
+      <controlDescriptions />
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Financials - Monthly Income" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="Main form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

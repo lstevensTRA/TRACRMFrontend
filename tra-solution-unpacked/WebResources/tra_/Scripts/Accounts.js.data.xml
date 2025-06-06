@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebResource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <WebResourceId>{0faea795-1af0-ef11-be21-002248350ca0}</WebResourceId>
+  <Name>tra_/Scripts/Accounts.js</Name>
+  <DisplayName>tra_/Scripts/Accounts.js</DisplayName>
+  <LanguageCode>0</LanguageCode>
+  <WebResourceType>3</WebResourceType>
+  <IntroducedVersion>1.0.0.0</IntroducedVersion>
+  <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+  <IsAvailableForMobileOffline>0</IsAvailableForMobileOffline>
+  <DependencyXml>&lt;Dependencies&gt;&lt;Dependency componentType="WebResource"&gt;&lt;Library libraryUniqueId="{92b0a7f6-eaba-ef11-b8e8-00224828b785}" name="tra_/Scripts/MasterCommonV9.js" displayName="tra_/Scripts/MasterCommonV9.js" /&gt;&lt;/Dependency&gt;&lt;/Dependencies&gt;</DependencyXml>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>1</CanBeDeleted>
+  <IsHidden>0</IsHidden>
+  <FileName>/WebResources/tra_ScriptsAccountsjs0FAEA795-1AF0-EF11-BE21-002248350CA0</FileName>
+</WebResource>

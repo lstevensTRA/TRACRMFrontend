@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{e9f88fd6-6e35-4685-9cbb-587838820084}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form headerdensity="HighWithControls">
+      <tabs>
+        <tab verticallayout="true" id="{cb972f5a-7d03-4c63-82f7-baacb4de8787}" IsUserDefined="1" name="tab_general">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="50%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{f069e148-480c-49d6-95aa-8886251e84ee}" name="section_general" columns="1">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{be4a836f-7443-4b7a-97b1-7b2430786d15}">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="tra_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="tra_name" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{d8573764-7091-4edc-ad3e-9fdcf49fb1bd}">
+                        <labels>
+                          <label description="Ytel Campaign" languagecode="1033" />
+                        </labels>
+                        <control id="tra_ytelcompaign" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="tra_ytelcompaign" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b4e5a667-90c0-4e0b-8a88-2169f2219d51}">
+                        <labels>
+                          <label description="TT TokenTD" languagecode="1033" />
+                        </labels>
+                        <control id="tra_tttokentd" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="tra_tttokentd" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a94d706e-3e38-4300-bcdd-e832f1046e6f}">
+                        <labels>
+                          <label description="List Source" languagecode="1033" />
+                        </labels>
+                        <control id="tra_listsource" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="tra_listsource" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{7cb3073f-97dd-4614-bdda-e9fda5dbb9ed}">
+                        <labels>
+                          <label description="List Source 2" languagecode="1033" />
+                        </labels>
+                        <control id="tra_listsource2" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="tra_listsource2" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{d13f5e6e-19c4-469f-a93d-c92522a27a67}">
+                        <labels>
+                          <label description="Original RO SO" languagecode="1033" />
+                        </labels>
+                        <control id="tra_originalroso" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="tra_originalroso" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{f8b275a4-4d21-4e45-8b63-c764af493166}">
+                        <labels>
+                          <label description="Called Client" languagecode="1033" />
+                        </labels>
+                        <control id="tra_calledclient" classid="{67fac785-cd58-4f9f-abb3-4b7ddc6ed5ed}" datafieldname="tra_calledclient" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e268fa53-8dd1-4423-b8b9-5527783d43da}">
+                        <labels>
+                          <label description="SO TV, Social or Radio Station" languagecode="1033" />
+                        </labels>
+                        <control id="tra_sotvsocialorradiostation" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="tra_sotvsocialorradiostation" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{883aaa2b-0b19-4a7c-95c3-0fad34c61046}">
+                        <labels>
+                          <label description="SO Refferrer - Name and Case Number" languagecode="1033" />
+                        </labels>
+                        <control id="tra_soreferrernameandcasenumber" classid="{4273edbd-ac1d-40d3-9fb2-095c621b552d}" datafieldname="tra_soreferrernameandcasenumber" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{7aa7932f-54aa-4d38-bf13-e37280ada248}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Radio Source" languagecode="1033" />
+                        </labels>
+                        <control id="tra_radiosource" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="tra_radiosource" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{914d7855-6973-4999-bc68-440e43c60eab}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Sourced By" languagecode="1033" />
+                        </labels>
+                        <control id="tra_sourcebyid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="tra_sourcebyid" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{316725a9-b706-4c62-b0a3-2432cfb56e35}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Lead Genesis Close" languagecode="1033" />
+                        </labels>
+                        <control id="tra_leadgenesiscloseid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="tra_leadgenesiscloseid" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{51bf7c87-0470-462a-b163-268c9a181943}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Lead Genesis OG" languagecode="1033" />
+                        </labels>
+                        <control id="tra_leadgenesisog" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="tra_leadgenesisog" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="50%">
+              <sections>
+                <section name="section_record_details" id="1cee5e64-1863-4460-9a67-b34d24b7fec2" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Record Details" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row />
+                    <row>
+                      <cell id="{2d102c48-fd96-4163-bfc8-f254f29f63a8}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Created By" languagecode="1033" />
+                        </labels>
+                        <control id="createdby" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="createdby" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e3fca9fd-13b6-4ba0-9c3f-c88a7e2ef55f}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Created On" languagecode="1033" />
+                        </labels>
+                        <control id="createdon" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="createdon" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{c7b9d871-f4e7-4d13-8936-e63b10416a58}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Modified By" languagecode="1033" />
+                        </labels>
+                        <control id="modifiedby" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="modifiedby" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{3f03352e-823f-4c00-8497-ca7b24737862}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Modified On" languagecode="1033" />
+                        </labels>
+                        <control id="modifiedon" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="modifiedon" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{add52136-3aea-45d1-880f-d9e114ed8dfd}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{b519d921-3b26-40b9-928b-7d53112440ed}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{c121e55d-48d9-49c0-8382-a255c83575da}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{1cf67b2d-b5a3-40ec-8d44-334202a226d9}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{dfb6d7ae-c061-42f7-83c4-d4f1e6f309e4}" colspan="1" rowspan="1">
+              <labels>
+                <label description="Owner" languagecode="1033" />
+              </labels>
+              <control id="header_ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{bb781882-d2ac-4e8d-930e-fc81f0ec3ad9}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{8c1dd0bb-08f5-4799-b344-5f9b416b4ddb}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{fc93e6a1-8c9f-45c8-92ef-8c3e21059b3b}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{47b17a03-c44e-4d19-ab60-74cca28bf395}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <DisplayConditions Order="0" FallbackForm="true">
+        <Everyone />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="TRA Marketing" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<optionset Name="tra_substatus" localizedName="Sub Status" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <OptionSetType>picklist</OptionSetType>
+  <IsGlobal>1</IsGlobal>
+  <IntroducedVersion>1.0.0.0</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <ExternalTypeName></ExternalTypeName>
+  <displaynames>
+    <displayname description="Sub Status" languagecode="1033" />
+  </displaynames>
+  <Descriptions>
+    <Description description="" languagecode="1033" />
+  </Descriptions>
+  <options>
+    <option value="211050000" ExternalValue="" IsHidden="0">
+      <labels>
+        <label description="8821 Form Reviewing" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="211050001" ExternalValue="" IsHidden="0">
+      <labels>
+        <label description="Submission (THS &amp; IRS)" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="211050002" ExternalValue="" IsHidden="0">
+      <labels>
+        <label description="Read to Investigate" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="211050003" ExternalValue="" IsHidden="0">
+      <labels>
+        <label description="Transcript Reviewing" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="211050004" ExternalValue="" IsHidden="0">
+      <labels>
+        <label description="Pending TI Analysis" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="211050005" ExternalValue="" IsHidden="0">
+      <labels>
+        <label description="Completed TI Analysis" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="211050006" ExternalValue="" IsHidden="0">
+      <labels>
+        <label description="Addingtion TI Required" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="211050007" ExternalValue="" IsHidden="0">
+      <labels>
+        <label description="Final TI Completed" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="211050008" ExternalValue="" IsHidden="0">
+      <labels>
+        <label description="Ready for Resolution" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="211050009" ExternalValue="" IsHidden="0">
+      <labels>
+        <label description="Client Information Reviewing" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="211050010" ExternalValue="" IsHidden="0">
+      <labels>
+        <label description="Submitted to 2.0" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="211050011" ExternalValue="" IsHidden="0">
+      <labels>
+        <label description="Informed to SO" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="211050012" ExternalValue="" IsHidden="0">
+      <labels>
+        <label description="Client Unreachable" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="211050013" ExternalValue="" IsHidden="0">
+      <labels>
+        <label description="Client Denied" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="211050014" ExternalValue="" IsHidden="0">
+      <labels>
+        <label description="Pending Invoice" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+    <option value="211050015" ExternalValue="" IsHidden="0">
+      <labels>
+        <label description="File Uploaded" languagecode="1033" />
+      </labels>
+      <Descriptions>
+        <Description description="" languagecode="1033" />
+      </Descriptions>
+    </option>
+  </options>
+</optionset>

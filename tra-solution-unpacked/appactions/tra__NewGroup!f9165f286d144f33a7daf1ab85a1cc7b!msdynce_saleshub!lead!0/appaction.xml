@@ -1,0 +1,28 @@
+<appaction uniquename="tra__NewGroup!f9165f286d144f33a7daf1ab85a1cc7b!msdynce_saleshub!lead!0">
+  <appmoduleid>
+    <uniquename>msdynce_saleshub</uniquename>
+  </appmoduleid>
+  <context>1</context>
+  <contextentity>
+    <logicalname>lead</logicalname>
+  </contextentity>
+  <contextvalue>lead</contextvalue>
+  <grouptitle default="NewGroup">
+    <label description="NewGroup" languagecode="1033" />
+  </grouptitle>
+  <hidden>0</hidden>
+  <iscustomizable>1</iscustomizable>
+  <isdisabled>0</isdisabled>
+  <isgrouptitlehidden>1</isgrouptitlehidden>
+  <location>0</location>
+  <name>NewGroup!f9165f286d144f33a7daf1ab85a1cc7b</name>
+  <onclickeventtype>0</onclickeventtype>
+  <origin>0</origin>
+  <parentappactionid>
+    <uniquename>tra__InterviewScript!04b0b5af012c4bc989362722008657cb!msdynce_saleshub!lead!0</uniquename>
+  </parentappactionid>
+  <sequence>10000.0000000000</sequence>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+  <type>3</type>
+</appaction>

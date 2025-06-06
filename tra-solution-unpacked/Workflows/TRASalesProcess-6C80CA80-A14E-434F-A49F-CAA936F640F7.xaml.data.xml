@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Workflow WorkflowId="{6c80ca80-a14e-434f-a49f-caa936f640f7}" Name="TRA Sales Process" Description="This is the default process flow to work on a lead and convert it to an opportunity." xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <XamlFileName>/Workflows/TRASalesProcess-6C80CA80-A14E-434F-A49F-CAA936F640F7.xaml</XamlFileName>
+  <Type>1</Type>
+  <Subprocess>0</Subprocess>
+  <Category>4</Category>
+  <Mode>0</Mode>
+  <Scope>4</Scope>
+  <OnDemand>0</OnDemand>
+  <TriggerOnCreate>1</TriggerOnCreate>
+  <TriggerOnDelete>0</TriggerOnDelete>
+  <AsyncAutodelete>0</AsyncAutodelete>
+  <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+  <StateCode>1</StateCode>
+  <StatusCode>2</StatusCode>
+  <processorder>100</processorder>
+  <RunAs>1</RunAs>
+  <UniqueName>new_bpf_6c80ca80a14e434fa49fcaa936f640f7</UniqueName>
+  <IsTransacted>1</IsTransacted>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <BusinessProcessType>0</BusinessProcessType>
+  <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+  <ProcessTriggerScope>1</ProcessTriggerScope>
+  <PrimaryEntity>Lead</PrimaryEntity>
+  <LocalizedNames>
+    <LocalizedName languagecode="1033" description="TRA Sales Process" />
+  </LocalizedNames>
+  <Descriptions>
+    <Description languagecode="1033" description="This is the default process flow to work on a lead and convert it to an opportunity." />
+  </Descriptions>
+  <labels>
+    <steplabels id="{cbc41dfd-1f80-4728-9385-c9c60d5f7205}">
+      <label languagecode="1033" description="Qualify" />
+    </steplabels>
+    <steplabels id="{58a9fce5-eebc-437b-b431-9860dd1aae40}">
+      <label languagecode="1033" description="Existing Contact?" />
+    </steplabels>
+    <steplabels id="{0f4c6cb5-beb4-4775-93c8-22e92b94fb5e}">
+      <label languagecode="1033" description="Existing Account?" />
+    </steplabels>
+    <steplabels id="{1869eb31-f292-4577-ae02-03e02d04fc84}">
+      <label languagecode="1033" description="Identify Decision Maker" />
+    </steplabels>
+    <steplabels id="{82d8a5f0-17e7-4c44-912a-7fe4fd22911f}">
+      <label languagecode="1033" description="Capture Summary" />
+    </steplabels>
+    <steplabels id="{7844cbf9-3ab7-4e86-8847-b3b2b4d0f65b}">
+      <label languagecode="1033" description="Interview" />
+    </steplabels>
+    <steplabels id="{a6a96119-aa7d-400e-aa4d-fb30d67a9674}">
+      <label languagecode="1033" description="Alright and what is your tax problem?" />
+    </steplabels>
+    <steplabels id="{fb50ee22-2e6d-41cd-bcd4-86bfba59fde8}">
+      <label languagecode="1033" description="And would that be Federal or State taxes?" />
+    </steplabels>
+    <steplabels id="{2dcea91a-3bed-406c-8a89-1ce3e93fe922}">
+      <label languagecode="1033" description="And is that Business or Personal?" />
+    </steplabels>
+    <steplabels id="{98ed0d76-8c59-4bec-9cfd-6c13fb325c27}">
+      <label languagecode="1033" description="Case" />
+    </steplabels>
+    <steplabels id="{577e171b-37e1-4850-a764-e287b15d3d76}">
+      <label languagecode="1033" description="Parent Case" />
+    </steplabels>
+  </labels>
+</Workflow>

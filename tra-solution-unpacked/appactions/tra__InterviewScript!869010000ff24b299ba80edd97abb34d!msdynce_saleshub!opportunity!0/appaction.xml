@@ -1,0 +1,32 @@
+<appaction uniquename="tra__InterviewScript!869010000ff24b299ba80edd97abb34d!msdynce_saleshub!opportunity!0">
+  <appmoduleid>
+    <uniquename>msdynce_saleshub</uniquename>
+  </appmoduleid>
+  <buttonlabeltext default="Interview Script">
+    <label description="Interview Script" languagecode="1033" />
+  </buttonlabeltext>
+  <context>1</context>
+  <contextentity>
+    <logicalname>opportunity</logicalname>
+  </contextentity>
+  <contextvalue>opportunity</contextvalue>
+  <fonticon>ConvertKnowledgeArticle</fonticon>
+  <hidden>0</hidden>
+  <iscustomizable>1</iscustomizable>
+  <isdisabled>0</isdisabled>
+  <isgrouptitlehidden>0</isgrouptitlehidden>
+  <location>0</location>
+  <name>InterviewScript!869010000ff24b299ba80edd97abb34d</name>
+  <onclickeventtype>0</onclickeventtype>
+  <origin>0</origin>
+  <sequence>100100018.2500000000</sequence>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+  <type>1</type>
+  <visibilityformulacomponentlibraryid>
+    <name>tra_saleshubdefaultcommandlibrary_41da1</name>
+  </visibilityformulacomponentlibraryid>
+  <visibilityformulacomponentname>604eeea4d7364079afcd320296707242</visibilityformulacomponentname>
+  <visibilityformulafunctionname>Visible</visibilityformulafunctionname>
+  <visibilitytype>1</visibilitytype>
+</appaction>

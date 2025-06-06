@@ -1,0 +1,204 @@
+{
+  "properties": {
+    "connectionReferences": {
+      "shared_commondataserviceforapps": {
+        "api": {
+          "name": "shared_commondataserviceforapps"
+        },
+        "connection": {
+          "connectionReferenceLogicalName": "tra_sharedcommondataserviceforapps_117e9"
+        },
+        "runtimeSource": "embedded"
+      },
+      "shared_sharepointonline-1": {
+        "api": {
+          "name": "shared_sharepointonline"
+        },
+        "connection": {
+          "connectionReferenceLogicalName": "tra_SharePointTRASalesBase"
+        },
+        "runtimeSource": "embedded"
+      }
+    },
+    "definition": {
+      "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+      "contentVersion": "1.0.0.0",
+      "parameters": {
+        "$authentication": {
+          "defaultValue": {},
+          "type": "SecureObject"
+        },
+        "$connections": {
+          "defaultValue": {},
+          "type": "Object"
+        },
+        "TRA Configurations (tra_TRAConfigurations)": {
+          "defaultValue": {
+            "SalesTeam": "",
+            "ParentSPDocumentLocationID": "dc7b2c5a-091a-f011-998a-7c1e520b713c",
+            "SharePointURLMain": "https://tradvocates.sharepoint.com/sites/",
+            "SharePointSiteURL": "CRMDev3",
+            "SharePointOpportunityFolders": [
+              "8821 Form",
+              "2848 Form",
+              "Contract Agreement"
+            ],
+            "SharePointCasesFolders": [
+              "THS Transcript",
+              "IRS Transcript"
+            ],
+            "CRMUrl": "https://tra-dev.crm.dynamics.com"
+          },
+          "type": "Object",
+          "metadata": {
+            "schemaName": "tra_TRAConfigurations"
+          }
+        }
+      },
+      "triggers": {
+        "When_a_row_is_added,_modified_or_deleted": {
+          "type": "OpenApiConnectionWebhook",
+          "inputs": {
+            "parameters": {
+              "subscriptionRequest/message": 1,
+              "subscriptionRequest/entityname": "opportunity",
+              "subscriptionRequest/scope": 4
+            },
+            "host": {
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps",
+              "operationId": "SubscribeWebhookTrigger",
+              "connectionName": "shared_commondataserviceforapps"
+            }
+          },
+          "metadata": {
+            "operationMetadataId": "6ff60985-bd16-4ac4-97fa-36c166841908"
+          }
+        }
+      },
+      "actions": {
+        "try": {
+          "type": "Scope",
+          "actions": {
+            "Generate_Unique_Name_with_Case_ID": {
+              "type": "Compose",
+              "inputs": "@{trim(triggerOutputs()?['body/name'])}_@{outputs('Get_a_row_by_ID_lead')?['body/tra_caseid']}",
+              "metadata": {
+                "operationMetadataId": "80789355-7f90-42f7-aafe-2436fdf36f9c"
+              }
+            },
+            "Add_a_new_row_Document_Location": {
+              "type": "OpenApiConnection",
+              "inputs": {
+                "parameters": {
+                  "entityName": "sharepointdocumentlocations",
+                  "item/name": "@outputs('Generate_Unique_Name_with_Case_ID')",
+                  "item/servicetype": 0,
+                  "item/parentsiteorlocation_sharepointdocumentlocation@odata.bind": "sharepointdocumentlocations(@{parameters('TRA Configurations (tra_TRAConfigurations)')?['ParentSPDocumentLocationID']})",
+                  "item/regardingobjectid_opportunity@odata.bind": "opportunities(@{triggerOutputs()?['body/opportunityid']})",
+                  "item/relativeurl": "@outputs('Generate_Unique_Name_with_Case_ID')"
+                },
+                "host": {
+                  "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps",
+                  "operationId": "CreateRecord",
+                  "connectionName": "shared_commondataserviceforapps"
+                }
+              },
+              "runAfter": {
+                "Generate_Unique_Name_with_Case_ID": [
+                  "Succeeded"
+                ]
+              },
+              "metadata": {
+                "operationMetadataId": "e6dbb89a-4d48-4bee-8e09-34e83b7b18b2"
+              }
+            },
+            "Apply_to_each": {
+              "type": "Foreach",
+              "foreach": "@parameters('TRA Configurations (tra_TRAConfigurations)')?['SharePointOpportunityFolders']",
+              "actions": {
+                "Create_new_folders_as_per_the_env_variable": {
+                  "type": "OpenApiConnection",
+                  "inputs": {
+                    "parameters": {
+                      "dataset": "@{parameters('TRA Configurations (tra_TRAConfigurations)')?['SharePointURLMain']}@{parameters('TRA Configurations (tra_TRAConfigurations)')?['SharePointSiteURL']}",
+                      "table": "f83a60df-bf55-4b0b-8971-4fa1629b573c",
+                      "parameters/path": "@{outputs('Generate_Unique_Name_with_Case_ID')}/@{items('Apply_to_each')}"
+                    },
+                    "host": {
+                      "apiId": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline",
+                      "operationId": "CreateNewFolder",
+                      "connectionName": "shared_sharepointonline-1"
+                    }
+                  },
+                  "metadata": {
+                    "operationMetadataId": "7f1bd32f-073a-49f6-94d3-d4a967e3a78d"
+                  }
+                }
+              },
+              "runAfter": {
+                "Generate_Unique_Name_with_Case_ID": [
+                  "Succeeded"
+                ]
+              },
+              "metadata": {
+                "operationMetadataId": "1cd212f1-de75-4516-9bc2-7d86419f712a"
+              }
+            }
+          },
+          "runAfter": {
+            "Get_a_row_by_ID_lead": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "02932868-249c-448d-95b0-2e1924513901"
+          }
+        },
+        "catch": {
+          "type": "Scope",
+          "actions": {
+            "Terminate": {
+              "type": "Terminate",
+              "inputs": {
+                "runStatus": "Failed"
+              },
+              "metadata": {
+                "operationMetadataId": "4e3a9513-c4fe-4ab3-99dd-6ed9844d955e"
+              }
+            }
+          },
+          "runAfter": {
+            "try": [
+              "Failed",
+              "Skipped",
+              "TimedOut"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "30a98574-e59a-4616-92eb-5aa4fb04e491"
+          }
+        },
+        "Get_a_row_by_ID_lead": {
+          "type": "OpenApiConnection",
+          "inputs": {
+            "parameters": {
+              "entityName": "leads",
+              "recordId": "@triggerOutputs()?['body/_originatingleadid_value']"
+            },
+            "host": {
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps",
+              "operationId": "GetItem",
+              "connectionName": "shared_commondataserviceforapps"
+            }
+          },
+          "runAfter": {},
+          "metadata": {
+            "operationMetadataId": "36787485-0c2e-4b1f-a099-e27f1eca123e"
+          }
+        }
+      }
+    },
+    "templateName": null
+  },
+  "schemaVersion": "1.0.0.0"
+}

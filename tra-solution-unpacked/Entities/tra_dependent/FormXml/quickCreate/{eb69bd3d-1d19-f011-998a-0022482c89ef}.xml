@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{eb69bd3d-1d19-f011-998a-0022482c89ef}</formid>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab verticallayout="true" id="{ce053ace-7098-45ba-b4b8-da104dce3fc1}" showlabel="false" name="New Tab" labelid="{aff8febc-09ef-48ec-a197-9ab6f0b3596c}">
+          <labels>
+            <label description="New Tab" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="34%">
+              <sections>
+                <section showlabel="true" columns="1" showbar="false" IsUserDefined="false" labelwidth="130" id="{c6354606-fd51-4ac2-9bd8-6d5e300cf4b0}" name="dependent_information" labelid="{a7de0149-bec8-4b30-8f13-76d4763c3f44}">
+                  <labels>
+                    <label description="Dependent Information" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{754c085d-045d-40d7-8850-3d203a71d822}" locklevel="0" colspan="1" rowspan="1" labelid="{bf48196f-496d-4dca-af7b-16d20cef18fc}">
+                        <labels>
+                          <label description="Full Name" languagecode="1033" />
+                        </labels>
+                        <control id="tra_name" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="tra_name" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{96832ae5-2890-4562-bba7-66e754b5892d}" locklevel="0" colspan="1" rowspan="1" labelid="{29806145-62bc-4013-930e-528ca030b93f}">
+                        <labels>
+                          <label description="Age" languagecode="1033" />
+                        </labels>
+                        <control id="tra_age" classid="{C6D124CA-7EDA-4A60-AEA9-7FB8D318B68F}" datafieldname="tra_age" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{eb65dca6-0dc4-4d5c-9dfa-7fda48acce8a}" locklevel="0" colspan="1" rowspan="1" labelid="{54b97ab6-81a2-4650-9b2a-2b7a01aaeac7}">
+                        <labels>
+                          <label description="Opportunity" languagecode="1033" />
+                        </labels>
+                        <control id="tra_opportunity" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="tra_opportunity" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{7065ee58-8e3c-4dec-95fc-ce42fe4abdec}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Dependent Type" languagecode="1033" />
+                        </labels>
+                        <control id="tra_dependenttype" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="tra_dependenttype" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{bb5967c8-0f93-49f6-9a95-438f593751f0}" locklevel="0" colspan="1" rowspan="1" labelid="{14cf5e7c-0919-4842-8397-2968605fd692}">
+                        <labels>
+                          <label description="Frequency of Claiming" languagecode="1033" />
+                        </labels>
+                        <control id="tra_frequencyofclaiming" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="tra_frequencyofclaiming" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{3ba9fbab-1bcb-4f33-8931-b83d9d9e8464}" locklevel="0" colspan="1" rowspan="1" labelid="{b2c79234-21b2-414e-bd0c-6d4be5746176}" visible="false">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%">
+              <sections>
+                <section id="{d9ed193c-895a-4107-b051-8212f0ee3717}" name="tab_1_column_2_section_1" columns="1" showlabel="false" showbar="false" IsUserDefined="0" labelwidth="130" labelid="{70668887-4a10-426c-9cba-8db251064c11}">
+                  <labels>
+                    <label description="New Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{fef0c7ec-c0a3-4197-9e5d-663639a289f6}" labelid="{514d442c-ae24-4251-a560-4fa2848c4da3}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%">
+              <sections>
+                <section id="{07c10015-a860-4cf8-92ac-bdd8af966a55}" name="tab_1_column_3_section_1" columns="1" showlabel="false" showbar="false" IsUserDefined="0" labelwidth="130" labelid="{4e788b35-943a-4c4d-82b9-c1435b088741}">
+                  <labels>
+                    <label description="New Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{7919286b-7bce-40d6-b20a-9c50e3acd44a}" labelid="{086753de-d96e-4f46-9cb6-15e976c1f079}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <DisplayConditions Order="0" FallbackForm="true">
+        <Role Id="{627090ff-40a3-4053-8790-584edc5be201}" />
+        <Role Id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="TRA Dependent QC" languagecode="1033" />
+    </LocalizedNames>
+  </systemform>
+</forms>

@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Workflow WorkflowId="{089a611c-481c-f011-9989-6045bdd3cad7}" Name="TRA Stage Process" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <XamlFileName>/Workflows/TRAStageProcess-089A611C-481C-F011-9989-6045BDD3CAD7.xaml</XamlFileName>
+  <Type>1</Type>
+  <Subprocess>0</Subprocess>
+  <Category>4</Category>
+  <Mode>0</Mode>
+  <Scope>4</Scope>
+  <OnDemand>0</OnDemand>
+  <TriggerOnCreate>1</TriggerOnCreate>
+  <TriggerOnDelete>0</TriggerOnDelete>
+  <AsyncAutodelete>0</AsyncAutodelete>
+  <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+  <StateCode>1</StateCode>
+  <StatusCode>2</StatusCode>
+  <processorder>0</processorder>
+  <RunAs>1</RunAs>
+  <UniqueName>tra_trastageprocess</UniqueName>
+  <IsTransacted>1</IsTransacted>
+  <IntroducedVersion>1.0.0.0</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <BusinessProcessType>0</BusinessProcessType>
+  <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+  <ProcessTriggerScope>1</ProcessTriggerScope>
+  <ModernFlowType>0</ModernFlowType>
+  <PrimaryEntity>Incident</PrimaryEntity>
+  <LocalizedNames>
+    <LocalizedName languagecode="1033" description="TRA Stage Process" />
+  </LocalizedNames>
+  <labels>
+    <steplabels id="{10118925-a8d5-4f10-9a7a-179f8d509b0a}">
+      <label languagecode="1033" description="TI Admin" />
+    </steplabels>
+    <steplabels id="{f7810d6f-77db-417d-9a65-af26b130b2b0}">
+      <label languagecode="1033" description="Status Reason" />
+    </steplabels>
+    <steplabels id="{d5f3cff1-a068-4287-95ab-351252fe0ce6}">
+      <label languagecode="1033" description="TI Compliance" />
+    </steplabels>
+    <steplabels id="{fe8ea16b-2843-4155-abd0-e4cf4438d555}">
+      <label languagecode="1033" description="Status Reason" />
+    </steplabels>
+    <steplabels id="{fc2f0e26-9f7e-48e7-8cfc-cc6dc9492bfb}">
+      <label languagecode="1033" description="TI Analyst" />
+    </steplabels>
+    <steplabels id="{fc656bcf-7e54-47af-b009-b6c9503087af}">
+      <label languagecode="1033" description="Status Reason" />
+    </steplabels>
+    <steplabels id="{41be1ce1-5119-42c8-99fe-1595a3e455ef}">
+      <label languagecode="1033" description="TI Resolution" />
+    </steplabels>
+    <steplabels id="{8f4fa2fa-85c9-45d0-85a6-6571a77451c1}">
+      <label languagecode="1033" description="Status Reason" />
+    </steplabels>
+    <steplabels id="{4f8642d0-7ade-4d9c-b578-2ee79db5dbba}">
+      <label languagecode="1033" description="Tax Preparation" />
+    </steplabels>
+    <steplabels id="{4a604822-dc0d-4c09-a6c9-b4389eb91731}">
+      <label languagecode="1033" description="Status Reason" />
+    </steplabels>
+    <steplabels id="{69b3efbc-1594-438f-9380-a79c4a830fc6}">
+      <label languagecode="1033" description="Resolution" />
+    </steplabels>
+    <steplabels id="{c5af6feb-7a99-45ee-97ff-ca44a571f352}">
+      <label languagecode="1033" description="Status Reason" />
+    </steplabels>
+  </labels>
+</Workflow>

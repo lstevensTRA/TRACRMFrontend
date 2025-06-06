@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AppModuleSiteMap xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SiteMapUniqueName>SalesHubSitemap</SiteMapUniqueName>
+  <EnableCollapsibleGroups>False</EnableCollapsibleGroups>
+  <ShowHome>True</ShowHome>
+  <ShowPinned>True</ShowPinned>
+  <ShowRecents>True</ShowRecents>
+  <SiteMap IntroducedVersion="7.0.0.0">
+    <Area IntroducedVersion="7.0.0.0" Icon="/WebResources/msdyn_/Images/Area_Default_Icon.png" Id="Enterprise_Sales" ResourceId="Area_Sales" DescriptionResourceId="Sales_Description" ShowGroups="true" ordinalvalue="0">
+      <Group IntroducedVersion="7.0.0.0" Id="My_Work" ResourceId="Group_MyWork" DescriptionResourceId="My_Work_Description" IsProfile="false" ToolTipResourseId="My_Work_ToolTip" ordinalvalue="0">
+        <SubArea Id="SalesAccelerationInstance_ViralTrial" VectorIcon="/WebResources/Sales/_imgs/SiteMap/salesacceleration.svg" Icon="/WebResources/Sales/_imgs/SiteMap/salesacceleration.svg" Url="/main.aspx?pagetype=control&amp;controlName=MscrmControls.AcceleratedSales.AnchorShellControl" Client="All" AvailableOffline="false" PassParams="false" Sku="All,OnPremise,Live,SPLA" ordinalvalue="2" solutionaction="Removed" />
+        <SubArea Icon="/_imgs/imagestrips/transparent_spacer.gif" Id="Activity" AvailableOffline="false" PassParams="false" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" Sku="All,OnPremise,Live,SPLA" Entity="activitypointer" ordinalvalue="3" solutionaction="Removed" />
+        <SubArea Id="Dashboards" ResourceId="Homepage_Dashboards" DescriptionResourceId="Dashboards_Description" Icon="/_imgs/imagestrips/transparent_spacer.gif" Url="/workplace/home_dashboards.aspx" DefaultDashboard="2701de60-8f2a-48a4-8262-4a35ca7441fa" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="false" PassParams="false" Sku="All,OnPremise,Live,SPLA" ordinalvalue="2" solutionaction="Modified" />
+        <SubArea Id="SalesResearchAgent" VectorIcon="/WebResources/msdyn_ProjectSophiaOutline.svg" Icon="/WebResources/msdyn_ProjectSophiaOutline.svg" Url="/main.aspx?pagetype=control&amp;controlName=msdyn_ProjectSophiaControl.ProjectSophiaControl&amp;data={&quot;hostname&quot;:&quot;Dynamics365Sales&quot;}" Client="Web" AvailableOffline="false" PassParams="false" ordinalvalue="3" solutionaction="Modified" />
+      </Group>
+      <Group Id="Customers" ResourceId="Group_Customers" DescriptionResourceId="Customers_Description" IsProfile="false" ToolTipResourseId="Customers_ToolTip" ordinalvalue="1">
+        <SubArea Icon="/_imgs/imagestrips/transparent_spacer.gif" Id="Account" AvailableOffline="false" PassParams="false" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" Sku="All,OnPremise,Live,SPLA" Entity="account" ordinalvalue="0" />
+        <SubArea Icon="/_imgs/imagestrips/transparent_spacer.gif" Id="Contact" AvailableOffline="false" PassParams="false" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" Sku="All,OnPremise,Live,SPLA" Entity="contact" ordinalvalue="1" />
+      </Group>
+      <Group Id="Sales" ResourceId="Area_Sales" DescriptionResourceId="Sales_Description" IsProfile="false" ToolTipResourseId="Sales_ToolTip" ordinalvalue="2">
+        <SubArea Icon="/_imgs/imagestrips/transparent_spacer.gif" Id="Lead" AvailableOffline="false" PassParams="false" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" Sku="All,OnPremise,Live,SPLA" Entity="lead" ordinalvalue="0" />
+        <SubArea Icon="/_imgs/imagestrips/transparent_spacer.gif" Id="Opportunity" AvailableOffline="false" PassParams="false" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" Sku="All,OnPremise,Live,SPLA" Entity="opportunity" ordinalvalue="1" />
+        <SubArea Icon="/_imgs/imagestrips/transparent_spacer.gif" Id="Competitor" AvailableOffline="false" PassParams="false" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" Sku="All,OnPremise,Live,SPLA" Entity="competitor" ordinalvalue="2" solutionaction="Removed" />
+        <SubArea Id="subarea_927309f4" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="incident" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" ordinalvalue="2" solutionaction="Added" />
+      </Group>
+      <Group Id="Collateral" ResourceId="Area_Collateral" DescriptionResourceId="Area_Collateral_Description" IsProfile="false" ToolTipResourseId="Area_Collateral_Sales_ToolTip" ordinalvalue="3" solutionaction="Removed" />
+      <Group Id="Marketing" ResourceId="Area_Marketing" DescriptionResourceId="Marketing_Description" ToolTipResourseId="Marketing_ToolTip" IntroducedVersion="9.0.0.0" ordinalvalue="4" solutionaction="Removed" />
+      <Group Id="Goals" ResourceId="Area_Goals" DescriptionResourceId="Area_Goals_Description" IsProfile="false" ToolTipResourseId="Area_Goals_ToolTip" ordinalvalue="5" solutionaction="Removed" />
+      <Group Id="Service" ResourceId="SitemapDesigner.NewGroup" IsProfile="false" ToolTipResourseId="SitemapDesigner.Unknown" ordinalvalue="3" solutionaction="Modified">
+        <SubArea Icon="/_imgs/imagestrips/transparent_spacer.gif" Id="Case" AvailableOffline="false" PassParams="false" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" Sku="All,OnPremise,Live,SPLA" Entity="incident" ordinalvalue="0" solutionaction="Removed" />
+        <SubArea Id="subarea_b2acf4b4" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="queueitem" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" ordinalvalue="0" solutionaction="Added" />
+      </Group>
+    </Area>
+    <Area Id="Sales_Settings_Area" ResourceId="Area_Sales_Settings" VectorIcon="$webresource:Sales/_imgs/saleAdminSetting/SettingsIcon.svg" Icon="/WebResources/Sales/_imgs/saleAdminSetting/SettingsIcon.svg" IntroducedVersion="9.0.0" ordinalvalue="1" solutionaction="Modified">
+      <Group Id="GeneralSettingsGroup" IsProfile="false" ToolTipResourseId="SitemapDesigner.Unknown" ordinalvalue="1" solutionaction="Modified">
+        <SubArea Id="GSOverview" DescriptionResourceId="PDF_Generation_Settings_Dsc" VectorIcon="$webresource:Sales/_imgs/saleAdminSetting/GsOverviewIcon.svg" Icon="/WebResources/Sales/_imgs/saleAdminSetting/GsOverviewIcon.svg" Url="/main.aspx?pagetype=control&amp;controlName=MscrmControls.FieldControls.CCFadminsettings&amp;data={&quot;id&quot;:&quot;overview&quot;,&quot;ismanage&quot;:&quot;overview&quot;}" IntroducedVersion="9.0.0" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="false" PassParams="false" Sku="All,OnPremise,Live,SPLA" ordinalvalue="0" solutionaction="Modified" />
+        <SubArea Id="SalesCopilot" VectorIcon="$webresource:Sales/_imgs/SiteMap/SalesCopilotIconBlack.svg" Icon="/WebResources/Sales/_imgs/SiteMap/SalesCopilotIconBlack.svg" Url="/main.aspx?pagetype=control&amp;controlName=msdyn_Sales.Controls.CopilotSettingsControl" IntroducedVersion="9.0.0" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="false" PassParams="false" Sku="All,OnPremise,Live,SPLA" ordinalvalue="1" solutionaction="Modified" />
+        <SubArea Id="LeadnManage" DescriptionResourceId="PDF_Generation_Settings_Dsc" VectorIcon="$webresource:Sales/_imgs/saleAdminSetting/GsLnOIcon.svg" Icon="/WebResources/Sales/_imgs/saleAdminSetting/GsLnOIcon.svg" Url="/main.aspx?pagetype=control&amp;controlName=MscrmControls.FieldControls.CCFadminsettings&amp;data={&quot;id&quot;:&quot;overview&quot;,&quot;ismanage&quot;:&quot;lno&quot;}" IntroducedVersion="9.0.0" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="false" PassParams="true" Sku="All,OnPremise,Live,SPLA" ordinalvalue="3" solutionaction="Modified">
+          <Titles>
+            <Title LCID="1051" Title="Správa potenciálnych zákazníkov a príležitostí" ordinalvalue="33" solutionaction="Modified" />
+          </Titles>
+        </SubArea>
+        <SubArea Id="ProductivityTools" DescriptionResourceId="PDF_Generation_Settings_Dsc" VectorIcon="$webresource:Sales/_imgs/saleAdminSetting/GsProductivityToolsIcon.svg" Icon="/WebResources/Sales/_imgs/saleAdminSetting/GsProductivityToolsIcon.svg" Url="/main.aspx?pagetype=control&amp;controlName=MscrmControls.FieldControls.CCFadminsettings&amp;data={&quot;id&quot;:&quot;overview&quot;,&quot;ismanage&quot;:&quot;pt&quot;}" IntroducedVersion="9.0.0" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="false" PassParams="true" Sku="All,OnPremise,Live,SPLA" ordinalvalue="4" solutionaction="Modified" />
+        <SubArea Id="ChatnCollab" VectorIcon="$webresource:Sales/_imgs/saleAdminSetting/GsChatCollabIcon.svg" Icon="/WebResources/Sales/_imgs/saleAdminSetting/GsChatCollabIcon.svg" Url="/main.aspx?pagetype=control&amp;controlName=MscrmControls.TeamsCollaborationAdmin.TeamsCollaborationAdmin" IntroducedVersion="9.0.0" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="false" PassParams="true" Sku="All,OnPremise,Live,SPLA" ordinalvalue="5" solutionaction="Modified">
+          <Titles>
+            <Title LCID="1051" Title="Konverzácia a spolupráca" ordinalvalue="33" solutionaction="Modified" />
+          </Titles>
+        </SubArea>
+        <SubArea Id="TeamsMeetings" VectorIcon="$webresource:Sales/_imgs/saleAdminSetting/GsChatCollabIcon.svg" Icon="/WebResources/Sales/_imgs/saleAdminSetting/GsChatCollabIcon.svg" Url="/main.aspx?pagetype=control&amp;controlName=MscrmControls.TeamsMeetingIntegrationAdmin.TeamsMeetingIntegrationAdmin" IntroducedVersion="9.0.0" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="false" PassParams="true" Sku="All,OnPremise,Live,SPLA" ordinalvalue="6" solutionaction="Modified" />
+        <SubArea Id="LinkedinIntegration" DescriptionResourceId="PDF_Generation_Settings_Dsc" VectorIcon="$webresource:Sales/_imgs/saleAdminSetting/GsLinkedInIcon.svg" Icon="/WebResources/Sales/_imgs/saleAdminSetting/GsLinkedInIcon.svg" Url="/main.aspx?pagetype=control&amp;controlName=MscrmControls.FieldControls.CCFadminsettings&amp;data={&quot;id&quot;:&quot;overview&quot;,&quot;ismanage&quot;:&quot;li&quot;}" IntroducedVersion="9.0.0" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="false" PassParams="true" Sku="All,OnPremise,Live,SPLA" ordinalvalue="7" solutionaction="Modified" />
+        <SubArea Id="OrgChart" DescriptionResourceId="Org_Chart_Setting_Dsc" VectorIcon="$webresource:Sales/_imgs/SiteMap/OrgChartIcon.svg" Icon="/WebResources/Sales/_imgs/SiteMap/OrgChartIcon.svg" Url="/main.aspx?pagetype=control&amp;controlName=MscrmControls.OrgChartV2.OrgChartAdminControl" IntroducedVersion="9.0.0" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="false" PassParams="false" Sku="All,OnPremise,Live,SPLA" ordinalvalue="8" solutionaction="Modified" />
+        <SubArea Id="SalesReporting" DescriptionResourceId="PDF_Generation_Settings_Dsc" VectorIcon="$webresource:Sales/_imgs/saleAdminSetting/GsAnalyticsIcon.svg" Icon="/WebResources/Sales/_imgs/saleAdminSetting/GsAnalyticsIcon.svg" Url="/main.aspx?pagetype=control&amp;controlName=MscrmControls.FieldControls.CCFadminsettings&amp;data={&quot;id&quot;:&quot;overview&quot;,&quot;ismanage&quot;:&quot;srep&quot;}" IntroducedVersion="9.0.0" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="false" PassParams="true" Sku="All,OnPremise,Live,SPLA" ordinalvalue="9" solutionaction="Modified">
+          <Titles>
+            <Title LCID="1051" Title="Zostavy o využití predaja" ordinalvalue="33" solutionaction="Modified" />
+          </Titles>
+        </SubArea>
+        <SubArea Id="TeamsCallsIntegration" VectorIcon="$webresource:Sales/_imgs/saleAdminSetting/GsTeamsCallsIcon.svg" Icon="/WebResources/Sales/_imgs/saleAdminSetting/GsTeamsCallsIcon.svg" Url="/main.aspx?pagetype=control&amp;controlName=MscrmControls.TeamsDialerSettings.DialerSettingsHostControl&amp;data={&quot;id&quot;:&quot;overview&quot;,&quot;ismanage&quot;:&quot;tc&quot;}" IntroducedVersion="9.0.0" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="false" PassParams="true" Sku="All,OnPremise,Live,SPLA" ordinalvalue="10" solutionaction="Modified" />
+        <SubArea Id="DealManagerSettings" VectorIcon="$webresource:Sales/_imgs/SiteMap/OpportunityPipelineView.svg" Icon="/WebResources/Sales/_imgs/SiteMap/OpportunityPipelineView.svg" Url="/main.aspx?pagetype=control&amp;controlName=MscrmControls.Sales.DealManagerSettings.DealManagerSettings" IntroducedVersion="9.0.0" Client="Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,Live,OnPremise,SPLA" ordinalvalue="11" solutionaction="Modified" />
+        <SubArea Id="SalesSMSProvider" IntroducedVersion="9.0.0" Icon="/WebResources/Sales/_imgs/SiteMap/SalesSMSProviderIcon.svg" VectorIcon="/WebResources/Sales/_imgs/SiteMap/SalesSMSProviderIcon.svg" Url="/main.aspx?pagetype=entitylist&amp;etn=msdyn_channelinstanceaccount&amp;viewid=f585f914-1a4a-ed11-bba2-000d3a98dd1f" AvailableOffline="false" PassParams="true" Client="All,Web" Sku="All,OnPremise,Live,SPLA" ordinalvalue="12" />
+      </Group>
+      <Group Id="PlaybookManagementGroup" IsProfile="false" ToolTipResourseId="SitemapDesigner.Unknown" ordinalvalue="3" solutionaction="Modified" />
+      <Group Id="SalesSettingsGrp" IsProfile="false" ToolTipResourseId="SitemapDesigner.Unknown" ordinalvalue="4" solutionaction="Modified">
+        <SubArea Id="Sales_Territories" VectorIcon="$webresource:Sales/_imgs/productgrid/SalesTerritories.svg" Icon="/WebResources/Sales/_imgs/productgrid/SalesTerritories.svg" Entity="territory" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="false" PassParams="false" Sku="All,OnPremise,Live,SPLA" ordinalvalue="0" solutionaction="Modified" />
+        <SubArea IntroducedVersion="9.0.0" Icon="/_imgs/svg_4300.svg" VectorIcon="/_imgs/svg_4300.svg" Id="MarketingSettings" Url="/main.aspx?pagetype=inlinedialog&amp;name=MarketingSettingsMDD" DescriptionResourceId="Marketing_Settings_Dsc" AvailableOffline="false" PassParams="false" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" Sku="All,OnPremise,Live,SPLA" ordinalvalue="2" />
+      </Group>
+      <Group Id="ProductCatalogGrp" IsProfile="false" ToolTipResourseId="SitemapDesigner.Unknown" ordinalvalue="5" solutionaction="Modified">
+        <SubArea Id="Sales_Settings" ResourceId="Sales_Settings_Rsrc" DescriptionResourceId="Sales_Settings_Dsc" VectorIcon="$webresource:Sales/_imgs/productgrid/productCatalogSettings.svg" Icon="/WebResources/Sales/_imgs/productgrid/productCatalogSettings.svg" Url="/main.aspx?pagetype=control&amp;controlName=MscrmControls.FieldControls.CCFadminsettings&amp;data={&quot;id&quot;:&quot;product_catalog&quot;,&quot;ismanage&quot;:&quot;product_catalog&quot;}" IntroducedVersion="9.0.0" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="false" PassParams="false" Sku="All,OnPremise,Live,SPLA" ordinalvalue="0" solutionaction="Modified" />
+        <SubArea Icon="/_imgs/imagestrips/transparent_spacer.gif" Id="Family_Products" AvailableOffline="false" PassParams="false" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" Sku="All,OnPremise,Live,SPLA" Entity="product" ordinalvalue="1">
+          <Titles>
+            <Title LCID="1086" Title="Keluarga dan produk" ordinalvalue="25" solutionaction="Modified" />
+            <Title LCID="1051" Title="Rady a produkty" ordinalvalue="33" solutionaction="Modified" />
+          </Titles>
+        </SubArea>
+        <SubArea Id="Discount_Lists" VectorIcon="$webresource:Sales/_imgs/productgrid/DiscountLists.svg" Icon="/WebResources/Sales/_imgs/productgrid/DiscountLists.svg" Entity="discounttype" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="false" PassParams="false" Sku="All,OnPremise,Live,SPLA" ordinalvalue="2" solutionaction="Modified" />
+        <SubArea Id="Price_Lists" VectorIcon="$webresource:Sales/_imgs/productgrid/PriceLists.svg" Icon="/WebResources/Sales/_imgs/productgrid/PriceLists.svg" Entity="pricelevel" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="false" PassParams="false" Sku="All,OnPremise,Live,SPLA" ordinalvalue="3" solutionaction="Modified" />
+        <SubArea Id="Unit_Groups" VectorIcon="$webresource:Sales/_imgs/productgrid/UnitGroups.svg" Icon="/WebResources/Sales/_imgs/productgrid/UnitGroups.svg" Entity="uomschedule" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="false" PassParams="false" Sku="All,OnPremise,Live,SPLA" ordinalvalue="4" solutionaction="Modified" />
+      </Group>
+      <Group Id="GoalManagementGrp" IsProfile="false" ToolTipResourseId="SitemapDesigner.Unknown" ordinalvalue="6" solutionaction="Modified">
+        <SubArea Id="Goal_Settings" DescriptionResourceId="Goal_Settings_Dsc" VectorIcon="$webresource:Sales/_imgs/productgrid/GoalSettings.svg" Icon="/WebResources/Sales/_imgs/productgrid/GoalSettings.svg" Url="/main.aspx?pagetype=inlinedialog&amp;name=GoalSettingMDD" IntroducedVersion="9.0.0" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="false" PassParams="false" Sku="All,OnPremise,Live,SPLA" ordinalvalue="0" solutionaction="Modified" />
+        <SubArea Icon="/_imgs/imagestrips/transparent_spacer.gif" Id="Goals" AvailableOffline="false" PassParams="false" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" Sku="All,OnPremise,Live,SPLA" Entity="goal" ordinalvalue="1" solutionaction="Removed" />
+        <SubArea Id="Goal_Metrics" VectorIcon="$webresource:Sales/_imgs/productgrid/GoalMetrics.svg" Icon="/WebResources/Sales/_imgs/productgrid/GoalMetrics.svg" Entity="metric" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="false" PassParams="false" Sku="All,OnPremise,Live,SPLA" ordinalvalue="2" solutionaction="Modified" />
+        <SubArea Id="Rollup_Queries" VectorIcon="$webresource:Sales/_imgs/goalmanagement/RollupQuery.svg" Icon="/WebResources/Sales/_imgs/goalmanagement/RollupQuery.svg" Entity="goalrollupquery" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="false" PassParams="false" Sku="All,OnPremise,Live,SPLA" ordinalvalue="3" solutionaction="Modified" />
+        <SubArea Id="ForecastConfiguration" VectorIcon="$webresource:Forecasting/Images/msdyn_ForecastDefinitionEntityIcon.svg" Icon="/WebResources/Forecasting/Images/msdyn_ForecastDefinitionEntityIcon.svg" Url="/main.aspx?pagetype=control&amp;controlName=ForecastingControls.FieldControls.CCFForecastConfig" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="false" PassParams="false" Sku="Live" ordinalvalue="4" solutionaction="Modified" />
+        <SubArea Id="Goals_d40451c1" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="goal" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="false" PassParams="false" Sku="All,OnPremise,Live,SPLA" ordinalvalue="1" solutionaction="Added">
+          <Titles>
+            <Title LCID="1033" Title="Goals" ordinalvalue="0" />
+            <Title LCID="1025" Title="الأهداف" ordinalvalue="1" />
+            <Title LCID="1026" Title="Цели" ordinalvalue="2" />
+            <Title LCID="1027" Title="Objectius" ordinalvalue="3" />
+            <Title LCID="1029" Title="Cíle" ordinalvalue="4" />
+            <Title LCID="1030" Title="Mål" ordinalvalue="5" />
+            <Title LCID="1031" Title="Ziele" ordinalvalue="6" />
+            <Title LCID="1032" Title="Στόχοι" ordinalvalue="7" />
+            <Title LCID="3082" Title="Objetivos" ordinalvalue="8" />
+            <Title LCID="1061" Title="Eesmärgid" ordinalvalue="9" />
+            <Title LCID="1069" Title="Xedeak" ordinalvalue="10" />
+            <Title LCID="1035" Title="Tavoitteet" ordinalvalue="11" />
+            <Title LCID="1036" Title="Objectifs" ordinalvalue="12" />
+            <Title LCID="1110" Title="Obxectivos" ordinalvalue="13" />
+            <Title LCID="1037" Title="מטרות" ordinalvalue="14" />
+            <Title LCID="1081" Title="लक्ष्य" ordinalvalue="15" />
+            <Title LCID="1050" Title="Ciljevi" ordinalvalue="16" />
+            <Title LCID="1038" Title="Célkitűzések" ordinalvalue="17" />
+            <Title LCID="1057" Title="Sasaran" ordinalvalue="18" />
+            <Title LCID="1040" Title="Obiettivi" ordinalvalue="19" />
+            <Title LCID="1041" Title="目標" ordinalvalue="20" />
+            <Title LCID="1087" Title="Мақсаттар" ordinalvalue="21" />
+            <Title LCID="1042" Title="목표" ordinalvalue="22" />
+            <Title LCID="1063" Title="Tikslai" ordinalvalue="23" />
+            <Title LCID="1062" Title="Mērķi" ordinalvalue="24" />
+            <Title LCID="1086" Title="Matlamat" ordinalvalue="25" />
+            <Title LCID="1044" Title="Mål" ordinalvalue="26" />
+            <Title LCID="1043" Title="Doelstellingen" ordinalvalue="27" />
+            <Title LCID="1045" Title="Cele" ordinalvalue="28" />
+            <Title LCID="1046" Title="Metas" ordinalvalue="29" />
+            <Title LCID="2070" Title="Objetivos" ordinalvalue="30" />
+            <Title LCID="1048" Title="Obiective" ordinalvalue="31" />
+            <Title LCID="1049" Title="Цели" ordinalvalue="32" />
+            <Title LCID="1051" Title="Ciele" ordinalvalue="33" />
+            <Title LCID="1060" Title="Cilji" ordinalvalue="34" />
+            <Title LCID="3098" Title="Циљеви" ordinalvalue="35" />
+            <Title LCID="2074" Title="Ciljevi" ordinalvalue="36" />
+            <Title LCID="1053" Title="Mål" ordinalvalue="37" />
+            <Title LCID="1054" Title="เป้าหมาย" ordinalvalue="38" />
+            <Title LCID="1055" Title="Hedefler" ordinalvalue="39" />
+            <Title LCID="1058" Title="Цілі" ordinalvalue="40" />
+            <Title LCID="1066" Title="Mục tiêu" ordinalvalue="41" />
+            <Title LCID="2052" Title="目标" ordinalvalue="42" />
+            <Title LCID="3076" Title="目標" ordinalvalue="43" />
+            <Title LCID="1028" Title="目標" ordinalvalue="44" />
+          </Titles>
+        </SubArea>
+      </Group>
+      <Group Id="AppExtensionsGrp" IsProfile="false" ToolTipResourseId="SitemapDesigner.Unknown" ordinalvalue="7" solutionaction="Modified">
+        <SubArea Id="Data_IConfiguration" VectorIcon="$webresource:Sales/_imgs/partnerapps/PartnerApps.svg" Icon="/WebResources/Sales/_imgs/partnerapps/PartnerApps.svg" Url="/main.aspx?pagetype=control&amp;controlName=MscrmControls.Sales.AppExtensions.PreferredPartnerApps" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="false" PassParams="false" Sku="All,OnPremise,Live,SPLA" ordinalvalue="0" solutionaction="Modified" />
+      </Group>
+      <Group Id="NewGroup_26584129" ResourceId="SitemapDesigner.NewGroup" IsProfile="false" ToolTipResourseId="SitemapDesigner.Unknown" ordinalvalue="8" solutionaction="Added">
+        <Titles>
+          <Title LCID="1033" Title="GeoEntities" />
+        </Titles>
+        <SubArea Id="NewSubArea_3c0483c3" Entity="tra_state" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" ordinalvalue="0" />
+        <SubArea Id="subarea_0f5aee3d" Entity="tra_county" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" ordinalvalue="1" />
+        <SubArea Id="subarea_fbcad568" Entity="tra_msa" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" ordinalvalue="2" />
+      </Group>
+      <Group Id="NewGroup_a86fe417" ResourceId="SitemapDesigner.NewGroup" IsProfile="false" ToolTipResourseId="SitemapDesigner.Unknown" ordinalvalue="9" solutionaction="Added">
+        <Titles>
+          <Title LCID="1033" Title="TRA" />
+        </Titles>
+        <SubArea Id="NewSubArea_858d4dfe" Icon="/_imgs/imagestrips/transparent_spacer.gif" Entity="tra_transcript" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" ordinalvalue="0" />
+        <SubArea Id="NewSubArea_86c626ec" Entity="tra_years" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" ordinalvalue="1" />
+        <SubArea Id="NewSubArea_ad248567" Entity="tra_taxyears" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" ordinalvalue="2" />
+        <SubArea Id="NewSubArea_0fad7989" Entity="tra_vehicle" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" ordinalvalue="3" />
+        <SubArea Id="NewSubArea_3fc895dc" Entity="tra_realproperty" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" ordinalvalue="4" />
+        <SubArea Id="NewSubArea_5bc7fdc5" Entity="tra_financialaccount" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" ordinalvalue="5" />
+        <SubArea Id="NewSubArea_3e02bd41" Entity="tra_virtualcurrency" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" ordinalvalue="6" />
+        <SubArea Id="subarea_0667c127" Entity="tra_revenueofficerdetails" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" ordinalvalue="7" />
+        <SubArea Id="subarea_ac6b9ce1" Entity="tra_monthlybusinessexpenses" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" ordinalvalue="8" />
+        <SubArea Id="subarea_86812981" Entity="tra_monthlybusinessincome" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" ordinalvalue="9" />
+        <SubArea Id="subarea_5593ba44" Entity="tra_monthlyexpenses" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" ordinalvalue="10" />
+        <SubArea Id="subarea_542ce1de" Entity="tra_housingandutilities" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" ordinalvalue="11" />
+        <SubArea Id="subarea_786b88a9" Entity="tra_otherassets" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" ordinalvalue="12" />
+        <SubArea Id="subarea_35eff2be" Entity="tra_otherexpenses" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" ordinalvalue="13" />
+        <SubArea Id="subarea_8d8d2db4" VectorIcon="/WebResources/tra_/SVG/IRSStandardIcon" Entity="tra_irsstandard" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" ordinalvalue="14" />
+        <SubArea Id="subarea_c337936b" Entity="tra_irsstandardforownershipcosts" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" ordinalvalue="15">
+          <Titles>
+            <Title LCID="1033" Title="IRS Standard (Ownership Costs)" ordinalvalue="0" />
+          </Titles>
+        </SubArea>
+        <SubArea Id="subarea_fc848657" Entity="tra_category" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="true" PassParams="false" Sku="All,OnPremise,Live,SPLA" ordinalvalue="16" />
+      </Group>
+    </Area>
+    <Area Id="Sales_Insights_Settings_Area" ResourceId="Area_Sales_Insights_Settings" VectorIcon="$webresource:Sales/_imgs/saleAdminSetting/SettingsIcon.svg" Icon="/WebResources/Sales/_imgs/saleAdminSetting/SettingsIcon.svg" IntroducedVersion="9.0.0" ordinalvalue="2" solutionaction="Modified">
+      <Group Id="SalesInsightsGrp" IsProfile="false" ToolTipResourseId="SitemapDesigner.Unknown" ordinalvalue="0" solutionaction="Modified">
+        <SubArea Id="Global_Settings" VectorIcon="$webresource:Sales/_imgs/SiteMap/Bundle.svg" Icon="/WebResources/Sales/_imgs/SiteMap/Bundle.svg" Url="/main.aspx?pagetype=control&amp;controlName=MscrmControls.UnifiedConfigCustomControl.UnifiedConfigCustomControl" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="false" PassParams="false" Sku="All,OnPremise,Live,SPLA" ordinalvalue="0" solutionaction="Modified" />
+        <SubArea Id="Personal_Settings" VectorIcon="$webresource:Sales/_imgs/SiteMap/Product.svg" Icon="/WebResources/Sales/_imgs/SiteMap/Product.svg" Url="/main.aspx?pagetype=control&amp;controlName=MscrmControls.UnifiedConfigWrapperControl.UnifiedConfigWrapperControl" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="false" PassParams="false" Sku="All,OnPremise,Live,SPLA" ordinalvalue="1" solutionaction="Modified" />
+      </Group>
+    </Area>
+    <Area Id="Sales_Personal_Settings_Area" ResourceId="Area_Sales_Personal_Settings" VectorIcon="$webresource:Sales/_imgs/saleAdminSetting/SettingsIcon.svg" Icon="/WebResources/Sales/_imgs/saleAdminSetting/SettingsIcon.svg" IntroducedVersion="9.0.0" ordinalvalue="3" solutionaction="Modified">
+      <Group Id="SalesPersonalSettingsGrp" IsProfile="false" ToolTipResourseId="SitemapDesigner.Unknown" ordinalvalue="0" solutionaction="Modified">
+        <SubArea Icon="$webresource:Sales/_imgs/saleAdminSetting/InsightIcon.svg" VectorIcon="$webresource:Sales/_imgs/saleAdminSetting/InsightIcon.svg" Id="Sales_Personal_Insights" Url="/main.aspx?pagetype=control&amp;controlName=MscrmControls.UnifiedConfigWrapperControl.UnifiedConfigWrapperControl" Sku="All,OnPremise,Live,SPLA" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" PassParams="false" AvailableOffline="false" ordinalvalue="0" />
+        <SubArea Icon="/_imgs/svg_2010.svg" VectorIcon="/_imgs/svg_2010.svg" Id="Email_Templates" Entity="template" Sku="All,OnPremise,Live,SPLA" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" PassParams="false" AvailableOffline="false" ordinalvalue="1" />
+        <SubArea Icon="/_imgs/svg_9997.svg" VectorIcon="/_imgs/svg_9997.svg" Id="Email_Signatures" Entity="emailsignature" Sku="All,OnPremise,Live,SPLA" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" PassParams="false" AvailableOffline="false" ordinalvalue="2" />
+      </Group>
+    </Area>
+    <Area Id="HLP" ResourceId="Sales_Area_Help" ShowGroups="true" Icon="/_imgs/icn_help16.png" DescriptionResourceId="Sales_Help_Area_Description" IntroducedVersion="7.0.0.0" ordinalvalue="4">
+      <Titles>
+        <Title LCID="1051" Title="Pomoc a technická podpora" solutionaction="Modified" />
+      </Titles>
+      <Group Id="HLP_GRP" ResourceId="Sales_Group_Help" DescriptionResourceId="Sales_Help_Description" IntroducedVersion="7.0.0.0" IsProfile="false" ToolTipResourseId="Help_ToolTip" ordinalvalue="0" solutionaction="Modified">
+        <SubArea Id="Help_Resource_Center" ResourceId="Sales_Area_CustomerCenter" DescriptionResourceId="ResourceCenter_Area_Description" Url="https://go.microsoft.com/fwlink/p/?linkid=853224" IntroducedVersion="7.0.0.0" AvailableOffline="false" PassParams="false" ordinalvalue="0" solutionaction="Modified" />
+        <SubArea Id="Sales_Dynamics_365_Community" ResourceId="Sales_D365_Community" VectorIcon="/WebResources/Sales/_imgs/common/E902-Community.svg" Icon="/WebResources/Sales/_imgs/common/E902-Community.svg" Url="https://community.dynamics.com/365/sales" IntroducedVersion="9.1.0.0" Client="All,Outlook,OutlookLaptopClient,OutlookWorkstationClient,Web" AvailableOffline="false" PassParams="false" Sku="All,OnPremise,Live,SPLA" ordinalvalue="1">
+          <Titles>
+            <Title LCID="1031" Title="Dynamics 365-Community" ordinalvalue="6" solutionaction="Modified" />
+            <Title LCID="1062" Title="Dynamics 365 kopiena" ordinalvalue="24" solutionaction="Modified" />
+            <Title LCID="1051" Title="Komunita systému Dynamics 365" ordinalvalue="33" solutionaction="Modified" />
+          </Titles>
+        </SubArea>
+      </Group>
+    </Area>
+  </SiteMap>
+  <LocalizedNames>
+    <LocalizedName description="Sales Hub" languagecode="1033" />
+  </LocalizedNames>
+</AppModuleSiteMap>

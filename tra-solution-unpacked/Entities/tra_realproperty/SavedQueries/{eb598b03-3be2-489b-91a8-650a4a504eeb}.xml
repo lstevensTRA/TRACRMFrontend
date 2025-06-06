@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>0</isdefault>
+    <savedqueryid>{eb598b03-3be2-489b-91a8-650a4a504eeb}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="tra_name" select="1" icon="1" preview="1">
+        <row name="result" id="tra_realpropertyid">
+          <cell name="tra_name" width="300" />
+          <cell name="tra_city" width="100" />
+          <cell name="tra_state" width="100" />
+          <cell name="tra_address" width="100" />
+          <cell name="tra_dateofpurchase" width="136" />
+          <cell name="tra_purchaseprice" width="123" />
+          <cell name="tra_fairmarketvalue" width="142" />
+          <cell name="tra_monthlypayment" width="141" />
+          <cell name="tra_monthly2ndmortgagepayment" width="224" />
+          <cell name="tra_annualpropertytax" width="158" />
+          <cell name="tra_ownerinsurancemonthlypayment" width="241" />
+          <cell name="tra_currentlyloanbalance" width="173" />
+          <cell name="tra_estimatedpayoffdate" width="164" />
+          <cell name="tra_opportunityid" width="109" />
+          <cell name="createdby" width="104" />
+          <cell name="createdon" width="105" />
+          <cell name="modifiedby" width="112" />
+          <cell name="modifiedon" width="113" />
+          <cell name="statecode" width="100" />
+          <cell name="ownerid" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="tra_realproperty">
+          <attribute name="tra_realpropertyid" />
+          <attribute name="tra_name" />
+          <order attribute="tra_name" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="1" />
+          </filter>
+          <attribute name="tra_city" />
+          <attribute name="tra_state" />
+          <attribute name="tra_dateofpurchase" />
+          <attribute name="tra_purchaseprice" />
+          <attribute name="tra_fairmarketvalue" />
+          <attribute name="tra_monthlypayment" />
+          <attribute name="tra_monthly2ndmortgagepayment" />
+          <attribute name="tra_annualpropertytax" />
+          <attribute name="tra_ownerinsurancemonthlypayment" />
+          <attribute name="tra_currentlyloanbalance" />
+          <attribute name="tra_estimatedpayoffdate" />
+          <attribute name="tra_opportunityid" />
+          <attribute name="createdby" />
+          <attribute name="createdon" />
+          <attribute name="modifiedby" />
+          <attribute name="modifiedon" />
+          <attribute name="statecode" />
+          <attribute name="ownerid" />
+          <attribute name="tra_address" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Inactive Real Properties" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

@@ -1,0 +1,313 @@
+{
+  "properties": {
+    "connectionReferences": {
+      "shared_onedriveforbusiness": {
+        "runtimeSource": "embedded",
+        "connection": {
+          "connectionReferenceLogicalName": "tra_sharedonedriveforbusiness_78be5"
+        },
+        "api": {
+          "name": "shared_onedriveforbusiness"
+        }
+      },
+      "shared_sharepointonline-1": {
+        "runtimeSource": "embedded",
+        "connection": {
+          "connectionReferenceLogicalName": "tra_SharePointTRASalesBase"
+        },
+        "api": {
+          "name": "shared_sharepointonline"
+        }
+      }
+    },
+    "definition": {
+      "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+      "contentVersion": "1.0.0.0",
+      "parameters": {
+        "$connections": {
+          "defaultValue": {},
+          "type": "Object"
+        },
+        "$authentication": {
+          "defaultValue": {},
+          "type": "SecureObject"
+        },
+        "TRA Configurations (tra_TRAConfigurations)": {
+          "defaultValue": {
+            "SalesTeam": "",
+            "ParentSPDocumentLocationID": "dc7b2c5a-091a-f011-998a-7c1e520b713c",
+            "SharePointURLMain": "https://tradvocates.sharepoint.com/sites/",
+            "SharePointSiteURL": "CRMDev3",
+            "SharePointOpportunityFolders": [
+              "8821 Form",
+              "2848 Form",
+              "Contract Agreement",
+              "Other Documents"
+            ],
+            "SharePointCasesFolders": [
+              "THS Transcript",
+              "IRS Transcript"
+            ],
+            "CRMUrl": "https://tra-dev.crm.dynamics.com"
+          },
+          "type": "Object",
+          "metadata": {
+            "schemaName": "tra_TRAConfigurations"
+          }
+        }
+      },
+      "triggers": {
+        "manual": {
+          "metadata": {
+            "operationMetadataId": "c3b1fb50-5a2d-4ce1-b5fa-769ea9bc6ff9"
+          },
+          "type": "Request",
+          "kind": "Http",
+          "inputs": {
+            "schema": {
+              "type": "object",
+              "properties": {
+                "FileName": {
+                  "type": "string"
+                },
+                "UserEmail": {
+                  "type": "string"
+                },
+                "FolderType": {
+                  "type": "string"
+                },
+                "UserName": {
+                  "type": "string"
+                },
+                "FileBase64": {
+                  "type": "string"
+                },
+                "SharePointFolderName": {
+                  "type": "string"
+                },
+                "SPFullPath": {
+                  "type": "string"
+                },
+                "EntityName": {
+                  "type": "string"
+                },
+                "ConvertToPDF": {
+                  "type": "boolean"
+                }
+              }
+            },
+            "method": "POST",
+            "triggerAuthenticationType": "All"
+          }
+        }
+      },
+      "actions": {
+        "Initialize_varFolderName": {
+          "runAfter": {},
+          "metadata": {
+            "operationMetadataId": "845b3794-c065-4a84-a23b-4cd85f72f2c0"
+          },
+          "type": "InitializeVariable",
+          "inputs": {
+            "variables": [
+              {
+                "name": "varFolderName",
+                "type": "string",
+                "value": "@{if(equals(triggerBody()?['FolderType'], 'Other Documents'), triggerBody()?['FileName'], triggerBody()?['FolderType'])}"
+              }
+            ]
+          }
+        },
+        "Condition_check_is_there_any_conversation_need_to_do": {
+          "actions": {
+            "Convert_file": {
+              "runAfter": {},
+              "metadata": {
+                "operationMetadataId": "a82f2d3f-5412-477e-b736-19ec1eb7ab0e"
+              },
+              "type": "OpenApiConnection",
+              "inputs": {
+                "host": {
+                  "connectionName": "shared_onedriveforbusiness",
+                  "operationId": "ConvertFile",
+                  "apiId": "/providers/Microsoft.PowerApps/apis/shared_onedriveforbusiness"
+                },
+                "parameters": {
+                  "id": "@outputs('Create_Temp_HTML_file')?['body/Id']",
+                  "type": "PDF"
+                },
+                "authentication": "@parameters('$authentication')"
+              }
+            },
+            "Upload_file_in_IRS_Transcript_folder": {
+              "runAfter": {
+                "Convert_file": [
+                  "Succeeded"
+                ]
+              },
+              "metadata": {
+                "operationMetadataId": "d188a8db-b6c4-4f24-8a35-094ec81938b6"
+              },
+              "type": "OpenApiConnection",
+              "inputs": {
+                "host": {
+                  "connectionName": "shared_sharepointonline-1",
+                  "operationId": "CreateFile",
+                  "apiId": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline"
+                },
+                "parameters": {
+                  "dataset": "@{parameters('TRA Configurations (tra_TRAConfigurations)')?['SharePointURLMain']}@{parameters('TRA Configurations (tra_TRAConfigurations)')?['SharePointSiteURL']}",
+                  "folderPath": "/@{triggerBody()?['EntityName']}/@{triggerBody()?['SharePointFolderName']}/@{if(equals(triggerBody()?['FolderType'], 'Other Documents'), 'Other Documents', variables('varFolderName'))}",
+                  "name": "@{variables('varFolderName')}_@{formatDateTime(utcNow(), 'yyyyMMddTHHmmss')}.pdf",
+                  "body": "@body('Convert_file')"
+                },
+                "authentication": "@parameters('$authentication')"
+              },
+              "runtimeConfiguration": {
+                "contentTransfer": {
+                  "transferMode": "Chunked"
+                }
+              }
+            }
+          },
+          "runAfter": {
+            "Create_Temp_HTML_file": [
+              "Succeeded"
+            ]
+          },
+          "else": {
+            "actions": {
+              "Get_file_content": {
+                "runAfter": {},
+                "metadata": {
+                  "operationMetadataId": "cf8c6370-f201-46fa-a359-c836f63e79db"
+                },
+                "type": "OpenApiConnection",
+                "inputs": {
+                  "host": {
+                    "connectionName": "shared_onedriveforbusiness",
+                    "operationId": "GetFileContent",
+                    "apiId": "/providers/Microsoft.PowerApps/apis/shared_onedriveforbusiness"
+                  },
+                  "parameters": {
+                    "id": "@outputs('Create_Temp_HTML_file')?['body/Id']",
+                    "inferContentType": true
+                  },
+                  "authentication": "@parameters('$authentication')"
+                }
+              },
+              "Upload_file_in_Folders": {
+                "runAfter": {
+                  "Get_file_content": [
+                    "Succeeded"
+                  ]
+                },
+                "metadata": {
+                  "operationMetadataId": "d188a8db-b6c4-4f24-8a35-094ec81938b6"
+                },
+                "type": "OpenApiConnection",
+                "inputs": {
+                  "host": {
+                    "connectionName": "shared_sharepointonline-1",
+                    "operationId": "CreateFile",
+                    "apiId": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline"
+                  },
+                  "parameters": {
+                    "dataset": "@{parameters('TRA Configurations (tra_TRAConfigurations)')?['SharePointURLMain']}@{parameters('TRA Configurations (tra_TRAConfigurations)')?['SharePointSiteURL']}",
+                    "folderPath": "/@{triggerBody()?['EntityName']}/@{triggerBody()?['SharePointFolderName']}/@{if(equals(triggerBody()?['FolderType'], 'Other Documents'), 'Other Documents', variables('varFolderName'))}",
+                    "name": "@{variables('varFolderName')}_@{formatDateTime(utcNow(), 'yyyyMMddTHHmmss')}.@{last(split( triggerBody()?['FileName'],'.'))}",
+                    "body": "@body('Get_file_content')"
+                  },
+                  "authentication": "@parameters('$authentication')"
+                },
+                "runtimeConfiguration": {
+                  "contentTransfer": {
+                    "transferMode": "Chunked"
+                  }
+                }
+              }
+            }
+          },
+          "expression": {
+            "equals": [
+              "@triggerBody()?['ConvertToPDF']",
+              "@true"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "f5ac80d7-ed9c-4092-bde8-ffef4b2382c6"
+          },
+          "type": "If"
+        },
+        "Create_Temp_HTML_file": {
+          "runAfter": {
+            "Initialize_varFolderName": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "93dbf014-e280-4518-bd17-5ca01020b3a7"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_onedriveforbusiness",
+              "operationId": "CreateFile",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_onedriveforbusiness"
+            },
+            "parameters": {
+              "folderPath": "/Temp Files",
+              "name": "@triggerBody()?['FileName']",
+              "body": "@base64ToString(triggerBody()?['FileBase64'])"
+            },
+            "authentication": "@parameters('$authentication')"
+          },
+          "runtimeConfiguration": {
+            "contentTransfer": {
+              "transferMode": "Chunked"
+            }
+          }
+        },
+        "Delete_file": {
+          "runAfter": {
+            "Response": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "846efd93-1a82-488b-8ab2-41649395b477"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_onedriveforbusiness",
+              "operationId": "DeleteFile",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_onedriveforbusiness"
+            },
+            "parameters": {
+              "id": "@outputs('Create_Temp_HTML_file')?['body/Id']"
+            },
+            "authentication": "@parameters('$authentication')"
+          }
+        },
+        "Response": {
+          "runAfter": {
+            "Condition_check_is_there_any_conversation_need_to_do": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "9385345b-1a3c-4263-9dc2-98ff41c21e69"
+          },
+          "type": "Response",
+          "kind": "Http",
+          "inputs": {
+            "statusCode": 200
+          }
+        }
+      }
+    },
+    "templateName": ""
+  },
+  "schemaVersion": "1.0.0.0"
+}

@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{05c25eb4-3da2-48ca-8931-6574ec4d36a4}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form headerdensity="HighWithControls">
+      <tabs>
+        <tab verticallayout="true" id="{0cf53c8e-6c57-448f-94b8-b34c078d6a4a}" IsUserDefined="1">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{d7f286e4-bbc4-4413-aa28-830503892e5b}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{8b7f356b-baf9-4cb9-865b-b3ec49a4dd53}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Year" languagecode="1033" />
+                        </labels>
+                        <control id="tra_year" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="tra_year" disabled="false">
+                          <parameters>
+                            <DisableMru>true</DisableMru>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a0aeabb6-2623-469e-9397-3626c8ca4e48}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Owe Taxes to Federal" languagecode="1033" />
+                        </labels>
+                        <control id="tra_owetaxestofederal" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="tra_owetaxestofederal" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{1d62debf-ce66-4c35-b0b8-3b72f021d3a2}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Owe Taxes to State" languagecode="1033" />
+                        </labels>
+                        <control id="tra_owetaxestostate" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="tra_owetaxestostate" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{d4ef32b4-8822-449d-a45e-e58a44e69075}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Owe Taxes to Local" languagecode="1033" />
+                        </labels>
+                        <control id="tra_owetaxestolocal" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="tra_owetaxestolocal" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{96c4f3d0-b338-48b7-be0b-3dcd601897e3}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Unfiled Taxes to Federal" languagecode="1033" />
+                        </labels>
+                        <control id="tra_unfiledtaxestofederal" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="tra_unfiledtaxestofederal" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{7b49d1cf-4ce5-4a2c-9e1e-48b1e1e2f5b3}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Unfiled Taxes to State" languagecode="1033" />
+                        </labels>
+                        <control id="tra_unfiledtaxestostate" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="tra_unfiledtaxestostate" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a484d36e-1ad9-4beb-89fe-e21f448fe8c0}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Unfiled Taxes to Local" languagecode="1033" />
+                        </labels>
+                        <control id="tra_unfiledtaxestolocal" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="tra_unfiledtaxestolocal" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{6aa08e4c-3a44-4968-9342-d69e175301e1}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Unfiled Business Taxes to Federal" languagecode="1033" />
+                        </labels>
+                        <control id="tra_unfiledbusinesstaxestofederal" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="tra_unfiledbusinesstaxestofederal" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{2146680b-d227-4761-b0ad-6c0257dd1430}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Unfiled Business Taxes to State" languagecode="1033" />
+                        </labels>
+                        <control id="tra_unfiledbusinesstaxestostate" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="tra_unfiledbusinesstaxestostate" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{431d9630-ccce-4451-8677-a791730f34f8}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Unfiled Business Taxes to Local" languagecode="1033" />
+                        </labels>
+                        <control id="tra_unfiledbusinesstaxestolocal" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="tra_unfiledbusinesstaxestolocal" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{3105e9ab-c86c-45dc-b608-d9304b627609}" showlabel="true" visible="false" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{0a9b8572-e256-4e8e-9526-7ffc554db200}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{37ed3a29-400e-44c6-9258-60986689ff59}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{08a7ae9b-06b5-4518-9e34-7e67bc922888}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{dee652f5-3b1b-43f8-ae46-c479bbb530db}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{b7d7964b-fa3e-426f-ab1d-5f05227ae475}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{f74c675c-b51f-4a05-b387-66c44cb46396}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{036ed223-0398-43cd-81a5-c6c943f2b6bf}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{172ca46d-7d61-4ff2-95bf-1b2bef23093f}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <DisplayConditions Order="0" FallbackForm="true">
+        <Everyone />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

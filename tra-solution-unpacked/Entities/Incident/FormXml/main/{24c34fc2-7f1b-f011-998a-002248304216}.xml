@@ -1,0 +1,876 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{24c34fc2-7f1b-f011-998a-002248304216}</formid>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form enablerelatedinformation="false" shownavigationbar="true" hasmargin="false" headerdensity="HighWithControls">
+      <ancestor id="{4a63c8d1-6c1e-48ec-9db4-3e6c7155334c}" />
+      <tabs showlabels="true">
+        <tab name="tab_summary" id="9932fef5-71a8-4cc2-aee0-e6680f9d70ef" IsUserDefined="0" locklevel="0" showlabel="true">
+          <labels>
+            <label description="ℹ️ Summary" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="section_summary" id="9d71d3ee-49a4-42be-895d-5d33df3aa974" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Summary" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row />
+                    <row>
+                      <cell id="{ecf4f513-59d3-49fc-8ea9-f28347c18cba}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Opportunity" languagecode="1033" />
+                        </labels>
+                        <control id="tra_opportunity" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="tra_opportunity" disabled="false">
+                          <parameters>
+                            <useMainFormDialogForCreate>true</useMainFormDialogForCreate>
+                            <useMainFormDialogForEdit>true</useMainFormDialogForEdit>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{3032792b-93d7-4ca1-8341-8142bbd29f71}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Customer" languagecode="1033" />
+                        </labels>
+                        <control id="customerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="customerid" disabled="false">
+                          <parameters>
+                            <useMainFormDialogForCreate>true</useMainFormDialogForCreate>
+                            <useMainFormDialogForEdit>true</useMainFormDialogForEdit>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{543a0489-1d8d-4036-9bd7-02bbfe9e3f74}" locklevel="0" colspan="1" rowspan="1" showlabel="false" visible="false" availableforphone="false">
+                        <labels>
+                          <label description="Case Title" languagecode="1033" />
+                        </labels>
+                        <control id="title" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="title" disabled="true" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{73b0acca-3580-4f8d-9d35-2eeb9665cabd}" locklevel="0" colspan="1" rowspan="1" visible="false">
+                        <labels>
+                          <label description="Status Reason" languagecode="1033" />
+                        </labels>
+                        <control id="statuscode" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="statuscode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell locklevel="0" id="{92c2e7b9-2e17-4e30-826b-318f4dbc0ba2}" rowspan="4" colspan="1" auto="false" showlabel="true">
+                        <labels>
+                          <label description="✅ Case Task Checklist Information" languagecode="1033" />
+                        </labels>
+                        <control indicationOfSubgrid="true" id="subgrid_case_task_checklist_information" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" uniqueid="{b6f799ea-469d-4bc3-bce4-0bca633b9a6c}">
+                          <parameters>
+                            <RecordsPerPage>4</RecordsPerPage>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <EnableChartPicker>true</EnableChartPicker>
+                            <ChartGridMode>All</ChartGridMode>
+                            <RelationshipName>tra_casetaskchecklist_case_incident</RelationshipName>
+                            <TargetEntityType>tra_casetaskchecklist</TargetEntityType>
+                            <ViewId>{35730C28-BCCE-48E5-AE9A-CA9D53E3D4F9}</ViewId>
+                            <ViewIds>{35730C28-BCCE-48E5-AE9A-CA9D53E3D4F9}</ViewIds>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+                <section name="tab_summary_section_3" id="aad4d69d-7dd5-4c3f-beca-2c0b6ec94dc9" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="🗂️ Files" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row />
+                    <row>
+                      <cell locklevel="0" id="{f3366838-d98f-469e-9906-a366ed30ae14}" rowspan="4" colspan="1" auto="false" showlabel="false" availableforphone="false">
+                        <labels>
+                          <label description="DocumentsSubGridAllFiles1" languagecode="1033" />
+                        </labels>
+                        <control indicationOfSubgrid="true" id="Subgrid_new_DocumentsSubGridAllFiles1" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" uniqueid="{5ec62af3-72c1-4574-833c-cf9951a6502f}">
+                          <parameters>
+                            <RecordsPerPage>10</RecordsPerPage>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>true</EnableViewPicker>
+                            <EnableChartPicker>false</EnableChartPicker>
+                            <ChartGridMode>Grid</ChartGridMode>
+                            <RelationshipName>incident_SharePointDocuments</RelationshipName>
+                            <TargetEntityType>sharepointdocument</TargetEntityType>
+                            <ViewId>{A5B008AC-07D9-4554-8509-2C05767BFF51}</ViewId>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="Assignments" id="d9667342-f0bf-4027-9bbd-227ecf7ebcdc" IsUserDefined="0" locklevel="0" showlabel="true">
+          <labels>
+            <label description="📝 Assignments" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="Assignments" id="f02f5381-af07-46ed-9eec-3ff428c84ac4" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Assignments" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row />
+                    <row>
+                      <cell id="{3c3ce87d-1056-4c20-829f-30edcf472e62}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Team" languagecode="1033" />
+                        </labels>
+                        <control id="tra_team" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="tra_team" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{c8287669-a41a-4ef1-bacd-c5d5d74fab15}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Set. Officer" languagecode="1033" />
+                        </labels>
+                        <control id="tra_setofficer" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="tra_setofficer" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{685b3bfe-c1f6-4579-876f-7dc929fc8092}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Tax Coordinator" languagecode="1033" />
+                        </labels>
+                        <control id="tra_taxcoordinator" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="tra_taxcoordinator" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{27c7478c-c3d4-4e33-ab12-655e7d868233}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Case Advocate" languagecode="1033" />
+                        </labels>
+                        <control id="tra_caseadvocate" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="tra_caseadvocate" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{8c111a4e-b64d-4cac-a7d3-39948b07cef0}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Tax Pro" languagecode="1033" />
+                        </labels>
+                        <control id="tra_taxpro" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="tra_taxpro" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{2bfacb03-ed89-4bdc-8a7e-63beda209325}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Tax Preparer" languagecode="1033" />
+                        </labels>
+                        <control id="tra_taxpreparer" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="tra_taxpreparer" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{968fc42d-d8c0-4e7b-8079-61a4d1af63f3}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Set. Officer 2" languagecode="1033" />
+                        </labels>
+                        <control id="tra_setofficer2" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="tra_setofficer2" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{710ea105-97c8-48cf-8ca2-ccbdc8acfc73}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="TI Agent" languagecode="1033" />
+                        </labels>
+                        <control id="tra_tiagent" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="tra_tiagent" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{f9147093-de22-4c76-84c6-f3db97d34e41}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Offer Analyst" languagecode="1033" />
+                        </labels>
+                        <control id="tra_offeranalyst" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="tra_offeranalyst" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{8d23b669-356f-4f6b-a7ef-2ceacf198183}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="TI Support Roles" languagecode="1033" />
+                        </labels>
+                        <control id="tra_tisupportroles" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="tra_tisupportroles" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{ee67bb63-8f6a-4d44-af5a-c91b5f30822a}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Tax Investigators" languagecode="1033" />
+                        </labels>
+                        <control id="tra_taxinvestigators" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="tra_taxinvestigators" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{19ff0946-a798-40be-8660-0414229534ff}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Tax Analyst" languagecode="1033" />
+                        </labels>
+                        <control id="tra_taxanalyst" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="tra_taxanalyst" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{458630e7-be77-4df3-a06e-40e9188e5ed2}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Tax Resolution Analyst" languagecode="1033" />
+                        </labels>
+                        <control id="tra_taxresolutionanalyst" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="tra_taxresolutionanalyst" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="8821_review" verticallayout="true" id="{564b9a08-4626-46f5-8bd8-3d31e17a8873}" IsUserDefined="0" labelid="{a02707fb-d6b3-46f6-bbd3-45b3b255cfae}" expanded="true">
+          <labels>
+            <label description="📄 8821 Review" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="documents_sharepoint_section" id="2ae25c3b-baa7-4faa-bd79-6145e7a3d74d" IsUserDefined="0" locklevel="0" showlabel="false" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Documents Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell locklevel="0" id="{12278a3f-f313-4c10-9355-6ccdfd159451}" rowspan="4" colspan="1" auto="false">
+                        <labels>
+                          <label description="Case Task Checklists" languagecode="1033" />
+                        </labels>
+                        <control indicationOfSubgrid="true" id="DocumentsSubGrid8821Review" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" uniqueid="{af0763c8-93ae-43b4-8810-12d7c1d2d636}">
+                          <parameters>
+                            <RecordsPerPage>10</RecordsPerPage>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>true</EnableViewPicker>
+                            <EnableChartPicker>false</EnableChartPicker>
+                            <ChartGridMode>Grid</ChartGridMode>
+                            <RelationshipName>incident_SharePointDocuments</RelationshipName>
+                            <TargetEntityType>sharepointdocument</TargetEntityType>
+                            <ViewId>{A5B008AC-07D9-4554-8509-2C05767BFF51}</ViewId>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="tab_all_files" id="7db4d113-3cf0-4018-b674-1b353c073f92" IsUserDefined="0" locklevel="0" showlabel="true">
+          <labels>
+            <label description="🗂️ All files" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="documents_sharepoint_section_all_files" id="b0ced1d5-31e3-4aea-9c9a-939d8389be4c" IsUserDefined="0" locklevel="0" showlabel="false" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Documents Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell locklevel="0" id="{bc1394a8-6d69-45a3-a257-164b1d346383}" rowspan="4" colspan="1" auto="false">
+                        <labels>
+                          <label description="Case Task Checklists" languagecode="1033" />
+                        </labels>
+                        <control indicationOfSubgrid="true" id="transcript_details" classid="{E7A81278-8635-4D9E-8D4D-59480B391C5B}">
+                          <parameters>
+                            <RecordsPerPage>4</RecordsPerPage>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>false</EnableViewPicker>
+                            <EnableChartPicker>true</EnableChartPicker>
+                            <ChartGridMode>All</ChartGridMode>
+                            <RelationshipName>tra_transcriptdetails_case_incident</RelationshipName>
+                            <TargetEntityType>tra_transcriptdetails</TargetEntityType>
+                            <ViewId>{4581A139-74A5-4A1D-8636-213BE4DCC018}</ViewId>
+                            <ViewIds>{4581A139-74A5-4A1D-8636-213BE4DCC018}</ViewIds>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row>
+                      <cell locklevel="0" id="{ecd67527-b375-4bbb-973f-bdb8232720f9}" rowspan="4" colspan="1" auto="false">
+                        <labels>
+                          <label description="DocumentsSubGridAllFiles" languagecode="1033" />
+                        </labels>
+                        <control indicationOfSubgrid="true" id="DocumentsSubGridAllFiles" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" uniqueid="{69227c56-d57f-403a-b94a-2b838df6a05f}">
+                          <parameters>
+                            <RecordsPerPage>10</RecordsPerPage>
+                            <AutoExpand>Fixed</AutoExpand>
+                            <EnableQuickFind>false</EnableQuickFind>
+                            <EnableViewPicker>true</EnableViewPicker>
+                            <EnableChartPicker>false</EnableChartPicker>
+                            <ChartGridMode>Grid</ChartGridMode>
+                            <RelationshipName>incident_SharePointDocuments</RelationshipName>
+                            <TargetEntityType>sharepointdocument</TargetEntityType>
+                            <ViewId>{A5B008AC-07D9-4554-8509-2C05767BFF51}</ViewId>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{CF9CD80E-17E4-438D-9705-5575B9BDF2D1}" celllabelposition="Top" columns="1111" labelwidth="115">
+        <rows>
+          <row>
+            <cell locklevel="0" id="{827a7b0e-8360-4fce-a714-0a863e0cf36d}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell locklevel="0" id="{0cd8bedb-34dd-4cfd-9245-c25585215395}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell locklevel="0" id="{2f21f638-a04e-4d48-a942-fc16ad990a4d}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell locklevel="0" id="{381876a4-ecdd-49be-8a33-249c05e01e79}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{924e5a22-39c1-6bd9-c6b6-676461bbaecb}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{a01cb7ad-5b91-21a4-2089-414cd88103b1}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell locklevel="0" id="{0c9c8dd2-0a95-44a9-a218-bd99aedabcf6}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell locklevel="0" id="{79776e61-465b-4b00-8172-6ffb29306a89}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{12e2dd3b-7277-4542-8620-ec8f7273577e}" locklevel="0" colspan="1" rowspan="1" visible="false">
+              <labels>
+                <label description="Status" languagecode="1033" />
+              </labels>
+              <control id="header_statecode" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="statecode" disabled="false" />
+            </cell>
+            <cell locklevel="0" id="{1d58ff23-77b1-4a23-8314-7d3c9d8929fe}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{53dd311c-6ec7-4cde-b299-d39fe21c3dcf}" labelid="{9029af22-7b8b-446f-ac84-754c9393a6a7}" colspan="1" rowspan="1" showlabel="true" locklevel="0">
+              <labels>
+                <label description="Status Reason" languagecode="1033" />
+              </labels>
+              <control id="header_statuscode" classid="{5D68B988-0661-4db2-BC3E-17598AD3BE6C}" datafieldname="statuscode" disabled="false" uniqueid="{0b68c304-555b-eb6e-edcb-d42adb9bcb33}" />
+            </cell>
+            <cell locklevel="0" id="{3eb9d70d-0c75-4df5-81a2-079484588b6a}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell locklevel="0" id="{e04501ef-700b-459b-8667-d04231a5c7bd}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{d2c3b79d-4172-4f15-aa40-e69aa7bd2ab6}" labelid="{20fd3ded-92c9-4fa1-a2af-772561038eb8}" colspan="1" rowspan="1">
+              <labels>
+                <label description="Owner" languagecode="1033" />
+              </labels>
+              <control id="header_ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" disabled="false" />
+            </cell>
+            <cell locklevel="0" id="{196bff31-ea25-461a-9882-716c014e17ff}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <events>
+        <event name="onload" application="true" active="true">
+          <InternalHandlers>
+            <Handler functionName="Mscrm.IncidentMainSystemLibraryWebResource.form_onload" libraryName="Service/Incident/Incident_main_system_library.js" handlerUniqueId="76e18454-eeba-47c3-8a9d-6d701c77fbcc" enabled="true">
+              <dependencies>
+                <dependency id="contractid" />
+                <dependency id="contractdetailid" />
+              </dependencies>
+            </Handler>
+          </InternalHandlers>
+          <Handlers>
+            <Handler functionName="CrmJS.TRACase.onLoad" libraryName="tra_/Scripts/Case.js" handlerUniqueId="{fc842610-e373-41f4-ab4a-7ca57e931414}" enabled="true" parameters="" passExecutionContext="true" />
+          </Handlers>
+        </event>
+        <event name="onchange" application="true" active="true" attribute="contractid">
+          <InternalHandlers>
+            <Handler functionName="Mscrm.contractid_onchange" libraryName="Service/Incident/Incident_main_system_library.js" handlerUniqueId="1ff26f3d-f9f4-470b-a379-bc74ce466a53" enabled="true">
+              <dependencies>
+                <dependency id="contractdetailid" />
+              </dependencies>
+            </Handler>
+          </InternalHandlers>
+        </event>
+        <event name="onchange" application="true" active="true" attribute="contractdetailid">
+          <InternalHandlers>
+            <Handler functionName="Mscrm.contractdetailid_onchange" libraryName="Service/Incident/Incident_main_system_library.js" handlerUniqueId="fde679b3-af20-4b24-ab99-13f7de54fbb1" enabled="true">
+              <dependencies>
+                <dependency id="contractid" />
+              </dependencies>
+            </Handler>
+          </InternalHandlers>
+        </event>
+        <event name="onchange" application="true" active="true" attribute="kbarticleid">
+          <InternalHandlers>
+            <Handler functionName="Mscrm.kbarticleid_onchange" libraryName="Service/Incident/Incident_main_system_library.js" handlerUniqueId="1d4f95de-79c3-44e4-a782-469a8fc6132d" enabled="true" />
+          </InternalHandlers>
+        </event>
+        <event name="onsave" application="true" active="true">
+          <InternalHandlers>
+            <Handler functionName="Mscrm.IncidentMainSystemLibraryWebResource.form_OnSave" libraryName="Service/Incident/Incident_main_system_library.js" handlerUniqueId="ed27ea24-dc09-47be-8af3-52721df36d96" enabled="true" passExecutionContext="true" />
+          </InternalHandlers>
+          <Handlers>
+            <Handler functionName="CrmJS.TRACase.onSave" libraryName="tra_/Scripts/Case.js" handlerUniqueId="{8efbdcf3-2044-465d-a1b2-b4af345f1cb5}" enabled="true" parameters="" passExecutionContext="true" />
+          </Handlers>
+        </event>
+      </events>
+      <clientresources>
+        <internalresources>
+          <clientincludes>
+            <internaljscriptfile src="$webresource:Service/Incident/Incident_main_system_library.js" />
+            <internaljscriptfile src="$webresource:Service/Incident/Ribbon/Incident_ribbon_library.js" />
+            <internalcssfile src="/_tree/tree.css.aspx" />
+          </clientincludes>
+          <clientvariables>
+            <internaljscriptvariable name="LOCID_ERROR_MISSING_CUSTOMER" resourceid="Web.cs.cases.edit.MissingCustomer" />
+          </clientvariables>
+        </internalresources>
+      </clientresources>
+      <Navigation>
+        <NavBar>
+          <NavBarByRelationshipItem RelationshipName="Incident_ActivityPointers" Id="navActivities" Icon="/_imgs/ico_18_act.gif" Sequence="10" Area="Info">
+            <Privileges>
+              <Privilege Entity="" Privilege="ReadActivity" />
+            </Privileges>
+            <Titles>
+              <Title LCID="1033" Text="Activities" />
+            </Titles>
+          </NavBarByRelationshipItem>
+          <NavBarByRelationshipItem RelationshipName="Incident_ActivityPointers" Id="navActivityHistory" TitleResourceId="Tab_Label_History" Icon="/_imgs/ico_18_history.gif" ViewId="21E2B905-6FDB-470d-8517-AD69B4C01268" Sequence="20" Area="Info">
+            <Privileges>
+              <Privilege Entity="" Privilege="ReadActivity" />
+            </Privileges>
+            <Titles>
+              <Title LCID="1033" Text="Closed Activities" />
+            </Titles>
+          </NavBarByRelationshipItem>
+        </NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+      <controlDescriptions>
+        <controlDescription forControl="{af0763c8-93ae-43b4-8810-12d7c1d2d636}">
+          <customControl id="{E7A81278-8635-4D9E-8D4D-59480B391C5B}">
+            <parameters>
+              <RecordsPerPage>4</RecordsPerPage>
+              <AutoExpand>Fixed</AutoExpand>
+              <EnableQuickFind>false</EnableQuickFind>
+              <EnableViewPicker>true</EnableViewPicker>
+              <EnableChartPicker>true</EnableChartPicker>
+              <ChartGridMode>All</ChartGridMode>
+              <RelationshipName>incident_SharePointDocuments</RelationshipName>
+              <TargetEntityType>sharepointdocument</TargetEntityType>
+              <ViewId>{A5B008AC-07D9-4554-8509-2C05767BFF51}</ViewId>
+              <ViewIds>{A5B008AC-07D9-4554-8509-2C05767BFF51}</ViewIds>
+            </parameters>
+          </customControl>
+          <customControl formFactor="0" name="tra_TRA.SPFileExplorer">
+            <parameters>
+              <data-set name="documentsDataSet">
+                <ViewId>{A5B008AC-07D9-4554-8509-2C05767BFF51}</ViewId>
+                <TargetEntityType>sharepointdocument</TargetEntityType>
+                <IsUserView>false</IsUserView>
+                <EnableViewPicker>true</EnableViewPicker>
+                <RelationshipName>incident_SharePointDocuments</RelationshipName>
+                <FilteredViewIds>{A5B008AC-07D9-4554-8509-2C05767BFF51}</FilteredViewIds>
+              </data-set>
+              <minHeight type="Whole.None" static="true">350</minHeight>
+              <hideFoldersPane type="TwoOptions" static="true">false</hideFoldersPane>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="tra_TRA.SPFileExplorer">
+            <parameters>
+              <data-set name="documentsDataSet">
+                <ViewId>{A5B008AC-07D9-4554-8509-2C05767BFF51}</ViewId>
+                <TargetEntityType>sharepointdocument</TargetEntityType>
+                <IsUserView>false</IsUserView>
+                <EnableViewPicker>true</EnableViewPicker>
+                <RelationshipName>incident_SharePointDocuments</RelationshipName>
+                <FilteredViewIds>{A5B008AC-07D9-4554-8509-2C05767BFF51}</FilteredViewIds>
+              </data-set>
+              <minHeight type="Whole.None" static="true">350</minHeight>
+              <hideFoldersPane type="TwoOptions" static="true">false</hideFoldersPane>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="tra_TRA.SPFileExplorer">
+            <parameters>
+              <data-set name="documentsDataSet">
+                <ViewId>{A5B008AC-07D9-4554-8509-2C05767BFF51}</ViewId>
+                <TargetEntityType>sharepointdocument</TargetEntityType>
+                <IsUserView>false</IsUserView>
+                <EnableViewPicker>true</EnableViewPicker>
+                <RelationshipName>incident_SharePointDocuments</RelationshipName>
+                <FilteredViewIds>{A5B008AC-07D9-4554-8509-2C05767BFF51}</FilteredViewIds>
+              </data-set>
+              <minHeight type="Whole.None" static="true">350</minHeight>
+              <hideFoldersPane type="TwoOptions" static="true">false</hideFoldersPane>
+            </parameters>
+          </customControl>
+        </controlDescription>
+        <controlDescription forControl="{69227c56-d57f-403a-b94a-2b838df6a05f}">
+          <customControl id="{E7A81278-8635-4D9E-8D4D-59480B391C5B}">
+            <parameters>
+              <RecordsPerPage>4</RecordsPerPage>
+              <AutoExpand>Fixed</AutoExpand>
+              <EnableQuickFind>false</EnableQuickFind>
+              <EnableViewPicker>true</EnableViewPicker>
+              <EnableChartPicker>true</EnableChartPicker>
+              <ChartGridMode>All</ChartGridMode>
+              <RelationshipName>incident_SharePointDocuments</RelationshipName>
+              <TargetEntityType>sharepointdocument</TargetEntityType>
+              <ViewId>{A5B008AC-07D9-4554-8509-2C05767BFF51}</ViewId>
+              <ViewIds>{A5B008AC-07D9-4554-8509-2C05767BFF51}</ViewIds>
+            </parameters>
+          </customControl>
+          <customControl formFactor="0" name="tra_TRA.SPFileExplorer">
+            <parameters>
+              <data-set name="documentsDataSet">
+                <ViewId>{A5B008AC-07D9-4554-8509-2C05767BFF51}</ViewId>
+                <TargetEntityType>sharepointdocument</TargetEntityType>
+                <IsUserView>false</IsUserView>
+                <EnableViewPicker>true</EnableViewPicker>
+                <RelationshipName>incident_SharePointDocuments</RelationshipName>
+                <FilteredViewIds>{A5B008AC-07D9-4554-8509-2C05767BFF51}</FilteredViewIds>
+              </data-set>
+              <minHeight type="Whole.None" static="true">350</minHeight>
+              <hideFoldersPane type="TwoOptions" static="true">false</hideFoldersPane>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="tra_TRA.SPFileExplorer">
+            <parameters>
+              <data-set name="documentsDataSet">
+                <ViewId>{A5B008AC-07D9-4554-8509-2C05767BFF51}</ViewId>
+                <TargetEntityType>sharepointdocument</TargetEntityType>
+                <IsUserView>false</IsUserView>
+                <EnableViewPicker>true</EnableViewPicker>
+                <RelationshipName>incident_SharePointDocuments</RelationshipName>
+                <FilteredViewIds>{A5B008AC-07D9-4554-8509-2C05767BFF51}</FilteredViewIds>
+              </data-set>
+              <minHeight type="Whole.None" static="true">350</minHeight>
+              <hideFoldersPane type="TwoOptions" static="true">false</hideFoldersPane>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="tra_TRA.SPFileExplorer">
+            <parameters>
+              <data-set name="documentsDataSet">
+                <ViewId>{A5B008AC-07D9-4554-8509-2C05767BFF51}</ViewId>
+                <TargetEntityType>sharepointdocument</TargetEntityType>
+                <IsUserView>false</IsUserView>
+                <EnableViewPicker>true</EnableViewPicker>
+                <RelationshipName>incident_SharePointDocuments</RelationshipName>
+                <FilteredViewIds>{A5B008AC-07D9-4554-8509-2C05767BFF51}</FilteredViewIds>
+              </data-set>
+              <minHeight type="Whole.None" static="true">350</minHeight>
+              <hideFoldersPane type="TwoOptions" static="true">false</hideFoldersPane>
+            </parameters>
+          </customControl>
+        </controlDescription>
+        <controlDescription forControl="{b6f799ea-469d-4bc3-bce4-0bca633b9a6c}">
+          <customControl id="{E7A81278-8635-4D9E-8D4D-59480B391C5B}">
+            <parameters />
+          </customControl>
+          <customControl formFactor="0" name="Microsoft.PowerApps.PowerAppsOneGrid">
+            <parameters>
+              <data-set name="Items">
+                <ViewId>{35730c28-bcce-48e5-ae9a-ca9d53e3d4f9}</ViewId>
+                <TargetEntityType>tra_casetaskchecklist</TargetEntityType>
+                <IsUserView>false</IsUserView>
+                <EnableViewPicker>false</EnableViewPicker>
+                <RelationshipName>tra_casetaskchecklist_case_incident</RelationshipName>
+                <FilteredViewIds>{35730C28-BCCE-48E5-AE9A-CA9D53E3D4F9}</FilteredViewIds>
+              </data-set>
+              <EnableEditing type="Enum" static="true">yes</EnableEditing>
+              <DisableChildItemsEditing type="Enum" static="true">no</DisableChildItemsEditing>
+              <EnableFiltering type="Enum" static="true">no</EnableFiltering>
+              <EnableSorting type="Enum" static="true">yes</EnableSorting>
+              <EnableGrouping type="Enum" static="true">yes</EnableGrouping>
+              <EnableAggregation type="Enum" static="true">yes</EnableAggregation>
+              <EnableColumnMoving type="Enum" static="true">yes</EnableColumnMoving>
+              <EnableMultipleSelection type="Enum" static="true">no</EnableMultipleSelection>
+              <EnableRangeSelection type="Enum" static="true">no</EnableRangeSelection>
+              <EnableJumpBar type="Enum" static="true">no</EnableJumpBar>
+              <EnablePagination type="Enum" static="true">no</EnablePagination>
+              <EnableDropdownColor type="Enum" static="true">yes</EnableDropdownColor>
+              <EnableStatusIcons type="Enum" static="true">yes</EnableStatusIcons>
+              <EnableTypeIcons type="Enum" static="true">yes</EnableTypeIcons>
+              <NavigationTypesAllowed type="Enum" static="true">all</NavigationTypesAllowed>
+              <ReflowBehavior type="Enum" static="true">Reflow</ReflowBehavior>
+              <ShowAvatar type="Enum" static="true">yes</ShowAvatar>
+              <ShowFooter type="Enum" static="true">yes</ShowFooter>
+              <ShowColumnHeaders type="Enum" static="true">yes</ShowColumnHeaders>
+              <ContextualLookupColumnFilters type="Enum" static="true">yes</ContextualLookupColumnFilters>
+              <LookupFilterBeginsWith type="Enum" static="true">no</LookupFilterBeginsWith>
+              <DateTimeFormat type="Enum" static="true">none</DateTimeFormat>
+              <DateOnlyFormat type="Enum" static="true">none</DateOnlyFormat>
+              <EnableStatusColumn type="Enum" static="true">yes</EnableStatusColumn>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="Microsoft.PowerApps.PowerAppsOneGrid">
+            <parameters>
+              <data-set name="Items">
+                <ViewId>{35730c28-bcce-48e5-ae9a-ca9d53e3d4f9}</ViewId>
+                <TargetEntityType>tra_casetaskchecklist</TargetEntityType>
+                <IsUserView>false</IsUserView>
+                <EnableViewPicker>false</EnableViewPicker>
+                <RelationshipName>tra_casetaskchecklist_case_incident</RelationshipName>
+                <FilteredViewIds>{35730C28-BCCE-48E5-AE9A-CA9D53E3D4F9}</FilteredViewIds>
+              </data-set>
+              <EnableEditing type="Enum" static="true">yes</EnableEditing>
+              <DisableChildItemsEditing type="Enum" static="true">no</DisableChildItemsEditing>
+              <EnableFiltering type="Enum" static="true">no</EnableFiltering>
+              <EnableSorting type="Enum" static="true">yes</EnableSorting>
+              <EnableGrouping type="Enum" static="true">yes</EnableGrouping>
+              <EnableAggregation type="Enum" static="true">yes</EnableAggregation>
+              <EnableColumnMoving type="Enum" static="true">yes</EnableColumnMoving>
+              <EnableMultipleSelection type="Enum" static="true">no</EnableMultipleSelection>
+              <EnableRangeSelection type="Enum" static="true">no</EnableRangeSelection>
+              <EnableJumpBar type="Enum" static="true">no</EnableJumpBar>
+              <EnablePagination type="Enum" static="true">no</EnablePagination>
+              <EnableDropdownColor type="Enum" static="true">yes</EnableDropdownColor>
+              <EnableStatusIcons type="Enum" static="true">yes</EnableStatusIcons>
+              <EnableTypeIcons type="Enum" static="true">yes</EnableTypeIcons>
+              <NavigationTypesAllowed type="Enum" static="true">all</NavigationTypesAllowed>
+              <ReflowBehavior type="Enum" static="true">Reflow</ReflowBehavior>
+              <ShowAvatar type="Enum" static="true">yes</ShowAvatar>
+              <ShowFooter type="Enum" static="true">yes</ShowFooter>
+              <ShowColumnHeaders type="Enum" static="true">yes</ShowColumnHeaders>
+              <ContextualLookupColumnFilters type="Enum" static="true">yes</ContextualLookupColumnFilters>
+              <LookupFilterBeginsWith type="Enum" static="true">no</LookupFilterBeginsWith>
+              <DateTimeFormat type="Enum" static="true">none</DateTimeFormat>
+              <DateOnlyFormat type="Enum" static="true">none</DateOnlyFormat>
+              <EnableStatusColumn type="Enum" static="true">yes</EnableStatusColumn>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="Microsoft.PowerApps.PowerAppsOneGrid">
+            <parameters>
+              <data-set name="Items">
+                <ViewId>{35730c28-bcce-48e5-ae9a-ca9d53e3d4f9}</ViewId>
+                <TargetEntityType>tra_casetaskchecklist</TargetEntityType>
+                <IsUserView>false</IsUserView>
+                <EnableViewPicker>false</EnableViewPicker>
+                <RelationshipName>tra_casetaskchecklist_case_incident</RelationshipName>
+                <FilteredViewIds>{35730C28-BCCE-48E5-AE9A-CA9D53E3D4F9}</FilteredViewIds>
+              </data-set>
+              <EnableEditing type="Enum" static="true">yes</EnableEditing>
+              <DisableChildItemsEditing type="Enum" static="true">no</DisableChildItemsEditing>
+              <EnableFiltering type="Enum" static="true">no</EnableFiltering>
+              <EnableSorting type="Enum" static="true">yes</EnableSorting>
+              <EnableGrouping type="Enum" static="true">yes</EnableGrouping>
+              <EnableAggregation type="Enum" static="true">yes</EnableAggregation>
+              <EnableColumnMoving type="Enum" static="true">yes</EnableColumnMoving>
+              <EnableMultipleSelection type="Enum" static="true">no</EnableMultipleSelection>
+              <EnableRangeSelection type="Enum" static="true">no</EnableRangeSelection>
+              <EnableJumpBar type="Enum" static="true">no</EnableJumpBar>
+              <EnablePagination type="Enum" static="true">no</EnablePagination>
+              <EnableDropdownColor type="Enum" static="true">yes</EnableDropdownColor>
+              <EnableStatusIcons type="Enum" static="true">yes</EnableStatusIcons>
+              <EnableTypeIcons type="Enum" static="true">yes</EnableTypeIcons>
+              <NavigationTypesAllowed type="Enum" static="true">all</NavigationTypesAllowed>
+              <ReflowBehavior type="Enum" static="true">Reflow</ReflowBehavior>
+              <ShowAvatar type="Enum" static="true">yes</ShowAvatar>
+              <ShowFooter type="Enum" static="true">yes</ShowFooter>
+              <ShowColumnHeaders type="Enum" static="true">yes</ShowColumnHeaders>
+              <ContextualLookupColumnFilters type="Enum" static="true">yes</ContextualLookupColumnFilters>
+              <LookupFilterBeginsWith type="Enum" static="true">no</LookupFilterBeginsWith>
+              <DateTimeFormat type="Enum" static="true">none</DateTimeFormat>
+              <DateOnlyFormat type="Enum" static="true">none</DateOnlyFormat>
+              <EnableStatusColumn type="Enum" static="true">yes</EnableStatusColumn>
+            </parameters>
+          </customControl>
+        </controlDescription>
+        <controlDescription forControl="{5ec62af3-72c1-4574-833c-cf9951a6502f}">
+          <customControl id="{E7A81278-8635-4D9E-8D4D-59480B391C5B}">
+            <parameters>
+              <RecordsPerPage>10</RecordsPerPage>
+              <AutoExpand>Fixed</AutoExpand>
+              <EnableQuickFind>false</EnableQuickFind>
+              <EnableViewPicker>true</EnableViewPicker>
+              <EnableChartPicker>false</EnableChartPicker>
+              <ChartGridMode>Grid</ChartGridMode>
+              <RelationshipName>incident_SharePointDocuments</RelationshipName>
+              <TargetEntityType>sharepointdocument</TargetEntityType>
+              <ViewId>{A5B008AC-07D9-4554-8509-2C05767BFF51}</ViewId>
+            </parameters>
+          </customControl>
+          <customControl formFactor="0" name="tra_TRA.SPFileExplorer">
+            <parameters>
+              <data-set name="documentsDataSet">
+                <ViewId>{a5b008ac-07d9-4554-8509-2c05767bff51}</ViewId>
+                <TargetEntityType>sharepointdocument</TargetEntityType>
+                <IsUserView>false</IsUserView>
+                <EnableViewPicker>true</EnableViewPicker>
+                <RelationshipName>incident_SharePointDocuments</RelationshipName>
+                <FilteredViewIds />
+              </data-set>
+              <minHeight type="Whole.None" static="true">350</minHeight>
+              <hideFoldersPane type="TwoOptions" static="true">false</hideFoldersPane>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="tra_TRA.SPFileExplorer">
+            <parameters>
+              <data-set name="documentsDataSet">
+                <ViewId>{a5b008ac-07d9-4554-8509-2c05767bff51}</ViewId>
+                <TargetEntityType>sharepointdocument</TargetEntityType>
+                <IsUserView>false</IsUserView>
+                <EnableViewPicker>true</EnableViewPicker>
+                <RelationshipName>incident_SharePointDocuments</RelationshipName>
+                <FilteredViewIds />
+              </data-set>
+              <minHeight type="Whole.None" static="true">350</minHeight>
+              <hideFoldersPane type="TwoOptions" static="true">false</hideFoldersPane>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="tra_TRA.SPFileExplorer">
+            <parameters>
+              <data-set name="documentsDataSet">
+                <ViewId>{a5b008ac-07d9-4554-8509-2c05767bff51}</ViewId>
+                <TargetEntityType>sharepointdocument</TargetEntityType>
+                <IsUserView>false</IsUserView>
+                <EnableViewPicker>true</EnableViewPicker>
+                <RelationshipName>incident_SharePointDocuments</RelationshipName>
+                <FilteredViewIds />
+              </data-set>
+              <minHeight type="Whole.None" static="true">350</minHeight>
+              <hideFoldersPane type="TwoOptions" static="true">false</hideFoldersPane>
+            </parameters>
+          </customControl>
+        </controlDescription>
+      </controlDescriptions>
+      <hiddencontrols>
+        <data id="FirstResponseSLAStatus" datafieldname="firstresponseslastatus" classid="{5546E6CD-394C-4bee-94A8-4425E17EF6C6}" />
+        <data id="ResolveBySLAStatus" datafieldname="resolvebyslastatus" classid="{5546E6CD-394C-4bee-94A8-4425E17EF6C6}" />
+      </hiddencontrols>
+      <footer id="{1e16561d-8bf2-49e6-bb08-da56c39af742}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{282fedd9-fea9-4829-9d40-90d27287d37e}" showlabel="false" labelid="{21fa74ff-da69-4f11-a1c6-16bedb10b01f}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{751dd23d-ad47-4dfe-a7f8-2e314c0195e1}" showlabel="false" labelid="{64220f6f-4d85-40fb-bb63-1d03d26a3572}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{031ac8e3-3fa6-47d9-b53e-d2ca17618c20}" showlabel="false" labelid="{5b174397-3414-4016-a246-4e429ba66bf8}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <formLibraries>
+        <Library name="tra_/Scripts/Case.js" libraryUniqueId="{1a673f94-9f7e-433a-8c5f-3898b1a6f255}" />
+      </formLibraries>
+      <DisplayConditions FallbackForm="true" Order="1">
+        <Role Id="{627090ff-40a3-4053-8790-584edc5be201}" />
+        <Role Id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="TRA Case" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="Updated default Case form." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

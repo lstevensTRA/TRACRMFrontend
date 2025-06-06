@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{4c32eadf-ff19-f011-998a-000d3a993e48}</formid>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab id="ACBA75B7-97B6-4116-AA55-51312992B721" name="tab_1" showlabel="false" labelid="{562c7ca7-bb91-4446-930c-24432d721b38}">
+          <labels>
+            <label description="New Tab" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section id="AD49B5BF-256F-46A8-9C75-947146172EB9" name="lead_details" columns="1" showlabel="false" showbar="false" IsUserDefined="0" labelwidth="130" labelid="{cd22d15a-23d2-4014-b104-0f83b5e5bb39}">
+                  <labels>
+                    <label description="Lead Details" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="C0550AC7-0F44-45A4-8EF5-D2911C0689D9" labelid="{d0c05416-76fc-4952-aeee-3808489027d2}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{37106794-9420-40e8-adde-d059e85c4f92}" locklevel="0" colspan="1" rowspan="1" labelid="{d71ef143-4a67-4e56-86ca-d5b61b3c492f}">
+                        <labels>
+                          <label description="Estimated Debt" languagecode="1033" />
+                        </labels>
+                        <control id="tra_estimateddebt" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="tra_estimateddebt" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{ee338f66-22df-46ce-8597-4d79eae2e687}" locklevel="0" colspan="1" rowspan="1" labelid="{686b0cff-80ff-4270-9835-7b5efd7527bc}">
+                        <labels>
+                          <label description="Type of Tax Debt (Agency)" languagecode="1033" />
+                        </labels>
+                        <control id="tra_agency" classid="{4AA28AB7-9C13-4F57-A73D-AD894D048B5F}" datafieldname="tra_agency" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{42b2c203-133e-4f21-9f5e-f953cbbaf395}" locklevel="0" colspan="1" rowspan="1" labelid="{6d29979c-15a4-4d25-bcbd-3b3101d2017d}">
+                        <labels>
+                          <label description="Tax Type" languagecode="1033" />
+                        </labels>
+                        <control id="tra_taxtype" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="tra_taxtype" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{7fc5b34b-3b02-4782-ba22-efe9b6b7b1c2}" locklevel="0" colspan="1" rowspan="1" labelid="{62c04006-a3ea-438b-a5ef-9929345c9152}">
+                        <labels>
+                          <label description="Marital Status" languagecode="1033" />
+                        </labels>
+                        <control id="tra_maritalstatus" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="tra_maritalstatus" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <DisplayConditions Order="3" FallbackForm="true">
+        <Role Id="{627090ff-40a3-4053-8790-584edc5be201}" />
+        <Role Id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="TRA Lead Section 3 QV" languagecode="1033" />
+    </LocalizedNames>
+  </systemform>
+</forms>

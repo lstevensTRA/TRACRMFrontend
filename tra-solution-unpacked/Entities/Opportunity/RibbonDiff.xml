@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RibbonDiffXml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <CustomActions>
+    <CustomAction Id="tra.opportunity.Buttons.MoveNextStage.CustomAction" Location="Mscrm.Form.opportunity.MainTab.Save.Controls._children" Sequence="47">
+      <CommandUIDefinition>
+        <Button Command="tra.opportunity.MoveToFinancials.Command" Id="tra.opportunity.Buttons.MoveNextStage" LabelText="$LocLabels:tra.opportunity.Buttons.MoveNextStage.LabelText" Sequence="47" TemplateAlias="o2" ToolTipTitle="$LocLabels:tra.opportunity.Buttons.MoveNextStage.ToolTipTitle" ToolTipDescription="$LocLabels:tra.opportunity.Buttons.MoveNextStage.ToolTipDescription" />
+      </CommandUIDefinition>
+    </CustomAction>
+  </CustomActions>
+  <Templates>
+    <RibbonTemplates Id="Mscrm.Templates"></RibbonTemplates>
+  </Templates>
+  <CommandDefinitions>
+    <CommandDefinition Id="tra.opportunity.CreateInvoice.Command">
+      <EnableRules />
+      <DisplayRules />
+      <Actions />
+    </CommandDefinition>
+    <CommandDefinition Id="tra.opportunity.MoveToFinancials.Command">
+      <EnableRules>
+        <EnableRule Id="tra.opportunity.MoveToFinancials.EnableRule" />
+      </EnableRules>
+      <DisplayRules />
+      <Actions>
+        <JavaScriptFunction FunctionName="CrmJS.OpportunityFunctions.changeOpportunityStageToFinancial" Library="$webresource:tra_/Scripts/Opportunity.js">
+          <CrmParameter Value="PrimaryControl" />
+        </JavaScriptFunction>
+      </Actions>
+    </CommandDefinition>
+  </CommandDefinitions>
+  <RuleDefinitions>
+    <TabDisplayRules />
+    <DisplayRules />
+    <EnableRules>
+      <EnableRule Id="tra.opportunity.MoveToFinancials.EnableRule">
+        <FormStateRule State="Existing" Default="false" InvertResult="false" />
+      </EnableRule>
+    </EnableRules>
+  </RuleDefinitions>
+  <LocLabels>
+    <LocLabel Id="tra.opportunity.Buttons.MoveNextStage.LabelText">
+      <Titles>
+        <Title description="Move to Financials" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="tra.opportunity.Buttons.MoveNextStage.ToolTipDescription">
+      <Titles>
+        <Title description="Move to Financials Stage" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+    <LocLabel Id="tra.opportunity.Buttons.MoveNextStage.ToolTipTitle">
+      <Titles>
+        <Title description="Move to Financials Stage" languagecode="1033" />
+      </Titles>
+    </LocLabel>
+  </LocLabels>
+</RibbonDiffXml>

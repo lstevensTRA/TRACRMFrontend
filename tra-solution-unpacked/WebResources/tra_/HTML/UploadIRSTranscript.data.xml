@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebResource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <WebResourceId>{29f6761a-ce2b-f011-8c4d-7c1e520b713c}</WebResourceId>
+  <Name>tra_/HTML/UploadIRSTranscript</Name>
+  <DisplayName>tra_/HTML/UploadIRSTranscript</DisplayName>
+  <LanguageCode>0</LanguageCode>
+  <WebResourceType>1</WebResourceType>
+  <IntroducedVersion>1.0.0.0</IntroducedVersion>
+  <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+  <IsAvailableForMobileOffline>0</IsAvailableForMobileOffline>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>1</CanBeDeleted>
+  <IsHidden>0</IsHidden>
+  <FileName>/WebResources/tra_HTMLUploadIRSTranscript29F6761A-CE2B-F011-8C4D-7C1E520B713C</FileName>
+</WebResource>

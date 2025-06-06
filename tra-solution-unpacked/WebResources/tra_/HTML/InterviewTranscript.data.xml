@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebResource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <WebResourceId>{7360a432-a60f-f011-9988-6045bdd3cad7}</WebResourceId>
+  <Name>tra_/HTML/InterviewTranscript</Name>
+  <DisplayName>tra_/HTML/InterviewTranscript</DisplayName>
+  <LanguageCode>0</LanguageCode>
+  <WebResourceType>1</WebResourceType>
+  <IntroducedVersion>1.0.0.0</IntroducedVersion>
+  <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+  <IsAvailableForMobileOffline>0</IsAvailableForMobileOffline>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>1</CanBeDeleted>
+  <IsHidden>0</IsHidden>
+  <FileName>/WebResources/tra_HTMLInterviewTranscript7360A432-A60F-F011-9988-6045BDD3CAD7</FileName>
+</WebResource>

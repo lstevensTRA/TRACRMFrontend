@@ -1,0 +1,37 @@
+<appaction uniquename="tra__SendforApproval!47c14ff6bfd548aba7988722e9f3e64c!msdynce_saleshub!opportunity!0">
+  <appmoduleid>
+    <uniquename>msdynce_saleshub</uniquename>
+  </appmoduleid>
+  <buttonlabeltext default="Send for Approval">
+    <label description="Send for Approval" languagecode="1033" />
+  </buttonlabeltext>
+  <context>1</context>
+  <contextentity>
+    <logicalname>opportunity</logicalname>
+  </contextentity>
+  <contextvalue>opportunity</contextvalue>
+  <fonticon>$clientsvg:ActivateOrders</fonticon>
+  <hidden>0</hidden>
+  <iscustomizable>1</iscustomizable>
+  <isdisabled>0</isdisabled>
+  <isgrouptitlehidden>0</isgrouptitlehidden>
+  <location>0</location>
+  <name>SendforApproval!47c14ff6bfd548aba7988722e9f3e64c</name>
+  <onclickeventjavascriptfunctionname>CrmJS.TRAOpportunity.sendForApproval</onclickeventjavascriptfunctionname>
+  <onclickeventjavascriptparameters>[{"type":5}]</onclickeventjavascriptparameters>
+  <onclickeventjavascriptwebresourceid>
+    <webresourceid>fd6100b1-a6bf-ef11-b8e8-7c1e5248511a</webresourceid>
+  </onclickeventjavascriptwebresourceid>
+  <onclickeventtype>2</onclickeventtype>
+  <origin>0</origin>
+  <sequence>100100046.0000000000</sequence>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+  <type>0</type>
+  <visibilityformulacomponentlibraryid>
+    <name>tra_saleshubdefaultcommandlibrary_41da1</name>
+  </visibilityformulacomponentlibraryid>
+  <visibilityformulacomponentname>ecd3efa44bc6423cbc8f5322acf79747</visibilityformulacomponentname>
+  <visibilityformulafunctionname>Visible</visibilityformulafunctionname>
+  <visibilitytype>1</visibilitytype>
+</appaction>

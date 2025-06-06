@@ -1,0 +1,35 @@
+<appaction uniquename="tra__Section3!19b72d58be784635ab30e91b488bcce6!msdynce_saleshub!lead!0">
+  <appmoduleid>
+    <uniquename>msdynce_saleshub</uniquename>
+  </appmoduleid>
+  <buttonlabeltext default="Section 3">
+    <label description="Section 3" languagecode="1033" />
+  </buttonlabeltext>
+  <context>1</context>
+  <contextentity>
+    <logicalname>lead</logicalname>
+  </contextentity>
+  <contextvalue>lead</contextvalue>
+  <fonticon>ConvertKnowledgeArticle</fonticon>
+  <hidden>0</hidden>
+  <iscustomizable>1</iscustomizable>
+  <isdisabled>0</isdisabled>
+  <isgrouptitlehidden>0</isgrouptitlehidden>
+  <location>0</location>
+  <name>Section3!19b72d58be784635ab30e91b488bcce6</name>
+  <onclickeventjavascriptfunctionname>CrmJS.TRALead.RB_InterviewScripts_OnClick</onclickeventjavascriptfunctionname>
+  <onclickeventjavascriptparameters>[{"type":5},{"type":19,"value":3}]</onclickeventjavascriptparameters>
+  <onclickeventjavascriptwebresourceid>
+    <webresourceid>3a77e2d9-eaba-ef11-b8e8-00224828b785</webresourceid>
+  </onclickeventjavascriptwebresourceid>
+  <onclickeventtype>2</onclickeventtype>
+  <origin>0</origin>
+  <parentappactionid>
+    <uniquename>tra__NewGroup!f9165f286d144f33a7daf1ab85a1cc7b!msdynce_saleshub!lead!0</uniquename>
+  </parentappactionid>
+  <sequence>30000.0000000000</sequence>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+  <type>0</type>
+  <visibilitytype>0</visibilitytype>
+</appaction>

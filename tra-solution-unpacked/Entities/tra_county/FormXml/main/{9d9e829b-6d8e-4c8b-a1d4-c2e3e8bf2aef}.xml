@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{9d9e829b-6d8e-4c8b-a1d4-c2e3e8bf2aef}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form headerdensity="HighWithControls">
+      <tabs>
+        <tab verticallayout="true" id="{46e34f9d-2c34-465a-9bd6-f74fefbecc27}" IsUserDefined="1">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{6ba5020d-8fbf-486f-a326-874abb921bd0}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{bf1a7eac-5bee-4dea-aa47-44c9f4f1fda5}">
+                        <labels>
+                          <label description="County" languagecode="1033" />
+                        </labels>
+                        <control id="tra_county" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="tra_county" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{447b5034-2c26-4962-bdae-95b504d85d50}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="State" languagecode="1033" />
+                        </labels>
+                        <control id="tra_stateid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="tra_stateid" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{5678c3a0-9c37-48ab-9066-d388281673b2}" visible="false">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="null_section_3" id="d7a6f629-2326-4140-853b-826fcc84390a" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="11" labelwidth="115">
+                  <labels>
+                    <label description="Allowable Living Expenses Housing Standards" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row />
+                    <row>
+                      <cell id="{867deb62-f3b6-4847-b707-c62977dfe6f4}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Housing Expense for a Family of 1" languagecode="1033" />
+                        </labels>
+                        <control id="tra_housingexpenseforafamilyof1" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="tra_housingexpenseforafamilyof1" disabled="false" />
+                      </cell>
+                      <cell id="{11ecedd0-772b-4a96-8828-f8bdcff66c5e}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Housing Expense for a Family of 4" languagecode="1033" />
+                        </labels>
+                        <control id="tra_housingexpenseforafamilyof4" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="tra_housingexpenseforafamilyof4" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{36bf8e98-1440-4ea5-9661-4d291d9338ef}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Housing Expense for a Family of 2" languagecode="1033" />
+                        </labels>
+                        <control id="tra_housingexpenseforafamilyof2" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="tra_housingexpenseforafamilyof2" disabled="false" />
+                      </cell>
+                      <cell id="{ed5e6220-384a-4056-a610-3c629f757326}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Housing Expense for a Family of 5" languagecode="1033" />
+                        </labels>
+                        <control id="tra_housingexpenseforafamilyof5currency" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="tra_housingexpenseforafamilyof5currency" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{c55ba9aa-52fb-4177-a73d-ceebfee812a8}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description=" Housing Expense for a Family of 3" languagecode="1033" />
+                        </labels>
+                        <control id="tra_housingexpenseforafamilyof3" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="tra_housingexpenseforafamilyof3" disabled="false" />
+                      </cell>
+                      <cell locklevel="0" id="{2f52376c-675a-4bd3-bb5f-126d2dbedef9}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{5152298d-81d9-4497-a88c-812d095fdaec}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{8afd9033-b0ba-4c42-8a46-0e9044f15c86}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{f4dcdf31-9f4c-4b23-a17d-ce80ff74733b}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{a4ae3fdc-5cf9-4394-b1dd-96a63a32f85f}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{3ede5334-0970-4b9c-96af-693d4ec93add}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{6a0b3517-1ce3-449a-89bb-3bd321a57674}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{57b70fac-3fcb-4c86-b36e-d887880bc483}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{927dba7e-c250-4d67-a89f-033dd5ed2c7b}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <DisplayConditions Order="0" FallbackForm="true">
+        <Everyone />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

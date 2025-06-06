@@ -1,0 +1,40 @@
+<appaction uniquename="tra__Reject!2bda5d9d0de54c2883e8e81eb414a1c9!msdynce_saleshub!opportunity!0">
+  <appmoduleid>
+    <uniquename>msdynce_saleshub</uniquename>
+  </appmoduleid>
+  <buttonlabeltext default="Reject">
+    <label description="Reject" languagecode="1033" />
+  </buttonlabeltext>
+  <context>1</context>
+  <contextentity>
+    <logicalname>opportunity</logicalname>
+  </contextentity>
+  <contextvalue>opportunity</contextvalue>
+  <fonticon>Cancel</fonticon>
+  <hidden>0</hidden>
+  <iconwebresourceid>
+    <webresourceid>463597bd-4120-f011-998a-002248304216</webresourceid>
+  </iconwebresourceid>
+  <iscustomizable>1</iscustomizable>
+  <isdisabled>0</isdisabled>
+  <isgrouptitlehidden>0</isgrouptitlehidden>
+  <location>0</location>
+  <name>Reject!2bda5d9d0de54c2883e8e81eb414a1c9</name>
+  <onclickeventjavascriptfunctionname>CrmJS.TRAOpportunity.OnReject</onclickeventjavascriptfunctionname>
+  <onclickeventjavascriptparameters>[{"type":5}]</onclickeventjavascriptparameters>
+  <onclickeventjavascriptwebresourceid>
+    <webresourceid>fd6100b1-a6bf-ef11-b8e8-7c1e5248511a</webresourceid>
+  </onclickeventjavascriptwebresourceid>
+  <onclickeventtype>2</onclickeventtype>
+  <origin>0</origin>
+  <sequence>100100046.7500000000</sequence>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+  <type>0</type>
+  <visibilityformulacomponentlibraryid>
+    <name>tra_saleshubdefaultcommandlibrary_41da1</name>
+  </visibilityformulacomponentlibraryid>
+  <visibilityformulacomponentname>31a91500e36f4d3ebc606983fc29d77b</visibilityformulacomponentname>
+  <visibilityformulafunctionname>Visible</visibilityformulafunctionname>
+  <visibilitytype>1</visibilitytype>
+</appaction>

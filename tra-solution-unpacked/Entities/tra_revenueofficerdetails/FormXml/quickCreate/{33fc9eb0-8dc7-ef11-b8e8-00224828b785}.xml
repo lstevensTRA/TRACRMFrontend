@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{33fc9eb0-8dc7-ef11-b8e8-00224828b785}</formid>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab id="F931FFE2-B873-473F-8F95-9502F0AA3F5E" name="tab_1" showlabel="false" labelid="{d8630d36-f5dd-4145-bec3-7430f75c21c2}">
+          <labels>
+            <label description="New Tab" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="34%">
+              <sections>
+                <section id="0C655D4E-C6E3-424E-9AF5-71E72D30D12E" name="tra_secrevenueofficer" columns="1" showlabel="false" showbar="false" IsUserDefined="0" labelwidth="130" labelid="{a72de3bb-0742-4846-843b-8261c9fc3eb6}">
+                  <labels>
+                    <label description="New Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="542FBFBE-0E4C-496C-8012-555DE6581923" labelid="{39389009-5017-4a9e-a1cd-ae6575ba5347}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{322cd4dd-1c64-4551-9007-820eb09eac2d}" locklevel="0" colspan="1" rowspan="1" labelid="{0afe560f-364b-4d77-a424-21e0825deca5}">
+                        <labels>
+                          <label description="Full Name" languagecode="1033" />
+                        </labels>
+                        <control id="tra_fullname" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="tra_fullname" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a1510204-6c9f-4b1f-b505-6a5536b79a86}" locklevel="0" colspan="1" rowspan="1" labelid="{16deff26-0fe6-46c3-87bb-e01737403350}">
+                        <labels>
+                          <label description="Officer ID" languagecode="1033" />
+                        </labels>
+                        <control id="tra_officerid" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="tra_officerid" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{7a558d2e-c395-4a03-8075-1c86e0a5d128}" locklevel="0" colspan="1" rowspan="1" labelid="{88828247-c43c-45f2-aa5c-9dba41ac7d15}">
+                        <labels>
+                          <label description="Agency" languagecode="1033" />
+                        </labels>
+                        <control id="tra_agency" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="tra_agency" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{95c5bd19-29c2-41de-8868-996831610b31}" locklevel="0" colspan="1" rowspan="1" labelid="{e391d380-d067-4180-bad6-2cc48450f5fc}">
+                        <labels>
+                          <label description="Job Title" languagecode="1033" />
+                        </labels>
+                        <control id="tra_jobtitle" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="tra_jobtitle" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b5f7bfc9-566b-4ff4-9f2a-414db6c79867}" locklevel="0" colspan="1" rowspan="1" labelid="{f9a363ca-ca40-46b7-ac09-4187948cfb16}">
+                        <labels>
+                          <label description="Full Address" languagecode="1033" />
+                        </labels>
+                        <control id="tra_fulladdress" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="tra_fulladdress" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b98b2c5d-8fd3-4533-9efb-fc3f21ca8b07}" locklevel="0" colspan="1" rowspan="1" labelid="{15bfb6cd-cc88-4067-988f-506004efe630}">
+                        <labels>
+                          <label description="Email" languagecode="1033" />
+                        </labels>
+                        <control id="tra_email" classid="{ADA2203E-B4CD-49BE-9DDF-234642B43B52}" datafieldname="tra_email" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b30ff393-de12-4e29-900e-7a9c6951cb8c}" locklevel="0" colspan="1" rowspan="1" labelid="{0e83eeb0-8d62-41a0-bd11-f6ff57ef8830}">
+                        <labels>
+                          <label description="Phone" languagecode="1033" />
+                        </labels>
+                        <control id="tra_phone" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="tra_phone" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{66c1da6a-ff92-4abc-9149-a9641d5d1185}" locklevel="0" colspan="1" rowspan="1" labelid="{3323304c-b473-4313-830c-7787d8b820f1}">
+                        <labels>
+                          <label description="Fax" languagecode="1033" />
+                        </labels>
+                        <control id="tra_fax" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="tra_fax" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{bc3afdaf-5319-4741-b0fe-70e802107cd7}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Opportunity" languagecode="1033" />
+                        </labels>
+                        <control id="tra_opportunityid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="tra_opportunityid" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{8e8bb44a-7fbb-41fb-ba6f-bfb68cb1e46c}" locklevel="0" colspan="1" rowspan="1" labelid="{8622dfcc-f6ef-4001-818f-d1399fa5d9f3}">
+                        <labels>
+                          <label description="Comments" languagecode="1033" />
+                        </labels>
+                        <control id="tra_comments" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="tra_comments" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{51b6d8a5-a9b4-4bee-b8ba-89fae68bfb0a}" locklevel="0" colspan="1" rowspan="1" visible="false">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%">
+              <sections>
+                <section id="02DECBA0-3AE2-484D-A19F-C5353AF4F4F2" name="tab_1_column_2_section_1" columns="1" showlabel="true" showbar="false" IsUserDefined="0" labelwidth="130" visible="false" labelid="{fd581484-8d2c-4cd4-baca-0774a505aa99}">
+                  <labels>
+                    <label description="New Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="266FE48D-4D04-4E9A-8C5A-7DEF9A2F059B" labelid="{4e796339-a0f4-4dd6-816a-a1e90f9faff6}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%">
+              <sections>
+                <section id="46FD66EA-B686-41D9-AAE0-C565BD78EC1F" name="tab_1_column_3_section_1" columns="1" showlabel="true" showbar="false" IsUserDefined="0" labelwidth="130" visible="false" labelid="{923e48b5-a245-4728-847c-5e6b5a498ccb}">
+                  <labels>
+                    <label description="New Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="07C04A4E-A482-45CC-BAB7-7FCA3CD02938" labelid="{b58b875b-a528-4353-813c-a5f2ae20e921}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <DisplayConditions Order="0" FallbackForm="true">
+        <Role Id="{627090ff-40a3-4053-8790-584edc5be201}" />
+        <Role Id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Revenue Officer QC" languagecode="1033" />
+    </LocalizedNames>
+  </systemform>
+</forms>

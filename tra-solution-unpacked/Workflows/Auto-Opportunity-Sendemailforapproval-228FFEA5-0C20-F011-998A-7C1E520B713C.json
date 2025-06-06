@@ -1,0 +1,153 @@
+{
+  "properties": {
+    "connectionReferences": {
+      "shared_commondataserviceforapps": {
+        "runtimeSource": "embedded",
+        "connection": {
+          "connectionReferenceLogicalName": "tra_sharedcommondataserviceforapps_117e9"
+        },
+        "api": {
+          "name": "shared_commondataserviceforapps"
+        }
+      },
+      "shared_office365": {
+        "runtimeSource": "embedded",
+        "connection": {
+          "connectionReferenceLogicalName": "tra_sharedoffice365_908a5"
+        },
+        "api": {
+          "name": "shared_office365"
+        }
+      }
+    },
+    "definition": {
+      "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+      "contentVersion": "1.0.0.0",
+      "parameters": {
+        "$connections": {
+          "defaultValue": {},
+          "type": "Object"
+        },
+        "$authentication": {
+          "defaultValue": {},
+          "type": "SecureObject"
+        }
+      },
+      "triggers": {
+        "When_a_row_is_added,_modified_or_deleted": {
+          "metadata": {
+            "operationMetadataId": "0927aac8-f380-454e-a354-b4e31d8dd921"
+          },
+          "type": "OpenApiConnectionWebhook",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_commondataserviceforapps",
+              "operationId": "SubscribeWebhookTrigger",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+            },
+            "parameters": {
+              "subscriptionRequest/message": 3,
+              "subscriptionRequest/entityname": "opportunity",
+              "subscriptionRequest/scope": 4,
+              "subscriptionRequest/filteringattributes": "statuscode",
+              "subscriptionRequest/filterexpression": "statuscode eq 211050002"
+            },
+            "authentication": "@parameters('$authentication')"
+          }
+        }
+      },
+      "actions": {
+        "List_Users_based_on_team": {
+          "runAfter": {
+            "Initialize_varEmails": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "3dbfc0b1-3b7e-405f-8ebb-baa3b4d7da05"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_commondataserviceforapps",
+              "operationId": "ListRecords",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps"
+            },
+            "parameters": {
+              "entityName": "systemusers",
+              "fetchXml": "<fetch version=\"1.0\" output-format=\"xml-platform\" mapping=\"logical\" distinct=\"true\">\n  <entity name=\"systemuser\">\n    <order attribute=\"fullname\" descending=\"false\" />\n    <link-entity name=\"teammembership\" from=\"systemuserid\" to=\"systemuserid\" visible=\"false\" intersect=\"true\">\n      <link-entity name=\"team\" from=\"teamid\" to=\"teamid\" alias=\"ab\">\n        <filter type=\"and\">\n          <condition attribute=\"name\" operator=\"eq\" value=\"Sales Team\" />\n        </filter>\n      </link-entity>\n    </link-entity>\n  </entity>\n</fetch>"
+            },
+            "authentication": "@parameters('$authentication')"
+          }
+        },
+        "Apply_to_each": {
+          "foreach": "@outputs('List_Users_based_on_team')?['body/value']",
+          "actions": {
+            "Append_to_string_variable_in_varEmails": {
+              "runAfter": {},
+              "metadata": {
+                "operationMetadataId": "184b9747-9525-4c73-9b99-714726117c05"
+              },
+              "type": "AppendToStringVariable",
+              "inputs": {
+                "name": "varEmails",
+                "value": "@{items('Apply_to_each')?['internalemailaddress']};"
+              }
+            }
+          },
+          "runAfter": {
+            "List_Users_based_on_team": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "f893e222-f9ed-413b-9533-4dfaf1481a6d"
+          },
+          "type": "Foreach"
+        },
+        "Initialize_varEmails": {
+          "runAfter": {},
+          "metadata": {
+            "operationMetadataId": "c4473735-aee8-4596-ab24-be5ee607c462"
+          },
+          "type": "InitializeVariable",
+          "inputs": {
+            "variables": [
+              {
+                "name": "varEmails",
+                "type": "string"
+              }
+            ]
+          }
+        },
+        "Send_an_email_to_Team": {
+          "runAfter": {
+            "Apply_to_each": [
+              "Succeeded"
+            ]
+          },
+          "metadata": {
+            "operationMetadataId": "b37e53ea-ff4f-4e64-8a07-411bed55c171"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "host": {
+              "connectionName": "shared_office365",
+              "operationId": "SendEmailV2",
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_office365"
+            },
+            "parameters": {
+              "emailMessage/To": "@variables('varEmails')",
+              "emailMessage/Subject": "Approval for Opportunity: @{triggerOutputs()?['body/name']}",
+              "emailMessage/Body": "<p>Dear Approver,</p>\n<p>You have a new opportunity that requires your approval:</p>\n<table border=\"0\" cellpadding=\"5\">\n   <tr>\n       <td><strong>Opportunity Name:</strong></td>\n       <td>@{triggerOutputs()?['body/name']}</td>\n   </tr>\n</table>\n<p>Please review and take the appropriate action:</p>\n<ul>\n   <li>Go to the <a href=\"https://tra-dev.crm.dynamics.com/main.aspx?appid=5d012b76-adb4-ef11-b8e8-7c1e521795b7&pagetype=entityrecord&etn=opportunity&id=@{triggerOutputs()?['body/opportunityid']}\">Opportunity Record</a></li>\n   <li>Click <strong>Approve</strong> or <strong>Reject</strong> from the top ribbon</li>\n</ul>\n<p>If you reject the opportunity, please provide a reason for rejection.</p>\n<p>Thank you,</p>\n<p><em>This is an automated message from Dynamics 365.</em></p>\n ",
+              "emailMessage/Importance": "Normal"
+            },
+            "authentication": "@parameters('$authentication')"
+          }
+        }
+      }
+    },
+    "templateName": ""
+  },
+  "schemaVersion": "1.0.0.0"
+}

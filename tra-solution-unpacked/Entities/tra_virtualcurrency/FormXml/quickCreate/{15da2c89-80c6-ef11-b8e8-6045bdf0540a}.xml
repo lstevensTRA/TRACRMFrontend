@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{15da2c89-80c6-ef11-b8e8-6045bdf0540a}</formid>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab id="F931FFE2-B873-473F-8F95-9502F0AA3F5E" name="tab_1" showlabel="false" labelid="{ab49b702-049c-41a0-940b-7c87c9dfa470}">
+          <labels>
+            <label description="New Tab" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="34%">
+              <sections>
+                <section id="0C655D4E-C6E3-424E-9AF5-71E72D30D12E" name="tra_secvirtualcurrency" columns="1" showlabel="false" showbar="false" IsUserDefined="0" labelwidth="130" labelid="{95450633-6938-4bf9-ac63-9ef81b5d16c4}">
+                  <labels>
+                    <label description="Virtual Currency" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="542FBFBE-0E4C-496C-8012-555DE6581923" labelid="{07e4647e-8879-4c4b-8af3-a6d544873300}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a12a8755-a416-4e54-86b7-a3bcf0d4b7fc}" locklevel="0" colspan="1" rowspan="1" labelid="{6623279f-d01f-4dc0-a359-b587642fe9f1}">
+                        <labels>
+                          <label description="Type of Virtual Currency" languagecode="1033" />
+                        </labels>
+                        <control id="tra_typeofvirtualcurrency" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="tra_typeofvirtualcurrency" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{70f55d09-a805-4836-ab3d-de6c97b79545}" locklevel="0" colspan="1" rowspan="1" labelid="{af6f8c49-7ac8-4325-9e2f-ec38150fbe0a}">
+                        <labels>
+                          <label description="Name of Virtual Wallet, Exchange, Digital Exchange" languagecode="1033" />
+                        </labels>
+                        <control id="tra_nameofvirtualcurrency" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="tra_nameofvirtualcurrency" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{f3d2c9bd-e834-471c-8d6e-8c8d857117b9}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Email Address Used to Set-up With the Virtual Currency Exchange or DCE" languagecode="1033" />
+                        </labels>
+                        <control id="tra_mailddressforvirtualcurrencyexchangeordce" classid="{ADA2203E-B4CD-49BE-9DDF-234642B43B52}" datafieldname="tra_mailddressforvirtualcurrencyexchangeordce" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e31d22a0-0df5-4281-9dfc-72452a99b049}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Virtual Currency Amount" languagecode="1033" />
+                        </labels>
+                        <control id="tra_virtualcurrencyamount" classid="{C3EFE0C3-0EC6-42BE-8349-CBD9079DFD8E}" datafieldname="tra_virtualcurrencyamount" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{32cb7efb-6132-47b1-9190-0fa134039f29}" locklevel="0" colspan="1" rowspan="1" labelid="{ba49e07e-7799-4729-9d0f-a3e1d1e3c5ef}">
+                        <labels>
+                          <label description="Location of Virtual Currency" languagecode="1033" />
+                        </labels>
+                        <control id="tra_locationofvirtualcurrency" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="tra_locationofvirtualcurrency" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{39beeff4-aecc-48a1-8dda-10cd14787402}" locklevel="0" colspan="1" rowspan="1" labelid="{112511d0-abfe-47bb-bb3c-758a6847aa56}">
+                        <labels>
+                          <label description="Virtual Currency Amount in US dollars today" languagecode="1033" />
+                        </labels>
+                        <control id="tra_virtualcurrencyamountinusdollarstoday" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="tra_virtualcurrencyamountinusdollarstoday" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%">
+              <sections>
+                <section id="02DECBA0-3AE2-484D-A19F-C5353AF4F4F2" name="tab_1_column_2_section_1" columns="1" showlabel="true" showbar="false" IsUserDefined="0" labelwidth="130" visible="false" labelid="{2afbcb5e-7ff3-4729-8e8c-936081616120}">
+                  <labels>
+                    <label description="New Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="266FE48D-4D04-4E9A-8C5A-7DEF9A2F059B" labelid="{09e71eb1-58f3-4880-b291-563fbcd214e9}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%">
+              <sections>
+                <section id="46FD66EA-B686-41D9-AAE0-C565BD78EC1F" name="tab_1_column_3_section_1" columns="1" showlabel="true" showbar="false" IsUserDefined="0" labelwidth="130" visible="false" labelid="{3d070d13-b385-43ef-b4a4-75be67d2982f}">
+                  <labels>
+                    <label description="New Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="07C04A4E-A482-45CC-BAB7-7FCA3CD02938" labelid="{17f9b3a1-e777-47a4-a993-ad25b81366af}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <DisplayConditions Order="0" FallbackForm="true">
+        <Role Id="{627090ff-40a3-4053-8790-584edc5be201}" />
+        <Role Id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Virtual Currency Quick Create Form" languagecode="1033" />
+    </LocalizedNames>
+  </systemform>
+</forms>

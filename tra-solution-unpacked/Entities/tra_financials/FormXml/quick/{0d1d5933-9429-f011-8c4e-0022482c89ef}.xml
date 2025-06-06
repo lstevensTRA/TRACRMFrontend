@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{0d1d5933-9429-f011-8c4e-0022482c89ef}</formid>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab id="ACBA75B7-97B6-4116-AA55-51312992B721" name="tab_1" showlabel="false" labelid="{d4aecf97-d86e-47bb-be68-37e2aba8357e}">
+          <labels>
+            <label description="New Tab" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section id="AD49B5BF-256F-46A8-9C75-947146172EB9" name="tab_expense_information" columns="1" showlabel="false" showbar="false" IsUserDefined="0" labelwidth="130" labelid="{baf26590-79c2-4e62-a4e6-29b6fc85abef}">
+                  <labels>
+                    <label description="Expense Information" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="C0550AC7-0F44-45A4-8EF5-D2911C0689D9" labelid="{07b7f0b8-b737-4b1b-94f6-00d2a60d2102}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{7db92e77-5fc6-4869-be79-605bad08e587}" locklevel="0" colspan="1" rowspan="1" labelid="{7479a380-cdd4-43d0-a3b2-6d35e539c87e}">
+                        <labels>
+                          <label description="Total Food Clothing Misc Expenses" languagecode="1033" />
+                        </labels>
+                        <control id="tra_totalfoodclothingmiscexpenses" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="tra_totalfoodclothingmiscexpenses" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{cd7b27d5-b150-4644-84a1-192e7accd6c9}" locklevel="0" colspan="1" rowspan="1" labelid="{d2a41248-7551-4995-8faa-8423288f48b5}">
+                        <labels>
+                          <label description="IRS Standards Total Housing Expenses" languagecode="1033" />
+                        </labels>
+                        <control id="tra_irsstandardstotalhousingexpenses" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="tra_irsstandardstotalhousingexpenses" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{1ed21d9a-29dc-4ed7-8157-7dff07f6458c}" locklevel="0" colspan="1" rowspan="1" labelid="{0fc2540a-754a-4f85-bac3-4c146136820d}">
+                        <labels>
+                          <label description="Total Auto Expenses" languagecode="1033" />
+                        </labels>
+                        <control id="tra_totalautoexpenses" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="tra_totalautoexpenses" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b12b99a9-a312-44dd-bdc4-60d27d109090}" locklevel="0" colspan="1" rowspan="1" labelid="{4176c1f6-8f81-4343-ac14-d1dea7494892}">
+                        <labels>
+                          <label description="Total Health Care Expenses" languagecode="1033" />
+                        </labels>
+                        <control id="tra_totalhealthcareexpenses" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="tra_totalhealthcareexpenses" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{285b048c-8868-4d70-8db4-fcaf95774d73}" locklevel="0" colspan="1" rowspan="1" labelid="{c8791b72-e251-4089-8101-a64892ff2cf0}">
+                        <labels>
+                          <label description="Total Other Expenses" languagecode="1033" />
+                        </labels>
+                        <control id="tra_totalotherexpenses" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="tra_totalotherexpenses" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <DisplayConditions Order="1" FallbackForm="true">
+        <Role Id="{627090ff-40a3-4053-8790-584edc5be201}" />
+        <Role Id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="TRA Monthly Expense QV" languagecode="1033" />
+    </LocalizedNames>
+  </systemform>
+</forms>

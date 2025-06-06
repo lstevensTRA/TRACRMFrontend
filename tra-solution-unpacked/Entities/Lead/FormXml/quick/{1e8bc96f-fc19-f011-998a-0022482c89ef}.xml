@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{1e8bc96f-fc19-f011-998a-0022482c89ef}</formid>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab id="ACBA75B7-97B6-4116-AA55-51312992B721" name="tab_1" showlabel="false" labelid="{f2338a23-b26b-40ae-976d-35171bbd9f44}">
+          <labels>
+            <label description="New Tab" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section id="AD49B5BF-256F-46A8-9C75-947146172EB9" name="lead_details" columns="1" showlabel="false" showbar="false" IsUserDefined="0" labelwidth="130" labelid="{6ff47779-c253-4d8f-a493-858199e4ee27}">
+                  <labels>
+                    <label description="Lead Details" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="C0550AC7-0F44-45A4-8EF5-D2911C0689D9" labelid="{61b945a6-0a39-4d7d-b529-df37632db2bb}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{3287497e-8eb5-4c78-a4f3-eb84303fec75}" locklevel="0" colspan="1" rowspan="1" labelid="{33ba9f1d-63fd-4a53-92c5-36ea8a182533}">
+                        <labels>
+                          <label description="First Name" languagecode="1033" />
+                        </labels>
+                        <control id="firstname" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="firstname" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e96d1aa5-6ed3-4c86-bfa0-524ce3d05baa}" locklevel="0" colspan="1" rowspan="1" labelid="{9ace2c20-e4b8-4b17-b54b-0f694d5c7bbf}">
+                        <labels>
+                          <label description="Middle Name" languagecode="1033" />
+                        </labels>
+                        <control id="middlename" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="middlename" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{6a990e4a-e123-4666-ab81-1a7b6fedba13}" locklevel="0" colspan="1" rowspan="1" labelid="{98465c4e-b677-48b5-a705-12d8686f6475}">
+                        <labels>
+                          <label description="Last Name" languagecode="1033" />
+                        </labels>
+                        <control id="lastname" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="lastname" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e9ac6a69-7d76-4999-bbe4-eb238b561cac}" locklevel="0" colspan="1" rowspan="1" labelid="{d1b01b2c-370c-4eae-9764-73d5d5d98999}">
+                        <labels>
+                          <label description="Mobile Phone" languagecode="1033" />
+                        </labels>
+                        <control id="mobilephone" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="mobilephone" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{8e31e1bd-2022-4559-ab96-d00060b0c409}" locklevel="0" colspan="1" rowspan="1" labelid="{7303ddab-349e-49fe-bb73-e548e8c0060d}">
+                        <labels>
+                          <label description="Email" languagecode="1033" />
+                        </labels>
+                        <control id="emailaddress1" classid="{ADA2203E-B4CD-49BE-9DDF-234642B43B52}" datafieldname="emailaddress1" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{d5939c40-551f-4d69-bb60-6725583a7996}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Affiliate" languagecode="1033" />
+                        </labels>
+                        <control id="tra_affiliate" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="tra_affiliate" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{86717375-6780-4f75-b71b-5893e883af07}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Case ID" languagecode="1033" />
+                        </labels>
+                        <control id="tra_caseid" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="tra_caseid" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{f252d37d-cfac-4261-8d08-c8b0a90102cc}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Date of Initial Contact" languagecode="1033" />
+                        </labels>
+                        <control id="tra_dateofinitialcontact" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="tra_dateofinitialcontact" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{1115c41b-e241-4ddb-bf0d-38961b02f764}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Do not allow Phone Calls" languagecode="1033" />
+                        </labels>
+                        <control id="donotphone" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="donotphone" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{80e95e6f-19be-4448-99fa-ef202168a689}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Lead Date" languagecode="1033" />
+                        </labels>
+                        <control id="tra_leaddate" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="tra_leaddate" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{f40c7f17-8352-4c91-b423-59f7cde4a5e0}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Lead Source" languagecode="1033" />
+                        </labels>
+                        <control id="leadsourcecode" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="leadsourcecode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{f2bd643c-96d4-4e56-8d47-8ca41fbf31ca}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Language" languagecode="1033" />
+                        </labels>
+                        <control id="tra_language" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="tra_language" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{efccab99-989d-4205-81a2-23dc0331f3c3}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Lead Type" languagecode="1033" />
+                        </labels>
+                        <control id="tra_leadtype" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="tra_leadtype" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{d00cb68d-daf9-4ef9-8335-2e13f2a185dd}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Marketing Material" languagecode="1033" />
+                        </labels>
+                        <control id="donotsendmm" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="donotsendmm" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e158bd98-90a4-4dd8-89a9-1a3ad526ab3e}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{fd2784ce-25d4-483e-a557-e8247b2f274c}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="SMS Permitted" languagecode="1033" />
+                        </labels>
+                        <control id="tra_smspermitted" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="tra_smspermitted" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <DisplayConditions Order="2" FallbackForm="true">
+        <Role Id="{627090ff-40a3-4053-8790-584edc5be201}" />
+        <Role Id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="TRA Lead QV" languagecode="1033" />
+    </LocalizedNames>
+  </systemform>
+</forms>

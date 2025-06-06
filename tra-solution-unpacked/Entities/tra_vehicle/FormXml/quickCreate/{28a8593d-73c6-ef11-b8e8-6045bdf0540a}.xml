@@ -1,0 +1,208 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{28a8593d-73c6-ef11-b8e8-6045bdf0540a}</formid>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab id="F931FFE2-B873-473F-8F95-9502F0AA3F5E" name="tab_1" showlabel="false" labelid="{5cfac34a-6349-4639-b77b-0d1915bc4ba4}">
+          <labels>
+            <label description="New Tab" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="34%">
+              <sections>
+                <section id="0C655D4E-C6E3-424E-9AF5-71E72D30D12E" name="tra_secvehicledetails" columns="1" showlabel="false" showbar="false" IsUserDefined="0" labelwidth="130" labelid="{ea1e0287-3c88-4157-a4c2-d360fce0daa0}">
+                  <labels>
+                    <label description="New Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{2e90d796-58d4-40f1-ae32-6aee0e9a27f0}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Vehicle Name" languagecode="1033" />
+                        </labels>
+                        <control id="tra_name" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="tra_name" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{4f47c96b-cd64-4dc8-a8ff-f403e3a71b26}" locklevel="0" colspan="1" rowspan="1" labelid="{11c6e4cc-2fd8-4c64-a3e0-3080d5d5af00}">
+                        <labels>
+                          <label description="Year" languagecode="1033" />
+                        </labels>
+                        <control id="tra_yearid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="tra_yearid" disabled="false">
+                          <parameters>
+                            <DisableMru>true</DisableMru>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{0634ca88-6a02-4637-b2e2-6b07d8badf80}" locklevel="0" colspan="1" rowspan="1" labelid="{291bc5a0-f5b7-410a-98a9-1ac69ff356b2}">
+                        <labels>
+                          <label description="Make" languagecode="1033" />
+                        </labels>
+                        <control id="tra_make" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="tra_make" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{737def86-60c4-46c7-ab4e-edfa9327fcfc}" locklevel="0" colspan="1" rowspan="1" labelid="{0483832e-623e-4c8e-aa0d-156ba83ae2e3}">
+                        <labels>
+                          <label description="Model" languagecode="1033" />
+                        </labels>
+                        <control id="tra_model" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="tra_model" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{c1b37087-b8d1-4a38-b837-06219e4d82f4}" locklevel="0" colspan="1" rowspan="1" labelid="{eed5475e-8eb7-4405-9182-c051ace67cf2}">
+                        <labels>
+                          <label description="Estimated Mileage" languagecode="1033" />
+                        </labels>
+                        <control id="tra_mileage" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="tra_mileage" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{1bf758e0-d92f-4b91-8763-56a78ed555e7}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Blue Book Value" languagecode="1033" />
+                        </labels>
+                        <control id="tra_bluebookvalue" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="tra_bluebookvalue" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{28513e05-68ac-4343-8348-65067f28c8d9}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Purchase Price" languagecode="1033" />
+                        </labels>
+                        <control id="tra_purchaseprice" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="tra_purchaseprice" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{2952ce56-3231-45ef-8270-ea33aaef60c4}" locklevel="0" colspan="1" rowspan="1" labelid="{555131bf-a3c7-4883-a1bb-517a5450d0e8}">
+                        <labels>
+                          <label description="Estimated Loan Balance" languagecode="1033" />
+                        </labels>
+                        <control id="tra_loanbalance" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="tra_loanbalance" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e0fec1cb-4baf-4ab0-a792-ba80465a397b}" locklevel="0" colspan="1" rowspan="1" labelid="{27d7f129-e642-454c-b992-56c22d635e98}">
+                        <labels>
+                          <label description="Monthly Payment" languagecode="1033" />
+                        </labels>
+                        <control id="tra_monthlypayment" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="tra_monthlypayment" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{431ed241-4ac5-446b-9862-a108da237f16}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Monthly Insurance" languagecode="1033" />
+                        </labels>
+                        <control id="tra_monthlyinsurance" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="tra_monthlyinsurance" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{919c2733-b32a-4e1e-93d8-ac5a85e85005}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Monthly Gas/Charging Fee" languagecode="1033" />
+                        </labels>
+                        <control id="tra_monthlygaschargingfee" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="tra_monthlygaschargingfee" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{dbe16b82-0074-4fc8-b53a-a71498d2728f}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Type of Vehicle" languagecode="1033" />
+                        </labels>
+                        <control id="tra_typeofvehicle" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="tra_typeofvehicle" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b9cd6b33-cd27-426e-abdc-5ab4d1069513}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Fair market Value" languagecode="1033" />
+                        </labels>
+                        <control id="tra_fairmarketvalue" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="tra_fairmarketvalue" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{70220dd0-99fc-4405-bca6-efb2787468d4}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Final Payoff Date" languagecode="1033" />
+                        </labels>
+                        <control id="tra_finalpayoffdate" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="tra_finalpayoffdate" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{85f12c54-51f8-49e2-813a-00920bf391ab}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Opportunity" languagecode="1033" />
+                        </labels>
+                        <control id="tra_opportunityid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="tra_opportunityid" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{16b37092-717b-4ae7-9e0d-070d0e3be121}" locklevel="0" colspan="1" rowspan="1" visible="false">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%">
+              <sections>
+                <section id="02DECBA0-3AE2-484D-A19F-C5353AF4F4F2" name="tab_1_column_2_section_1" columns="1" showlabel="true" showbar="false" IsUserDefined="0" labelwidth="130" visible="false" labelid="{d7ca2029-4096-4fc4-a3ef-24b3ba5e3ed3}">
+                  <labels>
+                    <label description="New Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="266FE48D-4D04-4E9A-8C5A-7DEF9A2F059B" labelid="{d47fc461-c6c4-40e1-8e70-93b4547ef27f}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%">
+              <sections>
+                <section id="46FD66EA-B686-41D9-AAE0-C565BD78EC1F" name="tab_1_column_3_section_1" columns="1" showlabel="true" showbar="false" IsUserDefined="0" labelwidth="130" visible="false" labelid="{6357611f-e262-41a9-a1a7-49a350633fdb}">
+                  <labels>
+                    <label description="New Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="07C04A4E-A482-45CC-BAB7-7FCA3CD02938" labelid="{ce2fdb79-07b5-4dff-9c58-189c9ac5de7c}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <DisplayConditions Order="0" FallbackForm="true">
+        <Role Id="{627090ff-40a3-4053-8790-584edc5be201}" />
+        <Role Id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Vehicle Quick Create Form" languagecode="1033" />
+    </LocalizedNames>
+  </systemform>
+</forms>

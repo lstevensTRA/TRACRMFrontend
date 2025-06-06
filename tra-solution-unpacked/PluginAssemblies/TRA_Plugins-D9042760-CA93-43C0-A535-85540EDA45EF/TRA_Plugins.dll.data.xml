@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PluginAssembly FullName="TRA_Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=2e045c80959b7504" PluginAssemblyId="d9042760-ca93-43c0-a535-85540eda45ef" CustomizationLevel="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <IsolationMode>2</IsolationMode>
+  <SourceType>0</SourceType>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <FileName>/PluginAssemblies/TRA_Plugins-D9042760-CA93-43C0-A535-85540EDA45EF/TRA_Plugins.dll</FileName>
+  <PluginTypes>
+    <PluginType AssemblyQualifiedName="TRA_Plugins.Financials.PostCreateFinancialsCreateDefaultRecordsForIncomeAndExpenseAndHousing, TRA_Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=2e045c80959b7504" PluginTypeId="ef0d5fc0-1539-40f5-8387-7c4682d48cc5" Name="TRA_Plugins.Financials.PostCreateFinancialsCreateDefaultRecordsForIncomeAndExpenseAndHousing">
+      <FriendlyName>b6873e23-756d-4bc0-bcb8-548a9d6a2b29</FriendlyName>
+    </PluginType>
+    <PluginType AssemblyQualifiedName="TRA_Plugins.HousingAndUtilities.PostCreateHousingAndUtilitiesCalculateTotalHousingExpense, TRA_Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=2e045c80959b7504" PluginTypeId="c4d12172-8a6b-4982-b263-e23027ac6f80" Name="TRA_Plugins.HousingAndUtilities.PostCreateHousingAndUtilitiesCalculateTotalHousingExpense">
+      <FriendlyName>e89ca38e-0ef1-4acf-be70-3f298e00db9b</FriendlyName>
+    </PluginType>
+    <PluginType AssemblyQualifiedName="TRA_Plugins.HousingAndUtilities.PostDeleteHousingAndUtilitiesCalculateTotalHousingExpense, TRA_Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=2e045c80959b7504" PluginTypeId="24b32497-9612-44c9-b837-b9a38d2e267b" Name="TRA_Plugins.HousingAndUtilities.PostDeleteHousingAndUtilitiesCalculateTotalHousingExpense">
+      <FriendlyName>2e9c768d-ee49-4239-8d61-7baa2e6f2705</FriendlyName>
+    </PluginType>
+    <PluginType AssemblyQualifiedName="TRA_Plugins.HousingAndUtilities.PostUpdateHousingAndUtilitiesCalculateTotalHousingExpense, TRA_Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=2e045c80959b7504" PluginTypeId="c7b1602b-60a1-4818-8482-ce978dfe395a" Name="TRA_Plugins.HousingAndUtilities.PostUpdateHousingAndUtilitiesCalculateTotalHousingExpense">
+      <FriendlyName>ee9f1335-b9b3-46e7-8780-db78eb333326</FriendlyName>
+    </PluginType>
+    <PluginType AssemblyQualifiedName="TRA_Plugins.MonthlyBusinessExpense.PostCreateMonthlyExpenseFinancialsCalculateTotalAmount, TRA_Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=2e045c80959b7504" PluginTypeId="d42ada0a-d89d-40ee-aab2-1f6079ca43ed" Name="TRA_Plugins.MonthlyBusinessExpense.PostCreateMonthlyExpenseFinancialsCalculateTotalAmount">
+      <FriendlyName>c4b44f9a-ab87-43cb-9f33-307d38e36ea8</FriendlyName>
+    </PluginType>
+    <PluginType AssemblyQualifiedName="TRA_Plugins.MonthlyBusinessExpense.PostDeleteMonthlyExpenseFinancialsCalculateTotalAmount, TRA_Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=2e045c80959b7504" PluginTypeId="5ce6c12f-6a95-458a-8dcb-c228d61804c8" Name="TRA_Plugins.MonthlyBusinessExpense.PostDeleteMonthlyExpenseFinancialsCalculateTotalAmount">
+      <FriendlyName>62e7eb4e-5baf-4a94-9615-d7d89f5ff11c</FriendlyName>
+    </PluginType>
+    <PluginType AssemblyQualifiedName="TRA_Plugins.MonthlyBusinessExpense.PostUpdateMonthlyExpenseFinancialCalculateTotalAmount, TRA_Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=2e045c80959b7504" PluginTypeId="c6ee2fa5-fad1-4da3-9771-a3b8d68a9a5e" Name="TRA_Plugins.MonthlyBusinessExpense.PostUpdateMonthlyExpenseFinancialCalculateTotalAmount">
+      <FriendlyName>77f75496-7561-447a-8554-93b6740f2b2f</FriendlyName>
+    </PluginType>
+    <PluginType AssemblyQualifiedName="TRA_Plugins.MonthlyIncome.PostCreateMonthlyIncomeFinancialsCalculateTotalAmount, TRA_Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=2e045c80959b7504" PluginTypeId="1b71c2c6-b1ee-4831-85a0-fdddade3d956" Name="TRA_Plugins.MonthlyIncome.PostCreateMonthlyIncomeFinancialsCalculateTotalAmount">
+      <FriendlyName>969a2733-dd43-464f-86c7-8d40adfb06aa</FriendlyName>
+    </PluginType>
+    <PluginType AssemblyQualifiedName="TRA_Plugins.MonthlyIncome.PostDeleteMonthlyIncomeFinancialsCaculateTotalAmount, TRA_Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=2e045c80959b7504" PluginTypeId="43ae6a88-3a1c-4643-972f-22365dab728e" Name="TRA_Plugins.MonthlyIncome.PostDeleteMonthlyIncomeFinancialsCaculateTotalAmount">
+      <FriendlyName>a41714dd-16c4-4f72-930f-f3719954b528</FriendlyName>
+    </PluginType>
+    <PluginType AssemblyQualifiedName="TRA_Plugins.MonthlyIncome.PostUpdateMonthlyIncomeFinancialsCalculateTotalamount, TRA_Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=2e045c80959b7504" PluginTypeId="e101c16b-98f2-4478-bf30-afabcc1d57b5" Name="TRA_Plugins.MonthlyIncome.PostUpdateMonthlyIncomeFinancialsCalculateTotalamount">
+      <FriendlyName>cecbe0f9-affc-4eb0-8b1a-23eee62b5ad7</FriendlyName>
+    </PluginType>
+    <PluginType AssemblyQualifiedName="TRA_Plugins.Opportunity.PostCreateInvoiceCreateInvoice, TRA_Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=2e045c80959b7504" PluginTypeId="f65d99e4-0753-40f8-93b3-a49449dc4d5b" Name="TRA_Plugins.Opportunity.PostCreateInvoiceCreateInvoice">
+      <FriendlyName>2a4b8619-4c7a-4351-ae1c-1d0a7f15d7cd</FriendlyName>
+    </PluginType>
+    <PluginType AssemblyQualifiedName="TRA_Plugins.Opportunity.PostCreateOpportunityCreateAccountFromLead, TRA_Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=2e045c80959b7504" PluginTypeId="28128540-5d0f-4ff1-a638-dcc3f556b9e8" Name="TRA_Plugins.Opportunity.PostCreateOpportunityCreateAccountFromLead">
+      <FriendlyName>37e0c612-85c6-4b36-a6a9-73f0c4137cc7</FriendlyName>
+    </PluginType>
+    <PluginType AssemblyQualifiedName="TRA_Plugins.Opportunity.PostCreateOpportunityCreateDefaultFieldsForMonthlyIncomeAndExpense, TRA_Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=2e045c80959b7504" PluginTypeId="bb5bfeae-9149-4cbb-9eba-809d5afc2acd" Name="TRA_Plugins.Opportunity.PostCreateOpportunityCreateDefaultFieldsForMonthlyIncomeAndExpense">
+      <FriendlyName>290568f7-3b4b-4615-8b31-c830102d3917</FriendlyName>
+    </PluginType>
+    <PluginType AssemblyQualifiedName="TRA_Plugins.Opportunity.PostCreateOpportunityCreateOpportunityLine, TRA_Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=2e045c80959b7504" PluginTypeId="da81dfd3-b67e-43fe-b200-f3c0ed4f5ebc" Name="TRA_Plugins.Opportunity.PostCreateOpportunityCreateOpportunityLine">
+      <FriendlyName>370984d8-5eb4-44ce-bacf-2e0c87a5e265</FriendlyName>
+    </PluginType>
+    <PluginType AssemblyQualifiedName="TRA_Plugins.Opportunity.PostCreateOpportunityCreateTaxYears, TRA_Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=2e045c80959b7504" PluginTypeId="de338bfd-f8c2-45b6-b768-a33c07238e37" Name="TRA_Plugins.Opportunity.PostCreateOpportunityCreateTaxYears">
+      <FriendlyName>b93b3d25-4d97-4e0d-a4ca-0eb971a77f5f</FriendlyName>
+    </PluginType>
+    <PluginType AssemblyQualifiedName="TRA_Plugins.Opportunity.PostUpdateOpportunityUpdateSpouseContact, TRA_Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=2e045c80959b7504" PluginTypeId="7510375f-c9ce-4da1-b3cd-9793307d7dac" Name="TRA_Plugins.Opportunity.PostUpdateOpportunityUpdateSpouseContact">
+      <FriendlyName>d2e529db-d0e2-4366-9c94-62ff21e349d2</FriendlyName>
+    </PluginType>
+    <PluginType AssemblyQualifiedName="TRA_Plugins.Opportunity.PreCreateOpportunityPopultePriceList, TRA_Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=2e045c80959b7504" PluginTypeId="c283fd90-6f60-4f19-acdf-0425910e1de2" Name="TRA_Plugins.Opportunity.PreCreateOpportunityPopultePriceList">
+      <FriendlyName>2c24621c-629b-44e8-b803-d0e52dda98e6</FriendlyName>
+    </PluginType>
+    <PluginType AssemblyQualifiedName="TRA_Plugins.Other_Assets.PostCreateOtherAssetsCalculateAssetsValue, TRA_Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=2e045c80959b7504" PluginTypeId="2628202b-a4d9-4311-9580-7ffd08839ce4" Name="TRA_Plugins.Other_Assets.PostCreateOtherAssetsCalculateAssetsValue">
+      <FriendlyName>49668637-4573-47a4-83c3-7aa61e0ab0dd</FriendlyName>
+    </PluginType>
+    <PluginType AssemblyQualifiedName="TRA_Plugins.Other_Assets.PostDeleteOtherAssetsCalculateAssetAndTotalAsset, TRA_Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=2e045c80959b7504" PluginTypeId="e15b0670-6e2b-48b0-b57e-3b9110448f82" Name="TRA_Plugins.Other_Assets.PostDeleteOtherAssetsCalculateAssetAndTotalAsset">
+      <FriendlyName>ed5950c4-9b6b-45dc-b639-e63a7bd90cd1</FriendlyName>
+    </PluginType>
+    <PluginType AssemblyQualifiedName="TRA_Plugins.Other_Assets.PostUpdateOtherAssetsCalculateAssetsValue, TRA_Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=2e045c80959b7504" PluginTypeId="deeb772d-9e3e-45e8-853b-cb99ca908991" Name="TRA_Plugins.Other_Assets.PostUpdateOtherAssetsCalculateAssetsValue">
+      <FriendlyName>c7402fa8-b56b-491c-93e5-41455f309a58</FriendlyName>
+    </PluginType>
+    <PluginType AssemblyQualifiedName="TRA_Plugins.OtherExpenses.PostCreateOtherExpenseCalculateTotalOtherExpenses, TRA_Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=2e045c80959b7504" PluginTypeId="7dba65d2-188f-4d99-b33f-f378c9b0c619" Name="TRA_Plugins.OtherExpenses.PostCreateOtherExpenseCalculateTotalOtherExpenses">
+      <FriendlyName>5c1e6515-8c1f-43a3-bc8a-afc961630074</FriendlyName>
+    </PluginType>
+    <PluginType AssemblyQualifiedName="TRA_Plugins.OtherExpenses.PostDeleteOtherExpensesCalculatetotalExpense, TRA_Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=2e045c80959b7504" PluginTypeId="313b4035-1e7a-475e-9cab-6a3303bbcbb5" Name="TRA_Plugins.OtherExpenses.PostDeleteOtherExpensesCalculatetotalExpense">
+      <FriendlyName>bdd3c8fb-6326-4779-b59e-7615968d662e</FriendlyName>
+    </PluginType>
+    <PluginType AssemblyQualifiedName="TRA_Plugins.OtherExpenses.PostUpdateOtherExpensesCalculateTotalExpense, TRA_Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=2e045c80959b7504" PluginTypeId="59e21fdf-32eb-4277-a9e3-42063ef4fc6d" Name="TRA_Plugins.OtherExpenses.PostUpdateOtherExpensesCalculateTotalExpense">
+      <FriendlyName>6d7b9523-8ba3-43df-8d66-93cb730b67e5</FriendlyName>
+    </PluginType>
+    <PluginType AssemblyQualifiedName="TRA_Plugins.Years.PreCreateYearValidateTaxYear, TRA_Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=2e045c80959b7504" PluginTypeId="a825955f-464a-414c-ac0e-9fa9b0410301" Name="TRA_Plugins.Years.PreCreateYearValidateTaxYear">
+      <FriendlyName>c3125a69-06b4-492b-9db6-bf3f23645f6b</FriendlyName>
+    </PluginType>
+    <PluginType AssemblyQualifiedName="TRA_Plugins.Years.PreUpdateYearValidateTaxYear, TRA_Plugins, Version=1.0.0.0, Culture=neutral, PublicKeyToken=2e045c80959b7504" PluginTypeId="4e7e8a2d-6fa1-4b40-b8aa-d4cd1d3fefb1" Name="TRA_Plugins.Years.PreUpdateYearValidateTaxYear">
+      <FriendlyName>2aba5321-5d5d-4c7b-93d6-e2396b898197</FriendlyName>
+    </PluginType>
+  </PluginTypes>
+</PluginAssembly>

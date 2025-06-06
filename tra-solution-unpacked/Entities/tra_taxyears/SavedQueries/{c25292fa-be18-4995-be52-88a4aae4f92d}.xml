@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{c25292fa-be18-4995-be52-88a4aae4f92d}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="tra_name" select="1" icon="1" preview="1">
+        <row name="result" id="tra_taxyearsid">
+          <cell name="tra_year" width="100" />
+          <cell name="tra_owetaxestofederal" width="163" />
+          <cell name="tra_owetaxestostate" width="149" />
+          <cell name="tra_owetaxestolocal" width="153" />
+          <cell name="tra_unfiledtaxestofederal" width="179" />
+          <cell name="tra_unfiledtaxestostate" width="165" />
+          <cell name="tra_unfiledtaxestolocal" width="169" />
+          <cell name="tra_unfiledbusinesstaxestofederal" width="232" />
+          <cell name="tra_unfiledbusinesstaxestostate" width="218" />
+          <cell name="tra_unfiledbusinesstaxestolocal" width="222" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="tra_taxyears">
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="tra_year" />
+          <attribute name="tra_owetaxestofederal" />
+          <attribute name="tra_owetaxestostate" />
+          <attribute name="tra_owetaxestolocal" />
+          <attribute name="tra_unfiledtaxestofederal" />
+          <attribute name="tra_unfiledtaxestostate" />
+          <attribute name="tra_unfiledtaxestolocal" />
+          <attribute name="tra_unfiledbusinesstaxestofederal" />
+          <attribute name="tra_unfiledbusinesstaxestostate" />
+          <attribute name="tra_unfiledbusinesstaxestolocal" />
+          <order attribute="tra_year" descending="true" />
+          <attribute name="tra_taxyearsid" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Tax Years" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

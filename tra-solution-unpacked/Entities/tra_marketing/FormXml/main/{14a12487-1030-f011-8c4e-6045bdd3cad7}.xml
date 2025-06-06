@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{14a12487-1030-f011-8c4e-6045bdd3cad7}</formid>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form headerdensity="HighWithControls">
+      <tabs>
+        <tab verticallayout="true" id="{cb972f5a-7d03-4c63-82f7-baacb4de8787}" IsUserDefined="1" name="tab_general" labelid="{e97c220f-8c4e-46c0-80e2-e7e4bb894b88}">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{f069e148-480c-49d6-95aa-8886251e84ee}" name="section_general" columns="1" labelid="{bcb60563-7890-426f-8c1c-dcccb9198e75}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{e0147426-13c8-4077-b4e1-267ebee6e8ae}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Do not allow Phone Calls" languagecode="1033" />
+                        </labels>
+                        <control id="tra_donotphone" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="tra_donotphone" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{408bde11-3ed7-44ba-a9cb-7bc241dde89c}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Marketing Material" languagecode="1033" />
+                        </labels>
+                        <control id="tra_donotsendmm" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="tra_donotsendmm" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{10d10674-237c-4e04-9dc5-db6434ecd361}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="SMS Permitted" languagecode="1033" />
+                        </labels>
+                        <control id="tra_smspermitted" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="tra_smspermitted" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{add52136-3aea-45d1-880f-d9e114ed8dfd}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{b519d921-3b26-40b9-928b-7d53112440ed}" showlabel="false" labelid="{478c7c42-bbe8-46dc-ac78-4b6f47115eb7}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{c121e55d-48d9-49c0-8382-a255c83575da}" showlabel="false" labelid="{daa9ebbf-f055-4e17-8e18-be8fad46bf2e}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{1cf67b2d-b5a3-40ec-8d44-334202a226d9}" showlabel="false" labelid="{55448b84-fcad-4552-a8a8-ee587d9f7a40}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{dfb6d7ae-c061-42f7-83c4-d4f1e6f309e4}" colspan="1" rowspan="1" labelid="{6be314a3-c620-4eb8-aaeb-7162219b1ef4}">
+              <labels>
+                <label description="Owner" languagecode="1033" />
+              </labels>
+              <control id="header_ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{bb781882-d2ac-4e8d-930e-fc81f0ec3ad9}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{8c1dd0bb-08f5-4799-b344-5f9b416b4ddb}" showlabel="false" labelid="{dfc53a4c-3c4e-4ea2-ac72-6c81e4655f05}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{fc93e6a1-8c9f-45c8-92ef-8c3e21059b3b}" showlabel="false" labelid="{9aa162d7-d1e4-4419-9d17-7ce4e0633ed8}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{47b17a03-c44e-4d19-ab60-74cca28bf395}" showlabel="false" labelid="{f8006cf8-021f-4131-a364-fc222e0a7675}">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <DisplayConditions Order="1" FallbackForm="true">
+        <Role Id="{627090ff-40a3-4053-8790-584edc5be201}" />
+        <Role Id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="TRA Marketing 2" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

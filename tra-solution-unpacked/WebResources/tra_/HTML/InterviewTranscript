@@ -1,0 +1,876 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interview Script</title>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+    <style>
+        body {
+            font-family: "Segoe UI", sans-serif;
+            margin: 0;
+            background: #f3f2f1;
+            display: flex;
+            height: 100vh;
+        }
+
+        .container {
+            background: white;
+            padding: 20px;
+            width: 100%;
+            min-height: 70vh;
+            display: flex;
+            flex-direction: column;
+            overflow: visible;
+        }
+
+        .header {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .section {
+            display: none;
+            height: calc(100vh - 107px);
+            overflow-y: auto;
+            scrollbar-gutter: stable;
+        }
+
+        .active {
+            display: block;
+        }
+
+        .buttons {
+            float: right;
+            margin-top: 10px;
+            /* display: flex; */
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .btn {
+            float: right;
+            background: #0078d4;
+            color: white;
+            padding: 10px 16px;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+            font-size: 14px;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .btn:hover {
+            background: #005a9e;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-secondary {
+            float: left;
+            background: white;
+            color: #242424;
+            border: solid 1px #242424;
+            padding: 10px 16px;
+            border-radius: 4px;
+            font-size: 14px;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .btn-secondary:hover {
+            background: #f3f2f1;
+        }
+
+        .btn:disabled {
+            background: #d0d0d0;
+            cursor: not-allowed;
+        }
+
+        .btn-secondary:disabled {
+            border-color: #d0d0d0;
+            color: #a0a0a0;
+            cursor: not-allowed;
+        }
+
+        .dynamicSpan {
+            color: #0078d4;
+        }
+
+        .dropdown-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-button {
+            background-color: white;
+            border: 1px solid #ccc;
+            padding: 8px 12px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        .dropdown-menu {
+            position: absolute;
+            bottom: 100%;
+            /* Opens above */
+            right: 0px;
+            margin-bottom: 4px;
+            list-style: none;
+            padding: 0;
+            background-color: white;
+            border: 1px solid #ccc;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 4px;
+            z-index: 9999;
+            min-width: 180px;
+            display: none;
+            max-height: 200px;
+            overflow-y: auto;
+        }
+
+        .dropdown-menu li {
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .dropdown-menu li:hover {
+            background-color: #f0f0f0;
+        }
+
+        #qualifyButtons {
+            float: right;
+            display: none;
+        }
+
+        #qualifyButtons>* {
+            margin-left: 8px;
+        }
+    </style>
+</head>
+
+<body onfocusout="parent.setEmailRange();" style="overflow-wrap: break-word;">
+    <div class="container" style="font-family: undefined;">
+        <div class="header" id="sectionTitle">Section</div>
+        <div id="dynamicContent" class="section active"></div>
+
+        <div class="buttons">
+            <button id="prevBtn" class="btn btn-secondary" onclick="handlePrevClick()" style="display: none;">
+                Previous
+            </button>
+            <button id="nextBtn" class="btn" onclick="handleNextClick()">
+                Next
+            </button>
+            <div id="qualifyButtons" style="display: none; align-items: center;">
+                <button class="btn" onclick="qualifyLead()">Qualify</button>
+                <div class="dropdown-container">
+                    <button class="dropdown-button" onclick="toggleDropdown()">Disqualify ▼</button>
+                    <ul class="dropdown-menu" id="disqualifyMenu"></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        let transcripts = [];
+        let currentIndex = 1;
+        const FIELD_MAPPINGS = {};
+        let currentUserName = "";
+        let currentTranscriptName = "";
+        let currentEntityName = ""; // "lead" or "opportunity"
+        let startSection;
+        let currentTableType;
+        let onchangeHandlers = {};
+
+        const disqualifyReasons = [
+            { label: "Lost", code: 4 },
+            { label: "Cannot Contact", code: 5 },
+            { label: "No Longer Interested", code: 6 },
+            { label: "Canceled", code: 7 }
+        ];
+
+        function fetchCurrentUser() {
+            try {
+                currentUserName =
+                    window.parent.Xrm.Utility.getGlobalContext().userSettings
+                        .userName || "[Current User]";
+            } catch (error) {
+                console.error("Error fetching current user:", error);
+                currentUserName = "[Current User]";
+            }
+        }
+
+        async function fetchTranscripts() {
+            try {
+                let result = await window.parent.Xrm.WebApi.retrieveMultipleRecords(
+                    "tra_transcript",
+                    "?$select=tra_name,tra_transcriptbody,tra_formsectionname,tra_tabletype&$expand=tra_NextSection($select=tra_name,tra_tabletype),tra_PreviousSection($select=tra_name,tra_tabletype)&$filter=statecode eq 0&$orderby=createdon asc"
+                );
+                transcripts = result.entities.map((e) => ({
+                    tra_transcriptid: e.tra_transcriptid,
+                    tra_name: e.tra_name,
+                    tra_transcriptbody: e.tra_transcriptbody.replace(
+                        /{{currentuser}}/gi,
+                        `<span class="dynamicSpan">${currentUserName}</span>`
+                    ),
+                    tra_tabletype: e.tra_tabletype,
+                    tra_nextsection_tabletype: e.tra_NextSection?.tra_tabletype,
+                    tra_nextsection_name: e.tra_NextSection?.tra_name,
+                    tra_previoussection_name: e.tra_PreviousSection?.tra_name,
+                    tra_formsectionname: e.tra_formsectionname,
+                }));
+
+                await extractDynamicFields();
+                await loadDataFromCRM();
+                await loadDynamicContent();
+            } catch (error) {
+                console.error("Error fetching transcripts:", error);
+            }
+        }
+
+        async function extractDynamicFields() {
+            transcripts.forEach((t) => {
+                const matches = t.tra_transcriptbody.match(/{{\w+}}/g);
+                if (matches) {
+                    matches.forEach((field) => {
+                        const fieldName = field.replace(/{{|}}/g, "");
+                        if (fieldName.toLowerCase() !== "currentuser") {
+                            if (!FIELD_MAPPINGS[fieldName]) {
+                                FIELD_MAPPINGS[fieldName] = fieldName;
+                            }
+                        }
+                    });
+                }
+            });
+        }
+
+        async function loadDataFromCRM() {
+            let formContext = window.parent.Xrm?.Page;
+            if (!formContext) {
+                console.error("Form context is undefined.");
+                return;
+            }
+            const formType = formContext.ui.getFormType();
+            try {
+                Object.keys(FIELD_MAPPINGS).forEach((crmField) => {
+                    let value;
+                    if (formType === 1) { // Create Form
+                        value = formContext.getAttribute(crmField)?.getValue() || `[${crmField}]`;
+                    } else { // Update or other forms
+                        const attribute = formContext.getAttribute(crmField);
+                        value = attribute?.getValueInternal()?.formatted || `[${crmField}]`;
+                    }
+                    FIELD_MAPPINGS[crmField] = value;
+                });
+                await attachOnChangeEvents(formContext);
+                await loadDynamicContent();
+            } catch (error) {
+                console.error("Error loading CRM data. Falling back to basic field mapping:", error);
+                // Simple fallback
+                Object.keys(FIELD_MAPPINGS).forEach((crmField) => {
+                    FIELD_MAPPINGS[crmField] = `[${crmField}]`;
+                });
+                await loadDynamicContent();
+            }
+
+        }
+
+        async function attachOnChangeEvents(formContext) {
+            Object.keys(FIELD_MAPPINGS).forEach((crmField) => {
+                const attribute = formContext.getAttribute(crmField);
+                if (attribute) {
+                    const handler = async () => {
+                        const value = attribute.getValue() || `[${crmField}]`;
+                        FIELD_MAPPINGS[crmField] = value;
+                        await loadDynamicContent();
+                    };
+
+                    attribute.addOnChange(handler);
+                    onchangeHandlers[crmField] = handler; // store reference
+                }
+            });
+        };
+
+        function removeOnChangeEvents(formContext) {
+            Object.keys(onchangeHandlers).forEach((crmField) => {
+                const attribute = formContext.getAttribute(crmField);
+                const handler = onchangeHandlers[crmField];
+                if (attribute && handler) {
+                    attribute.removeOnChange(handler);
+                }
+            });
+
+        }
+
+
+        async function updateButtons(current, filteredTranscripts) {
+            const formContext = window.parent.Xrm?.Page;
+            const isLead = current?.tra_tabletype === 211050000;
+            const isOpportunity = current?.tra_tabletype === 211050001;
+
+            const next = filteredTranscripts.find(t => t.tra_name === current?.tra_nextsection_name);
+            const nextBtn = document.getElementById("nextBtn");
+            const qualifyContainer = document.getElementById("qualifyButtons");
+
+            let state = null;
+            try {
+                state = formContext.getAttribute("statecode")?.getValue();
+            } catch (err) {
+                console.log("Unable to read statecode");
+            }
+
+            const isLeadQualifiedOrDisqualified = isLead && (state === 1 || state === 2);
+            const isTypeChanged = next && current?.tra_tabletype !== next?.tra_tabletype;
+
+            if (isLead) {
+                if (isTypeChanged && !isLeadQualifiedOrDisqualified) {
+                    // Lead and type is changing, and not already qualified/disqualified
+                    nextBtn.style.display = "none";
+                    qualifyContainer.style.display = "flex";
+                } else if (!isLeadQualifiedOrDisqualified) {
+                    // Lead with same type and not yet qualified/disqualified
+                    nextBtn.style.display = current?.tra_nextsection_name ? "inline-block" : "none";
+                    qualifyContainer.style.display = "none";
+                } else {
+                    // Lead but already qualified/disqualified
+                    nextBtn.style.display = "none";
+                    qualifyContainer.style.display = "none";
+                }
+            } else if (isOpportunity) {
+                // Opportunity: hide qualify/disqualify always
+                nextBtn.style.display = current?.tra_nextsection_name ? "inline-block" : "none";
+                qualifyContainer.style.display = "none";
+            } else {
+                nextBtn.style.display = current?.tra_nextsection_name ? "inline-block" : "none";
+                qualifyContainer.style.display = "none";
+            }
+            document.getElementById("prevBtn").style.display = current?.tra_previoussection_name ? "inline-block" : "none";
+        }
+
+        async function nextSection() {
+            if (currentIndex < transcripts.length - 1) {
+                currentIndex++;
+                await loadDynamicContent();
+            }
+        }
+
+        async function prevSection() {
+            if (currentIndex > 0) {
+                currentIndex--;
+                await loadDynamicContent();
+            }
+        }
+
+        let nextAction = null;
+
+        async function handlePrevClick() {
+            const currentTranscript = transcripts.find(
+                (t) => t.tra_name === currentTranscriptName
+            );
+            const prevName = currentTranscript?.tra_previoussection_name;
+
+            if (prevName) {
+                nextAction = async () => {
+                    currentTranscriptName = prevName;
+                    await loadDynamicContent();
+                };
+                await saveAndContinue();
+            }
+        }
+
+        async function handleNextClick() {
+            const currentTranscript = transcripts.find(
+                (t) => t.tra_name === currentTranscriptName
+            );
+            const nextName = currentTranscript?.tra_nextsection_name;
+            if (nextName) {
+                nextAction = async () => {
+                    currentTranscriptName = nextName;
+                    await loadDynamicContent();
+                };
+                await saveAndContinue();
+            }
+
+            const nextType = currentTranscript?.tra_nextsection_tabletype;
+            if (
+                currentTranscript?.tra_tabletype === 211050000 && // assuming 211050000 = Lead
+                nextType &&
+                nextType !== 211050000
+            ) {
+                // Show Qualify/Disqualify, hide Next
+                document.getElementById("nextBtn").style.display = "none";
+                showQualifyDisqualifyButtons(); // function you define to render them
+                return;
+            }
+        }
+
+        function showQualifyDisqualifyButtons() {
+            document.getElementById("qualifyButtons").style.display = "flex";
+        }
+
+        async function saveAndContinue() {
+            let formContext = window.parent.Xrm?.Page;
+            if (!formContext) {
+                console.error("Form context not found.");
+                return;
+            }
+            if (canSaveForm()) {
+                window.parent.Xrm.Utility.showProgressIndicator("Please wait...");
+                try {
+                    // Save form first (sync/blocking)
+                    await formContext.data.save();
+                    console.log("Form saved successfully.");
+                    // Immediately close the loader so UI remains snappy
+                    window.parent.Xrm.Utility.closeProgressIndicator();
+                    // Continue with next UI action
+                    if (nextAction) {
+                        nextAction();
+                    }
+                    // Do background update of lookup field (non-blocking)
+                    const leadId = formContext.data.entity.getId()?.replace("{", "").replace("}", "");
+                    if (leadId) {
+                        const currentTranscript = transcripts.find(t => t.tra_name === currentTranscriptName);
+                        if (currentTranscript?.tra_transcriptid) {
+                            const payload = {
+                                "tra_currentsection@odata.bind": `/tra_transcripts(${currentTranscript?.tra_transcriptid})`
+                            };
+                            await window.parent.Xrm.WebApi.updateRecord(currentEntityName, leadId, payload);
+                        }
+                    }
+                } catch (error) {
+                    console.error("Error in saveAndContinue:", error);
+                    window.parent.Xrm.Utility.closeProgressIndicator(); // ensure loader is closed on error
+                }
+
+            } else {
+                // If form cannot be saved but user can continue, proceed
+                if (nextAction) {
+                    nextAction();
+                }
+            }
+        }
+        async function qualifyLead() {
+
+            const saveResult = await window.parent.Xrm?.Page.data.save();
+            if (saveResult?.error) {
+                console.error("Form save failed:", saveResult.error.message);
+                await window.parent.Xrm.Navigation.openErrorDialog({ message: saveResult.error.message });
+                return;
+            }
+            const formContext = window.parent.Xrm.Page;
+            const estimatedDebtAttr = formContext.getAttribute("tra_estimateddebt");
+            const estimatedDebt = estimatedDebtAttr ? estimatedDebtAttr.getValue() : 0;
+
+            // Get lead name
+            const leadName = formContext.getAttribute("fullname")?.getValue();
+
+            if (estimatedDebt < 5000) {
+                const confirmResult = await window.parent.Xrm.Navigation.openConfirmDialog({
+                    title: "Less Estimated Debt",
+                    text: "The estimated debt is less than $5,000. Are you sure you want to qualify this lead?"
+                });
+
+                if (!confirmResult.confirmed) return;
+            }
+
+            let opportunityId = null;
+
+            try {
+                window.parent.Xrm.Utility.showProgressIndicator("Please wait...");
+
+                const leadId = formContext.data.entity.getId().replace("{", "").replace("}", "");
+                let contactId = null;
+
+                // Check for existing contact with the same name
+                const contactFetch = await fetch(
+                    `${formContext.context.getClientUrl()}/api/data/v9.0/contacts?$filter=fullname eq '${leadName}'`,
+                    {
+                        method: "GET",
+                        headers: {
+                            "OData-MaxVersion": "4.0",
+                            "OData-Version": "4.0",
+                            "Accept": "application/json",
+                            "Content-Type": "application/json; charset=utf-8"
+                        }
+                    }
+                );
+
+                if (!contactFetch.ok) {
+                    const errorData = await contactFetch.json();
+                    throw new Error(errorData?.error?.message || `HTTP ${contactFetch.status}`);
+                }
+
+                const contactResults = await contactFetch.json();
+                if (contactResults.value.length > 0) {
+                    contactId = contactResults.value[0].contactid;
+
+                    // Update the lead with the existing contact
+                    await fetch(`${formContext.context.getClientUrl()}/api/data/v9.0/leads(${leadId})`, {
+                        method: "PATCH",
+                        headers: {
+                            "OData-MaxVersion": "4.0",
+                            "OData-Version": "4.0",
+                            "Accept": "application/json",
+                            "Content-Type": "application/json; charset=utf-8"
+                        },
+                        body: JSON.stringify({
+                            "parentcontactid@odata.bind": `/contacts(${contactId})`
+                        })
+                    });
+                }
+
+                // Qualify the lead
+                const entity = {
+                    CreateAccount: contactId ? false : true,
+                    CreateContact: contactId ? false : true,  // Only create contact if not already found
+                    CreateOpportunity: true,
+                    Status: 3,
+                    SuppressDuplicateDetection: true
+                };
+
+                const response = await fetch(
+                    `${formContext.context.getClientUrl()}/api/data/v9.0/leads(${leadId})/Microsoft.Dynamics.CRM.QualifyLead`,
+                    {
+                        method: "POST",
+                        headers: {
+                            "OData-MaxVersion": "4.0",
+                            "OData-Version": "4.0",
+                            "Accept": "application/json",
+                            "Content-Type": "application/json; charset=utf-8",
+                            "MSCRM.SuppressDuplicateDetection": "true"
+                        },
+                        body: JSON.stringify(entity)
+                    }
+                );
+
+                if (!response.ok) {
+                    const errorData = await response.json();
+                    throw new Error(errorData?.error?.message || `HTTP ${response.status}`);
+                }
+
+                const result = await response.json();
+                const opportunityRef = result?.value?.find(item => item["@odata.type"] === "#Microsoft.Dynamics.CRM.opportunity");
+                if (opportunityRef?.opportunityid) {
+                    opportunityId = opportunityRef.opportunityid;
+                } else {
+                    throw new Error("Opportunity not returned in response.");
+                }
+                // Set tra_closedby to current user
+                const currentUserId = formContext.context.userSettings.userId.replace("{", "").replace("}", "");
+
+                await fetch(`${formContext.context.getClientUrl()}/api/data/v9.0/leads(${leadId})`, {
+                    method: "PATCH",
+                    headers: {
+                        "OData-MaxVersion": "4.0",
+                        "OData-Version": "4.0",
+                        "Accept": "application/json",
+                        "Content-Type": "application/json; charset=utf-8"
+                    },
+                    body: JSON.stringify({
+                        "tra_closedby@odata.bind": `/systemusers(${currentUserId})`
+                    })
+                });
+            } catch (error) {
+                console.error("Error qualifying lead:", error);
+                await window.parent.Xrm.Navigation.openErrorDialog({ message: error.message });
+            } finally {
+                window.parent.Xrm.Utility.closeProgressIndicator();
+
+                if (opportunityId) {
+                    await window.parent.Xrm.Navigation.openForm({
+                        entityName: "opportunity",
+                        entityId: opportunityId
+                    });
+                }
+            }
+        }
+
+        function toggleDropdown() {
+            const menu = document.getElementById("disqualifyMenu");
+            menu.style.display = menu.style.display === "block" ? "none" : "block";
+        }
+
+        // Optionally close when clicking outside
+        window.addEventListener("click", function (e) {
+            const menu = document.getElementById("disqualifyMenu");
+            if (!e.target.closest(".dropdown-container")) {
+                menu.style.display = "none";
+            }
+        });
+
+
+        function renderDisqualifyOptions() {
+            const menu = document.getElementById("disqualifyMenu");
+            menu.innerHTML = ""; // Clear existing
+            disqualifyReasons.forEach(reason => {
+                const li = document.createElement("li");
+                li.textContent = reason.label;
+                li.onclick = () => disqualifyLead(reason.code); // Pass code to disqualify
+                menu.appendChild(li);
+            });
+        }
+
+        async function disqualifyLead(statusCode) {
+            const saveResult = await window.parent.Xrm?.Page.data.save();
+            if (saveResult?.error) {
+                console.error("Form save failed:", saveResult.error.message);
+                await window.parent.Xrm.Navigation.openErrorDialog({ message: saveResult.error.message });
+                return;
+            }
+            try {
+                window.parent.Xrm.Utility.showProgressIndicator("Please wait...");
+                const leadId = window.parent.Xrm.Page.data.entity.getId().replace("{", "").replace("}", "");
+
+                const response = await fetch(`${window.parent.Xrm.Page.context.getClientUrl()}/api/data/v9.0/leads(${leadId})`, {
+                    method: "PATCH",
+                    headers: {
+                        "Content-Type": "application/json",
+                        "OData-MaxVersion": "4.0",
+                        "OData-Version": "4.0",
+                        "Accept": "application/json"
+                    },
+                    body: JSON.stringify({
+                        "statuscode": statusCode,
+                        "statecode": 2 // Disqualified
+                    })
+                });
+                if (!response.ok) {
+                    const errorData = await response.json();
+                    const message = errorData?.error?.message || `HTTP ${response.status} - ${response.statusText}`;
+                    throw new Error(message);
+                }
+                // Show a success message
+                document.getElementById("disqualifyMenu").style.display = "none";
+                nextBtn.style.display = "none";
+                qualifyContainer.style.display = "none";
+            } catch (error) {
+                console.error("Error disqualifying lead:", error);
+                await window.parent.Xrm.Navigation.openErrorDialog({ message: error.message });
+            } finally {
+                // Ensure the progress indicator is closed and reload the page
+                window.parent.Xrm.Utility.closeProgressIndicator();
+                // Refresh the form
+                window.parent.Xrm.Page.data.refresh();
+            }
+        }
+
+
+        async function replaceDynamicFields(text) {
+            return text.replace(/{{\w+}}/g, (match) => {
+                let fieldName = match.replace(/{{|}}/g, "");
+                return (
+                    `<span class="dynamicSpan">${FIELD_MAPPINGS[fieldName]}</span>` ||
+                    `{{${fieldName}}}`
+                );
+            });
+        }
+
+        function canSaveForm() {
+            if (currentEntityName === "lead") {
+                const statusCode = window.parent.Xrm.Page.getAttribute("statuscode")?.getValue();
+                return statusCode === 1; // Qualified/Active
+            }
+            return true; // Opportunity doesn't need the same check
+        }
+
+        async function loadDynamicContent() {
+            const formContext = window.parent.Xrm?.Page;
+
+            const currentTranscript = transcripts.find(t => t.tra_name === currentTranscriptName);
+
+            if (!currentTranscript) {
+                console.error("Transcript not found for name:", currentTranscriptName);
+                return;
+            }
+
+            const {
+                tra_name,
+                tra_transcriptbody,
+                tra_formsectionname,
+                tra_nextsection_name,
+                tra_previoussection_name
+            } = currentTranscript;
+
+            //  Hide ALL sections except the current one
+            transcripts.forEach((t) => {
+                const section = formContext.ui.tabs.get("Summary")?.sections.get(t.tra_formsectionname);
+                if (section) section.setVisible(false);
+            });
+
+            //  Show ONLY the current section
+            if (tra_formsectionname) {
+                const section = formContext.ui.tabs.get("Summary")?.sections.get(tra_formsectionname);
+                if (section) section.setVisible(true);
+            }
+
+            // Replace dynamic content
+            document.getElementById("sectionTitle").textContent = tra_name;
+            document.getElementById("dynamicContent").innerHTML = `<p>${await replaceDynamicFields(tra_transcriptbody)}</p>`;
+
+            // Navigation visibility
+            document.getElementById("prevBtn").style.display = tra_previoussection_name ? "inline-block" : "none";
+            document.getElementById("nextBtn").style.display = tra_nextsection_name ? "inline-block" : "none";
+
+            // Button logic
+            await updateButtons(currentTranscript, transcripts);
+        }
+
+        function getUrlParameters() {
+            const queryString = location.search.substring(1);
+            const params = {};
+            const queryStringParts = queryString.split("&");
+
+            for (let i = 0; i < queryStringParts.length; i++) {
+                const pieces = queryStringParts[i].split("=");
+                params[pieces[0].toLowerCase()] =
+                    pieces.length === 1 ? null : decodeURIComponent(pieces[1]);
+            }
+
+            return JSON.parse(decodeURIComponent(params.data));
+        }
+
+        function panelClose(currentEntityName, formContext) {
+            const pane = window.parent.Xrm.App.sidePanes.getPane("CustomWebResourcePane");
+            if (pane) {
+                pane.close();
+            };
+            manageSectionandFontStyles(formContext);
+            removeOnChangeEvents(formContext);
+            try {
+                const tabs = window.parent.Xrm?.Page.ui.tabs;
+                if (!tabs) return;
+
+                const entityName = window.parent.Xrm?.Page.data.entity.getEntityName();
+                const summaryTabsOpportunity = ["Summary", "Summary_2"];
+                const summaryTabsLead = ["Summary"];
+
+                if (entityName === "opportunity") {
+                    // Show all tabs except those in summaryTabs, and show all sections in visible tabs
+                    tabs.forEach(tab => {
+                        const tabName = tab.getName();
+                        if (summaryTabsOpportunity.includes(tabName)) {
+                            tab.setVisible(false);
+                        } else {
+                            tab.setVisible(true);
+                            const sections = tab.sections;
+                            sections.forEach(section => {
+                                section.setVisible(true);
+                            });
+                        }
+                    });
+                    return;
+                }
+                // Default behavior for lead
+                else if (entityName === "lead") {
+                    tabs.forEach(tab => {
+                        const tabName = tab.getName();
+                        if (summaryTabsLead.includes(tabName)) {
+                            tab.setVisible(false);
+                        } else {
+                            tab.setVisible(true);
+                            const sections = tab.sections;
+                            sections.forEach(section => {
+                                section.setVisible(true);
+                            });
+                        }
+                    });
+                    return;
+                }
+            } catch (error) {
+                console.error("Error in panelClose:", error);
+            }
+        }
+
+        function manageSectionandFontStyles(formContext) {
+            try {
+                var $ = window.$ || parent.$ || top.$;
+                if (!$ || !$.fn) {
+                    console.warn("jQuery ($) is not available. Skipping styling logic.");
+                    return;
+                }
+                console.log($);
+                debugger;
+                setTimeout($("li[role='tab']").each(function () {
+                    $(this).css({
+                        "font-size": "14px",
+                        "color": "#1a73e8", // red
+                        "font-weight": "bold"
+                    });
+                }), 2000);
+                setTimeout($("section h2").each(function () {
+                    $(this).css({
+                        "font-size": "18px",
+                        "color": "#1a73e8", // blue
+                        "font-weight": "bold"
+                    });
+                }), 2000);
+            } catch (error) {
+                console.error("Error in mngSectionandFontStyles:", error);
+            }
+        };
+
+        function startRecurringCheck(callbackFn) {
+            checkIntervalId = setInterval(() => {
+                try {
+                    const parentUrl = new URL(window.parent.location.href);
+                    const params = new URLSearchParams(parentUrl.search);
+
+                    const pagetype = params.get("pagetype");
+                    const etn = params.get("etn");
+
+                    if (pagetype === "entityrecord" && (etn === "lead" || etn === "opportunity" || etn === "incident")) {
+                        // Valid match — continue recurring logic
+                        if (typeof callbackFn === "function") {
+                            callbackFn();
+                        }
+                    } else {
+                        // Not matching criteria — stop and close
+                        console.log("Not a lead entityrecord — stopping and closing panel.");
+                        clearInterval(checkIntervalId);
+                        panelClose();
+                    }
+
+                } catch (error) {
+                    console.warn("Error in recurring check:", error);
+                }
+            }, 2000);
+        }
+
+        window.onload = async function () {
+            try {
+                const formContext = window.parent.Xrm?.Page
+
+                startRecurringCheck(() => {
+                    console.log("startRecurringCheck");
+                });
+
+                window.parent.Xrm.Utility.showProgressIndicator("Please wait...");
+                const tabs = formContext.ui.tabs;
+                currentEntityName = window.parent.Xrm.Page.data.entity.getEntityName();
+                window.addEventListener("unload", function () {
+                    panelClose(currentEntityName, formContext)
+                });
+                if ((currentEntityName === "opportunity" || currentEntityName === "lead") && tabs) {
+                    tabs.forEach(tab => tab.setVisible(tab.getName() === "Summary"));
+                }
+                startSection = await getUrlParameters();
+                if (startSection) {
+                    currentTranscriptName = "SECTION " + startSection;
+                } else {
+                    currentTranscriptName = "SECTION " + (currentEntityName === "lead") ? 1 : 4; //1 for lead and 4 for opportunity
+                }
+                await fetchCurrentUser();
+                await fetchTranscripts();
+                renderDisqualifyOptions();
+                window.parent.Xrm.Utility.closeProgressIndicator();
+                manageSectionandFontStyles(formContext);
+
+            } catch (error) {
+                window.parent.Xrm.Utility.closeProgressIndicator();
+            }
+        };
+    </script>
+
+
+</body>
+
+</html>

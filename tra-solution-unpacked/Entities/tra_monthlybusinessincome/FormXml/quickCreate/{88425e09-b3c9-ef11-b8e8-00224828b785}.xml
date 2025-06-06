@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{88425e09-b3c9-ef11-b8e8-00224828b785}</formid>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab id="F931FFE2-B873-473F-8F95-9502F0AA3F5E" name="tab_1" showlabel="false" labelid="{38a2565a-0a2f-4132-b9cc-4414af5b3c06}">
+          <labels>
+            <label description="New Tab" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="34%">
+              <sections>
+                <section id="0C655D4E-C6E3-424E-9AF5-71E72D30D12E" name="tra_secmonthlybusinessincome" columns="1" showlabel="false" showbar="false" IsUserDefined="0" labelwidth="130" labelid="{3e8343f0-3ed0-4323-8668-346b84cb92c2}">
+                  <labels>
+                    <label description="Monthly Business Income" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{67786885-6c57-4206-8810-54801531f048}" locklevel="0" colspan="1" rowspan="1" labelid="{176cae49-a627-463e-bbca-90920724c921}">
+                        <labels>
+                          <label description="Monthly Income Name" languagecode="1033" />
+                        </labels>
+                        <control id="tra_monthlybusinessincome" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="tra_monthlybusinessincome" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{08947d60-6a6d-4f59-9659-b80dded73bf9}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Income Type" languagecode="1033" />
+                        </labels>
+                        <control id="tra_incometype" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="tra_incometype" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{d5594e94-e773-43e2-9308-ec6c0d5fd56c}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Frequency" languagecode="1033" />
+                        </labels>
+                        <control id="tra_frequency" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="tra_frequency" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e3a750fa-a29a-48c2-a6e0-e5449926b164}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Amount" languagecode="1033" />
+                        </labels>
+                        <control id="tra_amount" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="tra_amount" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b0d87522-d5d2-4949-9e93-66a8987ff2ae}" locklevel="0" colspan="1" rowspan="1" labelid="{f597fd73-0b6a-40bf-8904-93bd5b8af8c4}" visible="false">
+                        <labels>
+                          <label description="Monthly Gross" languagecode="1033" />
+                        </labels>
+                        <control id="tra_monthlygross" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="tra_monthlygross" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e0bdbd43-de25-4ffd-bd54-17558758f2fa}" locklevel="0" colspan="1" rowspan="1" visible="false">
+                        <labels>
+                          <label description="Currency" languagecode="1033" />
+                        </labels>
+                        <control id="transactioncurrencyid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="transactioncurrencyid" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{8a770cf7-e78b-4a63-aef4-c80e81e10a1a}" locklevel="0" colspan="1" rowspan="1" visible="false">
+                        <labels>
+                          <label description="Opportunity" languagecode="1033" />
+                        </labels>
+                        <control id="tra_opportunityid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="tra_opportunityid" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{9ed458cb-4e59-4006-82a0-e8104a75030b}" locklevel="0" colspan="1" rowspan="1" visible="false">
+                        <labels>
+                          <label description="financials" languagecode="1033" />
+                        </labels>
+                        <control id="tra_financialsid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="tra_financialsid" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{8385f4a5-a2bf-491f-b891-56399d743f28}" locklevel="0" colspan="1" rowspan="1" visible="false">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%">
+              <sections>
+                <section id="02DECBA0-3AE2-484D-A19F-C5353AF4F4F2" name="tab_1_column_2_section_1" columns="1" showlabel="true" showbar="false" IsUserDefined="0" labelwidth="130" visible="false" labelid="{97ce149b-6048-4619-a6a4-7d28e567f0e1}">
+                  <labels>
+                    <label description="New Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="266FE48D-4D04-4E9A-8C5A-7DEF9A2F059B" labelid="{8d6a76b7-9e20-48e3-8fb1-175949a107d1}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%">
+              <sections>
+                <section id="46FD66EA-B686-41D9-AAE0-C565BD78EC1F" name="tab_1_column_3_section_1" columns="1" showlabel="true" showbar="false" IsUserDefined="0" labelwidth="130" visible="false" labelid="{596e47c8-f651-4f7e-a128-be33f5dc5657}">
+                  <labels>
+                    <label description="New Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="07C04A4E-A482-45CC-BAB7-7FCA3CD02938" labelid="{91407bf7-1652-4778-bb8e-ce61260672fc}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <DisplayConditions Order="0" FallbackForm="true">
+        <Role Id="{627090ff-40a3-4053-8790-584edc5be201}" />
+        <Role Id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+      </DisplayConditions>
+      <formLibraries>
+        <Library name="tra_/Scripts/MonthlyBusinessIncome.js" libraryUniqueId="{5fa2b4b2-47f2-46d2-93b3-5e12960d682d}" />
+      </formLibraries>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Monthly Business Income quick create form" languagecode="1033" />
+    </LocalizedNames>
+  </systemform>
+</forms>

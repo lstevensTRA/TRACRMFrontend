@@ -1,0 +1,11 @@
+<environmentvariabledefinition schemaname="tra_tradefaultpricelistname">
+  <defaultvalue>TRA Default Price List</defaultvalue>
+  <displayname default="TRA Default Price List Name">
+    <label description="TRA Default Price List Name" languagecode="1033" />
+  </displayname>
+  <introducedversion>1.0.0.0</introducedversion>
+  <iscustomizable>1</iscustomizable>
+  <isrequired>0</isrequired>
+  <secretstore>0</secretstore>
+  <type>100000000</type>
+</environmentvariabledefinition>

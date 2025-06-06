@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{c176e240-866e-4dce-a9c7-5ed9d1058b89}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab verticallayout="true" id="{10118925-a8d5-4f10-9a7a-179f8d509b0a}" name="StageStep3" locklevel="0" expanded="true" visible="false" labelid="{cbc3cefd-bdfa-42ef-8768-60cde85619ce}">
+          <labels>
+            <label description="TI Admin" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showbar="false" columns="1" id="{40714050-a880-3f32-d3a7-610dd6fba8ee}" name="StageStep3_section1" labelid="{f7825566-84c8-4084-9bdf-e1281ff32dd6}">
+                  <labels>
+                    <label description="TI Admin" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{f7810d6f-77db-417d-9a65-af26b130b2b0}" showlabel="true" visible="true" labelid="{b9069cca-0fbd-463b-9740-07a7eca8a10d}">
+                        <labels>
+                          <label description="Status Reason" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_incident_tra_trastageprocess:statuscode" classid="{3ef39988-22bb-4f0b-bbbe-64b5a3748aee}" datafieldname="statuscode" disabled="false" relationship="bpf_incident_tra_trastageprocess" isrequired="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab verticallayout="true" id="{d5f3cff1-a068-4287-95ab-351252fe0ce6}" name="StageStep7" locklevel="0" expanded="true" visible="false" labelid="{6b8c2f19-9c7d-4135-bb97-64fb75fdf214}">
+          <labels>
+            <label description="TI Compliance" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showbar="false" columns="1" id="{8656fbae-3e76-c567-4261-b27a40c02697}" name="StageStep7_section1" labelid="{4b6dd84c-2f77-4141-affc-05cd5d292d69}">
+                  <labels>
+                    <label description="TI Compliance" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{fe8ea16b-2843-4155-abd0-e4cf4438d555}" showlabel="true" visible="true" labelid="{5b33f3a4-d48f-466a-892a-83c137f03b59}">
+                        <labels>
+                          <label description="Status Reason" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_incident_tra_trastageprocess:statuscode" classid="{3ef39988-22bb-4f0b-bbbe-64b5a3748aee}" datafieldname="statuscode" disabled="false" relationship="bpf_incident_tra_trastageprocess" isrequired="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab verticallayout="true" id="{fc2f0e26-9f7e-48e7-8cfc-cc6dc9492bfb}" name="StageStep11" locklevel="0" expanded="true" visible="false" labelid="{c9dade50-6d8e-4eb4-bbae-a6445deb7689}">
+          <labels>
+            <label description="TI Analyst" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showbar="false" columns="1" id="{9135090f-f8f3-14fe-b25f-2d7e231fa2f3}" name="StageStep11_section1" labelid="{5515cb10-a295-468e-adfd-3195aaf669d0}">
+                  <labels>
+                    <label description="TI Analyst" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{fc656bcf-7e54-47af-b009-b6c9503087af}" showlabel="true" visible="true" labelid="{566eeee5-d5e9-44e8-aab2-e187d4e61213}">
+                        <labels>
+                          <label description="Status Reason" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_incident_tra_trastageprocess:statuscode" classid="{3ef39988-22bb-4f0b-bbbe-64b5a3748aee}" datafieldname="statuscode" disabled="false" relationship="bpf_incident_tra_trastageprocess" isrequired="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab verticallayout="true" id="{41be1ce1-5119-42c8-99fe-1595a3e455ef}" name="StageStep15" locklevel="0" expanded="true" visible="false" labelid="{a3dbb90f-2858-47c9-902d-d5058bdd00aa}">
+          <labels>
+            <label description="TI Resolution" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showbar="false" columns="1" id="{ff558ae0-5abe-81bd-273d-e6ae00aa8dd1}" name="StageStep15_section1" labelid="{37f4e96f-6483-4daf-b8b2-6e3dfa2ee72e}">
+                  <labels>
+                    <label description="TI Resolution" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{8f4fa2fa-85c9-45d0-85a6-6571a77451c1}" showlabel="true" visible="true" labelid="{06a1fef1-d231-4608-b7f6-501febb67fca}">
+                        <labels>
+                          <label description="Status Reason" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_incident_tra_trastageprocess:statuscode" classid="{3ef39988-22bb-4f0b-bbbe-64b5a3748aee}" datafieldname="statuscode" disabled="false" relationship="bpf_incident_tra_trastageprocess" isrequired="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab verticallayout="true" id="{4f8642d0-7ade-4d9c-b578-2ee79db5dbba}" name="StageStep19" locklevel="0" expanded="true" visible="false" labelid="{67fa37aa-4398-44c9-a781-cc162b69b23d}">
+          <labels>
+            <label description="Tax Preparation" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showbar="false" columns="1" id="{774cb262-3f79-1271-4f23-b5a3704e30b6}" name="StageStep19_section1" labelid="{495215c0-c581-4b38-b19f-25f37e0368fc}">
+                  <labels>
+                    <label description="Tax Preparation" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{4a604822-dc0d-4c09-a6c9-b4389eb91731}" showlabel="true" visible="true" labelid="{495caa15-a089-4064-b940-570d182ed84c}">
+                        <labels>
+                          <label description="Status Reason" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_incident_tra_trastageprocess:statuscode" classid="{3ef39988-22bb-4f0b-bbbe-64b5a3748aee}" datafieldname="statuscode" disabled="false" relationship="bpf_incident_tra_trastageprocess" isrequired="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab verticallayout="true" id="{69b3efbc-1594-438f-9380-a79c4a830fc6}" name="StageStep23" locklevel="0" expanded="true" visible="false" labelid="{5364eb12-8ade-4f27-a826-a3a23879ef90}">
+          <labels>
+            <label description="Resolution" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showbar="false" columns="1" id="{42176d90-4884-9c02-f2f2-5f5c53d9dae5}" name="StageStep23_section1" labelid="{9d8c6d26-09e8-472c-865a-171b97ce440f}">
+                  <labels>
+                    <label description="Resolution" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{c5af6feb-7a99-45ee-97ff-ca44a571f352}" showlabel="true" visible="true" labelid="{0b6c2080-3338-4762-9082-6e77bf34c6ff}">
+                        <labels>
+                          <label description="Status Reason" languagecode="1033" />
+                        </labels>
+                        <control id="bpf_incident_tra_trastageprocess:statuscode" classid="{3ef39988-22bb-4f0b-bbbe-64b5a3748aee}" datafieldname="statuscode" disabled="false" relationship="bpf_incident_tra_trastageprocess" isrequired="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

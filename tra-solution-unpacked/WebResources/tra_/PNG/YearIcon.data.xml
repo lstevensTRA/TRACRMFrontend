@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebResource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <WebResourceId>{d4342431-abc6-ef11-b8e8-6045bdf0540a}</WebResourceId>
+  <Name>tra_/PNG/YearIcon</Name>
+  <DisplayName>tra_/PNG/YearIcon</DisplayName>
+  <WebResourceType>5</WebResourceType>
+  <IntroducedVersion>1.0.0.0</IntroducedVersion>
+  <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+  <IsAvailableForMobileOffline>0</IsAvailableForMobileOffline>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>1</CanBeDeleted>
+  <IsHidden>0</IsHidden>
+  <FileName>/WebResources/tra_PNGYearIconD4342431-ABC6-EF11-B8E8-6045BDF0540A</FileName>
+</WebResource>

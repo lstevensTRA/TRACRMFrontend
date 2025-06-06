@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{cd1c3d87-da83-4cf4-84a8-2ea2d2599134}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="tra_name" select="1" icon="1" preview="1">
+        <row name="result" id="tra_virtualcurrencyid">
+          <cell name="tra_typeofvirtualcurrency" width="181" />
+          <cell name="tra_nameofvirtualcurrency" width="338" />
+          <cell name="tra_mailddressforvirtualcurrencyexchangeordce" width="346" />
+          <cell name="tra_locationofvirtualcurrency" width="203" />
+          <cell name="tra_virtualcurrencyamount" width="184" />
+          <cell name="tra_virtualcurrencyamountinusdollarstoday" width="296" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="tra_virtualcurrency">
+          <attribute name="tra_virtualcurrencyid" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="tra_typeofvirtualcurrency" />
+          <attribute name="tra_nameofvirtualcurrency" />
+          <attribute name="tra_locationofvirtualcurrency" />
+          <attribute name="tra_virtualcurrencyamountinusdollarstoday" />
+          <attribute name="tra_mailddressforvirtualcurrencyexchangeordce" />
+          <attribute name="tra_virtualcurrencyamount" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Virtual Currencies" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

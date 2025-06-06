@@ -1,0 +1,32 @@
+<appaction uniquename="tra__UploadIRSTranscri!dec270d5930b4df194b13b53934b62cf!msdynce_saleshub!incident!0">
+  <appmoduleid>
+    <uniquename>msdynce_saleshub</uniquename>
+  </appmoduleid>
+  <buttonlabeltext default="Upload Documents">
+    <label description="Upload Documents" languagecode="1033" />
+  </buttonlabeltext>
+  <context>1</context>
+  <contextentity>
+    <logicalname>incident</logicalname>
+  </contextentity>
+  <contextvalue>incident</contextvalue>
+  <fonticon>DocumentTemplateUpload</fonticon>
+  <hidden>0</hidden>
+  <iscustomizable>1</iscustomizable>
+  <isdisabled>0</isdisabled>
+  <isgrouptitlehidden>0</isgrouptitlehidden>
+  <location>0</location>
+  <name>UploadIRSTranscri!dec270d5930b4df194b13b53934b62cf</name>
+  <onclickeventjavascriptfunctionname>CrmJS.TRACase.UploadIRSTranscripts</onclickeventjavascriptfunctionname>
+  <onclickeventjavascriptparameters>[{"type":5}]</onclickeventjavascriptparameters>
+  <onclickeventjavascriptwebresourceid>
+    <webresourceid>d80c54c6-441c-f011-998a-7c1e520b713c</webresourceid>
+  </onclickeventjavascriptwebresourceid>
+  <onclickeventtype>2</onclickeventtype>
+  <origin>0</origin>
+  <sequence>100100046.0000000000</sequence>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+  <type>0</type>
+  <visibilitytype>0</visibilitytype>
+</appaction>

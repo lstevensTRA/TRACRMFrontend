@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebResource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <WebResourceId>{46158cf3-c9d7-ef11-a730-7c1e52188087}</WebResourceId>
+  <Name>tra_/PNG/OtherExpenseIcon</Name>
+  <DisplayName>tra_/PNG/OtherExpenseIcon</DisplayName>
+  <WebResourceType>5</WebResourceType>
+  <IntroducedVersion>1.0.0.0</IntroducedVersion>
+  <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+  <IsAvailableForMobileOffline>0</IsAvailableForMobileOffline>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>1</CanBeDeleted>
+  <IsHidden>0</IsHidden>
+  <FileName>/WebResources/tra_PNGOtherExpenseIcon46158CF3-C9D7-EF11-A730-7C1E52188087</FileName>
+</WebResource>

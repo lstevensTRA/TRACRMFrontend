@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{e08874f5-c119-f011-998a-002248304216}</formid>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab verticallayout="true" id="{59e7cba7-6151-4d7f-95a7-8e555ac896a3}" showlabel="false" name="New Tab" labelid="{9468d4e9-56e3-400c-b36f-1674408c4e58}">
+          <labels>
+            <label description="New Tab" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="34%">
+              <sections>
+                <section showlabel="true" columns="1" showbar="false" IsUserDefined="false" labelwidth="130" id="{f28cc617-8e46-40fa-a798-c4c11ed2be0c}" name="Business Information" labelid="{c322c8cb-0449-42e0-be48-de355170fabc}">
+                  <labels>
+                    <label description="Business Information" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{466ff4e2-0beb-4557-ae79-0ec15de3f00a}" locklevel="0" colspan="1" rowspan="1" labelid="{cb2800bf-9010-4b8b-818c-a587388fb44e}">
+                        <labels>
+                          <label description="Business Name" languagecode="1033" />
+                        </labels>
+                        <control id="tra_name" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="tra_name" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{d5f1661a-19c1-48b9-a8b5-36c965fc80e2}" locklevel="0" colspan="1" rowspan="1" labelid="{12cee82e-da09-407c-8dab-7548e72fc56d}">
+                        <labels>
+                          <label description="Business Type" languagecode="1033" />
+                        </labels>
+                        <control id="tra_businesstype" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="tra_businesstype" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b1197ada-bd22-496d-9fdd-527c94c8cf01}" locklevel="0" colspan="1" rowspan="1" labelid="{85cd4f10-6763-4703-b53a-8050a9af152f}">
+                        <labels>
+                          <label description="Employer ID #" languagecode="1033" />
+                        </labels>
+                        <control id="tra_employerid" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="tra_employerid" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{ca5a9c95-8867-475f-9658-dd02f80ccd8f}" locklevel="0" colspan="1" rowspan="1" labelid="{9defdf67-af62-4a61-bd54-6a75436b9803}">
+                        <labels>
+                          <label description="Street Address" languagecode="1033" />
+                        </labels>
+                        <control id="tra_streetaddress" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="tra_streetaddress" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{f71e4f54-a90a-4c0a-9211-e9a03d30de89}" locklevel="0" colspan="1" rowspan="1" labelid="{b87e5ad3-1c6e-4226-a71a-31eee32f9bc5}">
+                        <labels>
+                          <label description="Suite #" languagecode="1033" />
+                        </labels>
+                        <control id="tra_suite" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="tra_suite" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{547871d8-4743-485b-9d9a-f79a6e2fe049}" colspan="1" rowspan="1" labelid="{f0c861b3-41ca-4338-b56b-91a97c2a91fe}">
+                        <labels>
+                          <label description="City" languagecode="1033" />
+                        </labels>
+                        <control id="tra_city" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="tra_city" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{60d66c44-dfa5-4c93-aeba-5e392d16aa10}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="State" languagecode="1033" />
+                        </labels>
+                        <control id="tra_state" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="tra_state" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{4706b298-8ad8-46d9-a276-977936306101}" locklevel="0" colspan="1" rowspan="1" labelid="{b51a8188-61a9-4448-932f-df6796cb0b31}">
+                        <labels>
+                          <label description="Zip Code" languagecode="1033" />
+                        </labels>
+                        <control id="tra_zipcode" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="tra_zipcode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{3a556c96-d956-4651-8279-c9b05e78f91c}" colspan="1" rowspan="1" labelid="{2d83c72d-8fcc-46a8-bf25-e55530d71d6a}">
+                        <labels>
+                          <label description="Established Date" languagecode="1033" />
+                        </labels>
+                        <control id="tra_establisheddate" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="tra_establisheddate" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e578d370-6c58-4e92-8fcb-3a548212755d}" locklevel="0" colspan="1" rowspan="1" labelid="{593c9758-8f77-44f7-9b2a-5fdcdf2c4b85}">
+                        <labels>
+                          <label description="Closed Date" languagecode="1033" />
+                        </labels>
+                        <control id="tra_closeddate" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="tra_closeddate" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{217a15c5-8540-4919-8d4b-f13cf0994dd7}" labelid="{3511d47d-c4d9-448b-a63e-4ecdc1785f7f}">
+                        <labels>
+                          <label description="# of Employee" languagecode="1033" />
+                        </labels>
+                        <control id="tra_numberofemployee" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="tra_numberofemployee" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{c21b2041-a36e-4b74-927a-4c9b2c0463b3}" locklevel="0" colspan="1" rowspan="1" labelid="{26c037b0-86d0-4a1d-83e9-2afe9bf3015f}">
+                        <labels>
+                          <label description="Total W2 Employees" languagecode="1033" />
+                        </labels>
+                        <control id="tra_totalw2employees" classid="{C6D124CA-7EDA-4A60-AEA9-7FB8D318B68F}" datafieldname="tra_totalw2employees" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{53d279e1-d2fa-402f-a9c7-9bfc7a6439a0}" labelid="{baf0ade6-43aa-4287-90ba-81ebb2a37b61}">
+                        <labels>
+                          <label description="Total 1099's" languagecode="1033" />
+                        </labels>
+                        <control id="tra_total1099s" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="tra_total1099s" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{e385e4a5-0ea9-4f30-9f4f-b029a915f76f}" locklevel="0" colspan="1" rowspan="1" labelid="{c70dde43-4936-4517-99df-bc73693af8e5}">
+                        <labels>
+                          <label description="Tax Unfiled Year" languagecode="1033" />
+                        </labels>
+                        <control id="tra_taxunfiledyear" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="tra_taxunfiledyear" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b897d767-c902-411f-8953-4edb269660d8}" locklevel="0" colspan="1" rowspan="1" labelid="{5a0b9dc4-87c5-4e06-ae4b-f7158f2fa115}">
+                        <labels>
+                          <label description="Estimated Tax Year with Balance" languagecode="1033" />
+                        </labels>
+                        <control id="tra_estimatedtaxyearwithbalance" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="tra_estimatedtaxyearwithbalance" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{74f69f40-8579-4421-aca9-ebad12d4b985}" locklevel="0" colspan="1" rowspan="1" visible="false">
+                        <labels>
+                          <label description="Opportunity" languagecode="1033" />
+                        </labels>
+                        <control id="tra_opportunity" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="tra_opportunity" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%">
+              <sections>
+                <section id="{9fc0f9a1-9b04-4241-a527-1ffa241f1d4b}" name="tab_1_column_2_section_1" columns="1" showlabel="false" showbar="false" IsUserDefined="0" labelwidth="130" labelid="{35d48376-05ca-43ea-90e7-1df1bee4872b}">
+                  <labels>
+                    <label description="New Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{4584d771-1e08-43ea-b2b8-d9cadf175f57}" labelid="{638bc76c-da4b-44f4-b3be-96aab0b7aa77}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+            <column width="33%">
+              <sections>
+                <section id="{47f7c142-f103-4096-ab2e-47cb7d1bf1db}" name="tab_1_column_3_section_1" columns="1" showlabel="false" showbar="false" IsUserDefined="0" labelwidth="130" labelid="{36290e72-0ef5-4260-af50-dc03eff1a834}">
+                  <labels>
+                    <label description="New Section" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{31d0baf4-992a-454a-bce3-c1aad4e6812d}" labelid="{a773b4ab-813b-4927-b68b-46a8ded9acc7}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <DisplayConditions Order="0" FallbackForm="true">
+        <Role Id="{627090ff-40a3-4053-8790-584edc5be201}" />
+        <Role Id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="TRA Business QC" languagecode="1033" />
+    </LocalizedNames>
+  </systemform>
+</forms>

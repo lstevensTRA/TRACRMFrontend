@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Dialog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <LocalizedNames>
+    <LocalizedName description="Action : Move Opportunity to next Stage" languagecode="1033" />
+  </LocalizedNames>
+  <FormId>{7a74360f-7068-4972-8506-ad95e7563e84}</FormId>
+  <UniqueName>1178fb4f-57f4-ef11-be21-7c1e527f231e</UniqueName>
+  <IsCustomizable>1</IsCustomizable>
+  <IntroducedVersion>1.0.0.0</IntroducedVersion>
+  <IsTabletEnabled>1</IsTabletEnabled>
+  <CanBeDeleted>1</CanBeDeleted>
+  <FormXml>
+    <forms type="dialog">
+      <form>
+        <formparameters>
+          <querystringparameter name="last_button_clicked" type="SafeString" />
+        </formparameters>
+        <tabs>
+          <tab verticallayout="true" id="{eb1049cf-4984-4fa1-a82c-4144f067f17a}" name="tab element" locklevel="0" expanded="true">
+            <labels>
+              <label description="" languagecode="1033" />
+            </labels>
+            <columns>
+              <column width="100%">
+                <sections>
+                  <section showbar="false" columns="1" id="{4f266b5c-946c-4629-8b8e-4de729ddaf7c}" name="section element">
+                    <labels>
+                      <label description="" languagecode="1033" />
+                    </labels>
+                    <rows>
+                      <row>
+                        <cell id="{3f763d4d-0e5f-4ca2-b2c2-9205de940286}">
+                          <labels>
+                            <label description="No input parameters" languagecode="1033" />
+                          </labels>
+                          <control id="no_input_parameter_required_header" classid="{39354e4a-5015-4d74-8031-ea9eb73a1322}" isunbound="true">
+                            <parameters>
+                              <IsTitle>true</IsTitle>
+                            </parameters>
+                          </control>
+                        </cell>
+                      </row>
+                      <row>
+                        <cell id="{ad4fa5ec-41b9-430e-a370-a3a578b9d25d}">
+                          <labels>
+                            <label description="This action has no input parameters. Click Execute to run this action." languagecode="1033" />
+                          </labels>
+                          <control id="no_input_parameter_required" classid="{39354e4a-5015-4d74-8031-ea9eb73a1322}" isunbound="true">
+                            <parameters>
+                              <IsTitle>false</IsTitle>
+                            </parameters>
+                          </control>
+                        </cell>
+                      </row>
+                    </rows>
+                  </section>
+                </sections>
+              </column>
+            </columns>
+          </tab>
+        </tabs>
+        <header id="{7a3c836d-9fc0-42a0-bc0b-91eb3aa1b583}">
+          <rows>
+            <row>
+              <cell id="{a3ca3faa-f48d-4124-9a46-48b21bd98d0c}">
+                <labels>
+                  <label description="Action : Move Opportunity to next Stage" languagecode="1033" />
+                </labels>
+                <control id="runprocessaction_id" classid="{39354e4a-5015-4d74-8031-ea9eb73a1322}" isunbound="true">
+                  <parameters>
+                    <IsTitle>true</IsTitle>
+                  </parameters>
+                </control>
+              </cell>
+            </row>
+          </rows>
+        </header>
+        <footer id="{386ba064-086d-4204-ba4c-6caa5290d84e}">
+          <rows>
+            <row>
+              <cell id="{47244f8c-abca-4667-a0f9-c7d7aac27cb7}">
+                <labels>
+                  <label description="Execute" languagecode="1033" />
+                </labels>
+                <control id="ok_id" classid="{00ad73da-bd4d-49c6-88a8-2f4f4cad4a20}" isunbound="true" />
+              </cell>
+            </row>
+            <row>
+              <cell id="{2161a67e-c4b6-463e-8b7e-555defb92e25}">
+                <labels>
+                  <label description="Cancel" languagecode="1033" />
+                </labels>
+                <control id="cancel_id" classid="{00ad73da-bd4d-49c6-88a8-2f4f4cad4a20}" isunbound="true" />
+              </cell>
+            </row>
+          </rows>
+        </footer>
+        <events>
+          <event name="onclick" application="false" attribute="cancel_id">
+            <Handlers>
+              <Handler functionName="Mscrm.ManageProcessActionDialogActions.onClickCancel" libraryName="Main_system_library.js" handlerUniqueId="{2d02e167-be7d-4b22-969b-4bf52a386126}" enabled="true" passExecutionContext="true" />
+            </Handlers>
+          </event>
+          <event name="onclick" application="false" attribute="ok_id">
+            <Handlers>
+              <Handler functionName="Mscrm.ManageProcessActionDialogActions.onClickOk" libraryName="Main_system_library.js" handlerUniqueId="{03d80721-295a-4713-a98a-da70cffe4b90}" enabled="true" passExecutionContext="true" />
+            </Handlers>
+          </event>
+        </events>
+        <clientresources>
+          <internalresources>
+            <clientincludes>
+              <internaljscriptfile src="$webresource:Main_system_library.js" />
+            </clientincludes>
+          </internalresources>
+        </clientresources>
+      </form>
+    </forms>
+  </FormXml>
+</Dialog>

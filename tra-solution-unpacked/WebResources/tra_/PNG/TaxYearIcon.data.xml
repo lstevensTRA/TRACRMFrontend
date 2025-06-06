@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebResource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <WebResourceId>{5aece918-abc6-ef11-b8e9-6045bdd84b82}</WebResourceId>
+  <Name>tra_/PNG/TaxYearIcon</Name>
+  <DisplayName>tra_/PNG/TaxYearIcon</DisplayName>
+  <WebResourceType>5</WebResourceType>
+  <IntroducedVersion>1.0.0.0</IntroducedVersion>
+  <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+  <IsAvailableForMobileOffline>0</IsAvailableForMobileOffline>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>1</CanBeDeleted>
+  <IsHidden>0</IsHidden>
+  <FileName>/WebResources/tra_PNGTaxYearIcon5AECE918-ABC6-EF11-B8E9-6045BDD84B82</FileName>
+</WebResource>

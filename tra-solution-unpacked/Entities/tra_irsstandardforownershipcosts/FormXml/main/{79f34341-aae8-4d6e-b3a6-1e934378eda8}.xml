@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{79f34341-aae8-4d6e-b3a6-1e934378eda8}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form headerdensity="HighWithControls">
+      <tabs>
+        <tab verticallayout="true" id="{55c1ab1c-a6ea-43b1-b38b-318ad6eff253}" IsUserDefined="1">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{73b96fcb-3527-45bc-90a4-f8384b2dd1cb}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{6faa2e0d-05ab-40b9-b0a7-ea317205abb1}">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="tra_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="tra_name" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{4893a596-df20-401f-b012-6d5711738a88}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Region" languagecode="1033" />
+                        </labels>
+                        <control id="tra_region" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="tra_region" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{439dcd94-0c92-484f-a90e-23ae88e72682}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="State" languagecode="1033" />
+                        </labels>
+                        <control id="tra_stateid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="tra_stateid" disabled="false">
+                          <parameters>
+                            <DisableMru>true</DisableMru>
+                          </parameters>
+                        </control>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b40232e2-0b62-4051-9a0a-e873fbfe8722}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="County" languagecode="1033" />
+                        </labels>
+                        <control id="tra_countyid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="tra_countyid" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{9ec37573-9de0-4807-af7e-507dac4bbbff}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="One Car Price" languagecode="1033" />
+                        </labels>
+                        <control id="tra_onecarprice" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="tra_onecarprice" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{46969cbe-2744-4bd4-9de9-c6d648583191}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Two Car Price" languagecode="1033" />
+                        </labels>
+                        <control id="tra_twocarprice" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="tra_twocarprice" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{cab7ed4b-4d11-46b7-bff6-8b275f5af665}" visible="false">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{cbf031b0-7e74-4a78-b36e-8d8659ec4bbb}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{46df488c-3c42-4d4f-93b2-691c1150850c}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{77aeeaf1-f296-4750-8d71-f6db582b6440}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{3b50a1c5-9413-4286-a38b-1184c4017a21}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{41aea039-78f3-4967-a2e4-129750eadb68}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{9d93945c-6315-4e06-a175-f63a72627428}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{f1913a47-eb80-4527-9b4a-1a40583f547f}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{326a929b-eac8-4045-9d5f-acb321732a34}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <DisplayConditions Order="0" FallbackForm="true">
+        <Everyone />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

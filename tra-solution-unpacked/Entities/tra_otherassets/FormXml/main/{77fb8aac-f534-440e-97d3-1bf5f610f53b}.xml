@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{77fb8aac-f534-440e-97d3-1bf5f610f53b}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form headerdensity="HighWithControls">
+      <tabs>
+        <tab verticallayout="true" id="{cd02c3cf-6bf4-4a30-8ef3-7bc42baf56fa}" IsUserDefined="1">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{32ad523f-928f-42c8-bf35-7e39ab2111b8}" name="tra_secotherassets" columns="1">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{391c760f-9874-441d-8da2-db83e0468932}">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="tra_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="tra_name" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b407fc2b-ced8-4347-9fc6-71d2ab9d689e}" visible="false">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{72d7eaca-8778-4135-83dc-0d5069df8ed6}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Market Value" languagecode="1033" />
+                        </labels>
+                        <control id="tra_marketvalue" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="tra_marketvalue" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{add49d53-71f7-4983-a270-246302c2af9e}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Quick Sale" languagecode="1033" />
+                        </labels>
+                        <control id="tra_quicksale" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="tra_quicksale" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{6a76aa5a-5e80-494c-928b-a42ce92d2ac8}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Loan" languagecode="1033" />
+                        </labels>
+                        <control id="tra_loan" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="tra_loan" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{23489ec1-9f83-4f5b-a57e-b395d78d7f1b}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Equity" languagecode="1033" />
+                        </labels>
+                        <control id="tra_equity" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="tra_equity" disabled="true" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{61cdbf20-0fae-45fe-9e43-2365a71ade03}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{03417bca-7336-468b-bc79-6fffd746ecd4}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{b4bf9006-6839-4ddb-99de-32817db47160}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{1b8e7817-f721-41bd-aa89-5514121fa986}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{03f9b0bd-af8a-4796-8c7d-c174bcb72793}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{36bdddab-4157-4d3b-83ee-7cf1cf7421ef}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{392bcdeb-8ecd-4f5e-b8c9-8aa166d28c15}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{08fed4b9-1643-42cc-8f81-b4a003765351}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <DisplayConditions Order="0" FallbackForm="true">
+        <Everyone />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Information" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

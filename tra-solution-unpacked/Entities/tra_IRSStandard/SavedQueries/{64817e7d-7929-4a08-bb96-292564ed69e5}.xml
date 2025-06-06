@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{64817e7d-7929-4a08-bb96-292564ed69e5}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="tra_newcolumn" select="1" icon="1" preview="1">
+        <row name="result" id="tra_irsstandardid">
+          <cell name="tra_category" width="100" />
+          <cell name="tra_agegroup" width="103" />
+          <cell name="tra_count" width="100" />
+          <cell name="tra_allowanceamount" width="151" />
+          <cell name="tra_additionalpersonallowance" width="206" />
+          <cell name="tra_state" width="100" />
+          <cell name="tra_county" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="tra_irsstandard">
+          <attribute name="tra_irsstandardid" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="tra_category" />
+          <attribute name="tra_agegroup" />
+          <attribute name="tra_count" />
+          <attribute name="tra_allowanceamount" />
+          <attribute name="tra_additionalpersonallowance" />
+          <attribute name="tra_county" />
+          <attribute name="tra_state" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active IRS Standards" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

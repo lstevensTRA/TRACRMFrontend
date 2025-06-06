@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{c720dbac-899d-413f-b8bb-12c0c4eac1de}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="tra_fullname" select="1" icon="1" preview="1">
+        <row name="result" id="tra_revenueofficerdetailsid">
+          <cell name="tra_fullname" width="300" />
+          <cell name="tra_officerid" width="100" />
+          <cell name="tra_agency" width="100" />
+          <cell name="tra_jobtitle" width="100" />
+          <cell name="tra_fulladdress" width="112" />
+          <cell name="tra_email" width="100" />
+          <cell name="tra_phone" width="100" />
+          <cell name="tra_fax" width="100" />
+          <cell name="tra_comments" width="101" />
+          <cell name="tra_opportunityid" width="109" />
+          <cell name="createdby" width="104" />
+          <cell name="createdon" width="105" />
+          <cell name="modifiedby" width="112" />
+          <cell name="modifiedon" width="113" />
+          <cell name="statecode" width="100" />
+          <cell name="ownerid" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="tra_revenueofficerdetails">
+          <attribute name="tra_revenueofficerdetailsid" />
+          <attribute name="tra_fullname" />
+          <order attribute="tra_fullname" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="tra_officerid" />
+          <attribute name="tra_agency" />
+          <attribute name="tra_jobtitle" />
+          <attribute name="tra_fulladdress" />
+          <attribute name="tra_email" />
+          <attribute name="tra_phone" />
+          <attribute name="tra_fax" />
+          <attribute name="tra_comments" />
+          <attribute name="tra_opportunityid" />
+          <attribute name="createdby" />
+          <attribute name="createdon" />
+          <attribute name="modifiedby" />
+          <attribute name="modifiedon" />
+          <attribute name="ownerid" />
+          <attribute name="statecode" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Revenue officer details" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{cc54335b-8ec2-ef11-b8e8-00224828b785}</formid>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab id="ACBA75B7-97B6-4116-AA55-51312992B721" name="tra_tabcontactinfoquickview" showlabel="false" labelid="{71c94d18-61f8-4fb6-a929-f9bb48501120}">
+          <labels>
+            <label description="Contact Info Quick View" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section id="AD49B5BF-256F-46A8-9C75-947146172EB9" name="tra_secgeneral" columns="1" showlabel="true" showbar="false" IsUserDefined="0" labelwidth="130" labelid="{fe9d82f7-c1fc-4589-868d-e2323ddac841}">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="C0550AC7-0F44-45A4-8EF5-D2911C0689D9" labelid="{11251413-1e9a-48f8-9c4c-2e6a60858364}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{8c114c57-8ddb-4622-835a-12f4a045adf0}" locklevel="0" colspan="1" rowspan="1" labelid="{285247cf-199c-4191-857d-773391bf765a}">
+                        <labels>
+                          <label description="First Name" languagecode="1033" />
+                        </labels>
+                        <control id="firstname" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="firstname" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{38a1e4bd-2f07-448f-91ad-f56ccc16c02e}" locklevel="0" colspan="1" rowspan="1" labelid="{f99e726b-bf10-4266-97cd-1e6068388bc9}">
+                        <labels>
+                          <label description="Middle Name" languagecode="1033" />
+                        </labels>
+                        <control id="middlename" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="middlename" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{62ea7e62-c72b-4902-b44e-138081263f35}" locklevel="0" colspan="1" rowspan="1" labelid="{dd110ec5-8714-4cc1-825d-16880c336404}">
+                        <labels>
+                          <label description="Last Name" languagecode="1033" />
+                        </labels>
+                        <control id="lastname" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="lastname" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{8fb12301-958f-4d08-92db-c33bb23f0160}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Date of Birth" languagecode="1033" />
+                        </labels>
+                        <control id="birthdate" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="birthdate" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{613ccef4-6c30-484d-9561-0ceb22e2593a}" locklevel="0" colspan="1" rowspan="1" labelid="{b7548784-53d4-4b95-a4dd-1d0c8bc61f4f}">
+                        <labels>
+                          <label description="SSN" languagecode="1033" />
+                        </labels>
+                        <control id="tra_ssn" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="tra_ssn" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{c007c4b4-2907-4fae-95f6-b3a2c55be012}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Marital Status" languagecode="1033" />
+                        </labels>
+                        <control id="tra_maritalstatus" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="tra_maritalstatus" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{0baf1296-6b35-42a3-a6bd-c7d228c0308e}" locklevel="0" colspan="1" rowspan="1" labelid="{fc347eb7-6924-4809-abe9-be00e95fc2b7}">
+                        <labels>
+                          <label description="Language" languagecode="1033" />
+                        </labels>
+                        <control id="tra_language" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="tra_language" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <DisplayConditions Order="6" FallbackForm="true">
+        <Role Id="{627090ff-40a3-4053-8790-584edc5be201}" />
+        <Role Id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="General" languagecode="1033" />
+    </LocalizedNames>
+  </systemform>
+</forms>

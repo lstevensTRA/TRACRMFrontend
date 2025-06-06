@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebResource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <WebResourceId>{a7e7017b-aac6-ef11-b8e8-7c1e5216eefd}</WebResourceId>
+  <Name>tra_/PNG/VirtualCurrencyIcon</Name>
+  <DisplayName>tra_/PNG/VirtualCurrencyIcon</DisplayName>
+  <WebResourceType>5</WebResourceType>
+  <IntroducedVersion>1.0.0.0</IntroducedVersion>
+  <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+  <IsAvailableForMobileOffline>0</IsAvailableForMobileOffline>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>1</CanBeDeleted>
+  <IsHidden>0</IsHidden>
+  <FileName>/WebResources/tra_PNGVirtualCurrencyIconA7E7017B-AAC6-EF11-B8E8-7C1E5216EEFD</FileName>
+</WebResource>

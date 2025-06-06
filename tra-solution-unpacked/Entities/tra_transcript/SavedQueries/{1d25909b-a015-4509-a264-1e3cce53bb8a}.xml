@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{1d25909b-a015-4509-a264-1e3cce53bb8a}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="tra_name" select="1" icon="1" preview="1">
+        <row name="result" id="tra_transcriptid">
+          <cell name="tra_name" width="150" />
+          <cell name="tra_previoussection" width="135" />
+          <cell name="tra_nextsection" width="113" />
+          <cell name="tra_tabletype" width="103" />
+          <cell name="tra_transcriptbody" width="300" />
+          <cell name="statecode" width="100" />
+          <cell name="statuscode" width="119" />
+          <cell name="modifiedby" width="112" />
+          <cell name="modifiedon" width="113" />
+          <cell name="createdby" width="104" />
+          <cell name="createdon" width="125" />
+          <cell name="ownerid" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="tra_transcript">
+          <attribute name="tra_transcriptid" />
+          <attribute name="tra_name" />
+          <attribute name="createdon" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="tra_tabletype" />
+          <attribute name="tra_transcriptbody" />
+          <attribute name="statecode" />
+          <attribute name="statuscode" />
+          <attribute name="modifiedon" />
+          <attribute name="createdby" />
+          <attribute name="modifiedby" />
+          <attribute name="ownerid" />
+          <attribute name="tra_previoussection" />
+          <attribute name="tra_nextsection" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active TRA Transcripts" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

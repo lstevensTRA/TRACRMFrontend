@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{901baf97-9429-f011-8c4e-7c1e520b713c}</formid>
+    <IntroducedVersion>1.0.0.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab id="ACBA75B7-97B6-4116-AA55-51312992B721" name="tab_1" showlabel="false" labelid="{45789b5a-2a82-4c16-8ae7-1ac518757627}">
+          <labels>
+            <label description="New Tab" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section id="AD49B5BF-256F-46A8-9C75-947146172EB9" name="tab_monthly_information" columns="1" showlabel="false" showbar="false" IsUserDefined="0" labelwidth="130" labelid="{7de16ae9-2ab2-4be4-94e3-d834a06fee2e}">
+                  <labels>
+                    <label description="Monthly Information" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="C0550AC7-0F44-45A4-8EF5-D2911C0689D9" labelid="{a6e2da05-7acb-4cc8-b5c6-7e030588e9b7}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{32abfd0a-a030-4965-b9bb-830e1512168b}" locklevel="0" colspan="1" rowspan="1" labelid="{7404cd6c-b3d5-4f58-9f8d-73caebff6425}">
+                        <labels>
+                          <label description="Total Monthly Income" languagecode="1033" />
+                        </labels>
+                        <control id="tra_totalmonthlyincome" classid="{533B9E00-756B-4312-95A0-DC888637AC78}" datafieldname="tra_totalmonthlyincome" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <DisplayConditions Order="2" FallbackForm="true">
+        <Role Id="{627090ff-40a3-4053-8790-584edc5be201}" />
+        <Role Id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="TRA Monthly Income QV" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="TRA Monthly Income QV" languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

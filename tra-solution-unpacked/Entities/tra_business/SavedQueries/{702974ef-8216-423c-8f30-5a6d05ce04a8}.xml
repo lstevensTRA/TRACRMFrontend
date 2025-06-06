@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{702974ef-8216-423c-8f30-5a6d05ce04a8}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="tra_name" select="1" icon="1" preview="1">
+        <row name="result" id="tra_businessid">
+          <cell name="tra_name" width="300" />
+          <cell name="tra_businesstype" width="122" />
+          <cell name="tra_employerid" width="150" />
+          <cell name="tra_streetaddress" width="150" />
+          <cell name="tra_suite" width="150" />
+          <cell name="tra_city" width="150" />
+          <cell name="tra_state" width="100" />
+          <cell name="tra_zipcode" width="150" />
+          <cell name="tra_establisheddate" width="150" />
+          <cell name="tra_closeddate" width="150" />
+          <cell name="tra_numberofemployee" width="150" />
+          <cell name="tra_totalw2employees" width="150" />
+          <cell name="tra_total1099s" width="150" />
+          <cell name="tra_taxunfiledyear" width="150" />
+          <cell name="tra_estimatedtaxyearwithbalance" width="150" />
+          <cell name="tra_opportunity" width="109" />
+          <cell name="statecode" width="100" />
+          <cell name="createdby" width="104" />
+          <cell name="createdon" width="105" />
+          <cell name="modifiedby" width="112" />
+          <cell name="modifiedon" width="113" />
+          <cell name="ownerid" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="tra_business">
+          <attribute name="tra_businessid" />
+          <attribute name="tra_name" />
+          <order attribute="tra_name" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="tra_employerid" />
+          <attribute name="tra_streetaddress" />
+          <attribute name="tra_suite" />
+          <attribute name="tra_city" />
+          <attribute name="tra_zipcode" />
+          <attribute name="tra_establisheddate" />
+          <attribute name="tra_closeddate" />
+          <attribute name="tra_numberofemployee" />
+          <attribute name="tra_totalw2employees" />
+          <attribute name="tra_total1099s" />
+          <attribute name="tra_taxunfiledyear" />
+          <attribute name="tra_estimatedtaxyearwithbalance" />
+          <attribute name="tra_businesstype" />
+          <attribute name="tra_state" />
+          <attribute name="createdby" />
+          <attribute name="createdon" />
+          <attribute name="modifiedby" />
+          <attribute name="modifiedon" />
+          <attribute name="ownerid" />
+          <attribute name="statecode" />
+          <attribute name="tra_opportunity" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Businesses" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

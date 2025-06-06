@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{d0c597f4-4c3c-41e6-b24a-5642222744fe}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="tra_name" select="1" icon="1" preview="1">
+        <row name="result" id="tra_irsstandardforownershipcostsid">
+          <cell name="tra_name" width="300" />
+          <cell name="tra_region" width="100" />
+          <cell name="tra_stateid" width="100" />
+          <cell name="tra_countyid" width="100" />
+          <cell name="tra_onecarprice" width="120" />
+          <cell name="tra_twocarprice" width="121" />
+          <cell name="createdon" width="105" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="tra_irsstandardforownershipcosts">
+          <attribute name="tra_irsstandardforownershipcostsid" />
+          <attribute name="tra_name" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="tra_region" />
+          <attribute name="tra_stateid" />
+          <attribute name="tra_countyid" />
+          <attribute name="tra_onecarprice" />
+          <attribute name="tra_twocarprice" />
+          <attribute name="createdon" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active IRS Standard for Ownership Costs" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

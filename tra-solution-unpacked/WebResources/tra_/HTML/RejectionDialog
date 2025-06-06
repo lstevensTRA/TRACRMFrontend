@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Reject Opportunity</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xrm/9.1.0/xrm.min.js"></script>
+    <style>
+        body {
+            font-family: "Segoe UI", sans-serif;
+            background-color: #ffffff;
+            margin: 0;
+            padding: 24px;
+        }
+
+        h3 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            height: 40px;
+            border: 1px solid #8a8886;
+            border-radius: 4px;
+            padding: 10px;
+            font-family: "Segoe UI", sans-serif;
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+
+        .require {
+            color: red;
+            font-size: 12px;
+            display: none;
+            margin-bottom: 16px;
+        }
+
+        .button-group {
+            display: flex;
+            justify-content: flex-end;
+            gap: 10px;
+        }
+
+        .btn {
+            background-color: #0078d4;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            padding: 10px 16px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+        }
+
+        .btn:hover {
+            background-color: #005a9e;
+        }
+
+        .btn-secondary {
+            background-color: white;
+            color: #323130;
+            border: 1px solid #8a8886;
+        }
+
+        .btn-secondary:hover {
+            background-color: #edebe9;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Rejected Reason</h3>
+    <div class="form-group">
+        <input type="text" id="reasonInput" class="form-control" />
+        <span id="txtRejectedValidation" class="require">Rejected Reason: Required</span>
+    </div>
+    <div class="button-group">
+        <button class="btn btn-secondary" id="btnCancel">Cancel</button>
+        <button class="btn" id="btnSubmit">Submit</button>
+    </div>
+
+    <script>
+$(document).ready(function () {
+    const queryParams = new URLSearchParams(window.location.search);
+    const data = queryParams.get("data");
+
+    let opportunityId = null;
+    let currentUserId = null;
+
+    try {
+        const parsed = data ? JSON.parse(decodeURIComponent(data)) : null;
+        opportunityId = parsed?.opportunityId;
+        currentUserId = parsed?.currentUserId;
+    } catch (e) {
+        console.error("Invalid data format passed from OnReject.");
+        window.close();
+        return;
+    }
+
+    if (!opportunityId || !currentUserId) {
+        console.error("Required IDs not available.");
+        window.close();
+        return;
+    }
+
+    $("#btnSubmit").on("click", function () {
+        const reason = $("#reasonInput").val().trim();
+
+        if (!reason) {
+            $("#txtRejectedValidation").show();
+            return;
+        }
+
+        $("#txtRejectedValidation").hide();
+
+        const parentXrm = window.parent.Xrm;
+        parentXrm.Utility.showProgressIndicator("Rejecting opportunity...");
+
+        const updateData = {
+            statuscode: 211050004, // Rejected
+            tra_rejectedreason: reason,
+            "tra_rejectedby@odata.bind": `/systemusers(${currentUserId})`
+        };
+
+        parentXrm.WebApi.updateRecord("opportunity", opportunityId, updateData)
+            .then(function () {
+                parentXrm.Utility.closeProgressIndicator();
+
+                const formContext = parentXrm.Page; // Works when parent is a form
+                if (formContext && formContext.ui && formContext.ui.setFormNotification) {
+                    formContext.ui.setFormNotification(
+                        "Opportunity has been rejected successfully.",
+                        "INFO",
+                        "rejectSuccess"
+                    );
+
+                    setTimeout(() => {
+                        formContext.ui.clearFormNotification("rejectSuccess");
+                    }, 5000);
+
+                    formContext.data.refresh();
+                    formContext.ui.refreshRibbon();
+                }
+
+                window.close();
+            })
+            .catch(function (error) {
+                parentXrm.Utility.closeProgressIndicator();
+                console.error("Error:", error.message);
+                window.close(); // Still close, even on error
+                window.refresh();
+            });
+    });
+
+    $("#btnCancel").on("click", function () {
+        window.close();
+    });
+});
+    </script>
+</body>
+</html>

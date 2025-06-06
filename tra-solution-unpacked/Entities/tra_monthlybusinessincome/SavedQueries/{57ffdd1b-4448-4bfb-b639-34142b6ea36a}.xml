@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{57ffdd1b-4448-4bfb-b639-34142b6ea36a}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="tra_monthlybusinessincome" select="1" icon="1" preview="1">
+        <row name="result" id="tra_monthlybusinessincomeid">
+          <cell name="tra_incometype" width="150" />
+          <cell name="tra_frequency" width="100" />
+          <cell name="tra_amount" width="100" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="tra_monthlybusinessincome">
+          <attribute name="tra_monthlybusinessincomeid" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+          <attribute name="tra_incometype" />
+          <attribute name="tra_frequency" />
+          <attribute name="tra_amount" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Active Monthly Business Incomes" languagecode="1033" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

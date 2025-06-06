@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebResource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <WebResourceId>{5b0218c9-a3c6-ef11-b8e8-7c1e5248511a}</WebResourceId>
+  <Name>tra_/PNG/RealPropertyIcon</Name>
+  <DisplayName>tra_/PNG/RealPropertyIcon</DisplayName>
+  <WebResourceType>5</WebResourceType>
+  <IntroducedVersion>1.0.0.0</IntroducedVersion>
+  <IsEnabledForMobileClient>0</IsEnabledForMobileClient>
+  <IsAvailableForMobileOffline>0</IsAvailableForMobileOffline>
+  <IsCustomizable>1</IsCustomizable>
+  <CanBeDeleted>1</CanBeDeleted>
+  <IsHidden>0</IsHidden>
+  <FileName>/WebResources/tra_PNGRealPropertyIcon5B0218C9-A3C6-EF11-B8E8-7C1E5248511A</FileName>
+</WebResource>

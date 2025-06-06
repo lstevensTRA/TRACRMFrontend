@@ -1,0 +1,38 @@
+<appaction uniquename="tra__CalculateIRS!bbb47c7787144210bf010e2e1aa98740!msdynce_saleshub!tra_financials!0">
+  <appmoduleid>
+    <uniquename>msdynce_saleshub</uniquename>
+  </appmoduleid>
+  <buttonlabeltext default="Recalculate IRS ">
+    <label description="Recalculate IRS " languagecode="1033" />
+  </buttonlabeltext>
+  <buttontooltipdescription default="Recalculate IRS Standards">
+    <label description="Recalculate IRS Standards" languagecode="1033" />
+  </buttontooltipdescription>
+  <buttontooltiptitle default="Recalculate IRS Standards">
+    <label description="Recalculate IRS Standards" languagecode="1033" />
+  </buttontooltiptitle>
+  <context>1</context>
+  <contextentity>
+    <logicalname>tra_financials</logicalname>
+  </contextentity>
+  <contextvalue>tra_financials</contextvalue>
+  <fonticon>$clientsvg:Calculator</fonticon>
+  <hidden>0</hidden>
+  <iscustomizable>1</iscustomizable>
+  <isdisabled>0</isdisabled>
+  <isgrouptitlehidden>0</isgrouptitlehidden>
+  <location>0</location>
+  <name>CalculateIRS!bbb47c7787144210bf010e2e1aa98740</name>
+  <onclickeventjavascriptfunctionname>CrmJS.FinancialsFunctions.CalculateIRSStandards</onclickeventjavascriptfunctionname>
+  <onclickeventjavascriptparameters>[{"type":5}]</onclickeventjavascriptparameters>
+  <onclickeventjavascriptwebresourceid>
+    <webresourceid>69eadd9a-c7cc-ef11-b8e8-6045bdf0540a</webresourceid>
+  </onclickeventjavascriptwebresourceid>
+  <onclickeventtype>2</onclickeventtype>
+  <origin>0</origin>
+  <sequence>100100075.0000000000</sequence>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+  <type>0</type>
+  <visibilitytype>0</visibilitytype>
+</appaction>

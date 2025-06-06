@@ -1,0 +1,260 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{eba761db-663d-4aa6-ac78-e8fd07cfd560}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form headerdensity="HighWithControls">
+      <tabs>
+        <tab verticallayout="true" id="{176e0775-7aa3-4844-a08c-aa1d9bc3556c}" IsUserDefined="1" name="General">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{bf04ae49-3596-4f72-9590-18df40b7a875}" name="General" columns="1111" celllabelposition="Top" height="auto">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{7c9c3a96-8070-4d21-a7df-f7ffa8103436}" colspan="1">
+                        <labels>
+                          <label description="Section Name" languagecode="1033" />
+                        </labels>
+                        <control id="tra_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="tra_name" />
+                      </cell>
+                      <cell id="{97876cd0-0076-4c41-a240-fdb87034bff6}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Table Type" languagecode="1033" />
+                        </labels>
+                        <control id="tra_tabletype" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="tra_tabletype" disabled="false" />
+                      </cell>
+                      <cell id="{5fee5b2c-90e8-435c-b925-6fc20a02d1a3}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Previous Section" languagecode="1033" />
+                        </labels>
+                        <control id="tra_previoussection" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="tra_previoussection" disabled="false" />
+                      </cell>
+                      <cell id="{5c28a078-43f2-464e-8d46-3b88aa7984a7}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Next Section" languagecode="1033" />
+                        </labels>
+                        <control id="tra_nextsection" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="tra_nextsection" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{d47ffa4c-125a-4842-a014-0ffc9d82a197}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Form Section Name" languagecode="1033" />
+                        </labels>
+                        <control id="tra_formsectionname" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="tra_formsectionname" disabled="false" />
+                      </cell>
+                      <cell locklevel="0" id="{8687a6a8-fe81-4b90-b0f1-01e7a620c231}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell locklevel="0" id="{72a4e174-3619-4434-990d-7cb7deff5cd6}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                      <cell id="{90c7edea-2b1d-43e7-d9ea-b972a14b48cd}" showlabel="false">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{d88c7080-fada-4a93-bbc7-61b01987ff44}" locklevel="0" colspan="4" rowspan="15" auto="true">
+                        <labels>
+                          <label description="Transcript" languagecode="1033" />
+                        </labels>
+                        <control id="tra_transcriptbody" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="tra_transcriptbody" disabled="false" />
+                      </cell>
+                    </row>
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row />
+                    <row height="auto" />
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+        <tab name="tab_record_info" id="d3d3cf7c-90eb-4176-ba4c-508853cde6c1" IsUserDefined="0" locklevel="0" showlabel="true">
+          <labels>
+            <label description="Record Info" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section name="tab_section_record_details" id="05c3cd52-6dda-4dfd-8ce4-36cc2a272e19" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                  <labels>
+                    <label description="Record Details" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{84a2d1bb-2bfe-472a-8918-bc13e5ef997c}">
+                        <labels>
+                          <label description="" languagecode="1033" />
+                        </labels>
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{519d4545-b5b0-49c5-8928-ad4d02919865}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Created By" languagecode="1033" />
+                        </labels>
+                        <control id="createdby" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="createdby" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a368cdb5-cafc-4bc2-a071-3a864ccf0035}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Created On" languagecode="1033" />
+                        </labels>
+                        <control id="createdon" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="createdon" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{5de55f18-7555-4e4f-b4f1-0840c6309cae}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Modified By" languagecode="1033" />
+                        </labels>
+                        <control id="modifiedby" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="modifiedby" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{a1abd0a8-7952-4a4a-be9c-8ec7ed05aa50}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Modified On" languagecode="1033" />
+                        </labels>
+                        <control id="modifiedon" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="modifiedon" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{ff7f3778-6e91-45e6-87cb-ca9620b1d5c5}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{a0e5d419-44ff-4576-990d-51d5c551d3d2}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{83542b86-43f8-4983-9ff8-887323eae108}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{fc265fb7-5bac-4605-ade2-d81e5cca7a63}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{35a4efe9-ac02-41c9-807a-668d00bb9172}" locklevel="0" colspan="1" rowspan="1">
+              <labels>
+                <label description="Name" languagecode="1033" />
+              </labels>
+              <control id="header_tra_name" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="tra_name" disabled="false" />
+            </cell>
+            <cell id="{081852de-4f2f-43ed-8322-7fbf9a44e1c0}" locklevel="0" colspan="1" rowspan="1">
+              <labels>
+                <label description="Status Reason" languagecode="1033" />
+              </labels>
+              <control id="header_statuscode" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="statuscode" disabled="false" />
+            </cell>
+            <cell id="{48d3c4cf-a268-4191-822e-e8ad89d96b9d}" colspan="1" rowspan="1">
+              <labels>
+                <label description="Owner" languagecode="1033" />
+              </labels>
+              <control id="header_ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{b8f2c098-ea52-4fca-b84b-adfd52873251}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{0200b632-e9a9-4228-809c-80387dde90b3}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{dd6bbef2-994f-4f23-99c8-f3a140ab14cc}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{93378402-5d7e-418d-bcd4-f44d2465e192}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <Navigation>
+        <NavBar></NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+      <DisplayConditions Order="0" FallbackForm="true">
+        <Everyone />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="TRA Transcript" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>
