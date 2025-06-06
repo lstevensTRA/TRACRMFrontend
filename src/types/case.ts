@@ -7,11 +7,18 @@ export interface Case {
   assignedTo: string;
   createdDate: string;
   lastModifiedDate: string;
-  customer: {
+  ticketnumber: string;
+  statecode: number;
+  customerid: {
     id: string;
     name: string;
     email: string;
   };
+  createdon: string;
+  modifiedon: string;
+  tra_caseadvocate?: string;
+  tra_offeranalyst?: string;
+  tra_setofficer?: string;
   attachments: Array<{
     id: string;
     name: string;

@@ -1,26 +1,28 @@
-import React from 'react';
-import { useTRACases } from '../../hooks/useTRACases';
+import { useState } from 'react';
+import { Case } from '../../types/case';
 
-export default function CasesListBasic() {
-  const { data: cases, isLoading, error } = useTRACases();
+interface CasesListBasicProps {
+  cases: Case[];
+  onCaseClick?: (caseItem: Case) => void;
+}
 
-  if (isLoading) return <div>Loading cases...</div>;
-  if (error) return <div>Error: {error.message}</div>;
-  if (!cases || cases.length === 0) return <div>No cases found</div>;
-
+export const CasesListBasic = ({ cases, onCaseClick }: CasesListBasicProps) => {
   return (
-    <div>
-      <h1>TRA Cases - Raw Data Debug</h1>
-      <p>Check console for actual field names!</p>
-      
-      {cases.map((caseItem, index) => (
-        <div key={index} style={{ border: '1px solid #ccc', margin: '10px', padding: '10px' }}>
-          <h3>Case #{index + 1}</h3>
-          <pre style={{ fontSize: '12px', overflow: 'auto' }}>
-            {JSON.stringify(caseItem, null, 2)}
-          </pre>
+    <div className="space-y-4">
+      {cases.map((caseItem) => (
+        <div
+          key={caseItem.id}
+          className="p-4 bg-white dark:bg-gray-800 rounded-lg shadow cursor-pointer hover:shadow-md transition-shadow"
+          onClick={() => onCaseClick?.(caseItem)}
+        >
+          <h3 className="text-lg font-medium text-gray-900 dark:text-white">
+            {caseItem.title}
+          </h3>
+          <p className="text-sm text-gray-500 dark:text-gray-400">
+            Status: {caseItem.status}
+          </p>
         </div>
       ))}
     </div>
   );
-} 
+}; 

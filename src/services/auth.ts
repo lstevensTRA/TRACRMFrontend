@@ -1,124 +1,43 @@
-import { PublicClientApplication, AccountInfo, AuthenticationResult, InteractionRequiredAuthError } from '@azure/msal-browser';
-import { loginRequest } from '../config/msal';
+import { PublicClientApplication, AccountInfo } from '@azure/msal-browser';
 import { msalConfig } from '../config/msal';
 
-const clientId = import.meta.env.VITE_AZURE_CLIENT_ID;
-const authority = import.meta.env.VITE_AZURE_AUTHORITY;
-
-// Microsoft Authentication Library (MSAL) configuration
-const msalConfig = {
-  auth: {
-    clientId: import.meta.env.VITE_AZURE_CLIENT_ID || '',
-    authority: `https://login.microsoftonline.com/${import.meta.env.VITE_AZURE_TENANT_ID}`,
-    redirectUri: window.location.origin,
-  },
-  cache: {
-    cacheLocation: 'sessionStorage',
-    storeAuthStateInCookie: false,
-  },
-};
-
-// Initialize MSAL instance
 const msalInstance = new PublicClientApplication(msalConfig);
 
-// Scopes for Dataverse API
-const scopes = ['https://tra-dev.crm.dynamics.com/user_impersonation'];
+export const authService = {
+  getActiveAccount: (): AccountInfo | null => {
+    const accounts = msalInstance.getAllAccounts();
+    return accounts.length > 0 ? accounts[0] : null;
+  },
 
-class AuthService {
-  private initialized: boolean = false;
-
-  constructor() {
-    this.initialize();
-  }
-
-  async initialize() {
-    if (!this.initialized) {
-      await msalInstance.initialize();
-      this.initialized = true;
+  login: async () => {
+    try {
+      await msalInstance.loginPopup();
+      return true;
+    } catch (error) {
+      console.error('Login failed:', error);
+      return false;
     }
-  }
+  },
 
-  async login(): Promise<AccountInfo | null> {
-    await this.initialize();
-    const result = await msalInstance.loginPopup(loginRequest);
-    if (result.account) {
-      msalInstance.setActiveAccount(result.account);
-      return result.account;
-    }
-    return null;
-  }
+  logout: () => {
+    msalInstance.logout();
+  },
 
-  async logout(): Promise<void> {
-    await this.initialize();
-    await msalInstance.logoutPopup();
-  }
-
-  async getToken(scopes: string[]): Promise<string> {
-    await this.initialize();
-    let account = msalInstance.getActiveAccount();
+  getToken: async (scopes: string[]) => {
+    const account = authService.getActiveAccount();
     if (!account) {
-      const accounts = msalInstance.getAllAccounts();
-      if (accounts.length > 0) {
-        account = accounts[0];
-        msalInstance.setActiveAccount(account);
-      } else {
-        throw new Error('No active account found');
-      }
+      throw new Error('No active account');
     }
+
     try {
       const response = await msalInstance.acquireTokenSilent({
         scopes,
-        account
+        account,
       });
       return response.accessToken;
-    } catch (error: any) {
-      if (error instanceof InteractionRequiredAuthError) {
-        const response = await msalInstance.acquireTokenPopup({
-          scopes,
-          account
-        });
-        return response.accessToken;
-      }
+    } catch (error) {
+      console.error('Token acquisition failed:', error);
       throw error;
     }
-  }
-
-  getActiveAccount(): AccountInfo | null {
-    if (!this.initialized) return null;
-    let account = msalInstance.getActiveAccount();
-    if (!account) {
-      const accounts = msalInstance.getAllAccounts();
-      if (accounts.length > 0) {
-        account = accounts[0];
-        msalInstance.setActiveAccount(account);
-      }
-    }
-    return account;
-  }
-
-  isAuthenticated(): boolean {
-    return this.getActiveAccount() !== null;
-  }
-}
-
-export const authService = new AuthService();
-
-// Get access token for Dataverse API
-export const getToken = async (): Promise<string> => {
-  return authService.getToken(scopes);
-};
-
-// Login function
-export const login = async (): Promise<void> => {
-  await authService.login();
-};
-
-// Logout function
-export const logout = async (): Promise<void> => {
-  await authService.logout();
-};
-
-// Check if user is authenticated
-export const isAuthenticated = (): boolean => {
-  return authService.isAuthenticated();
+  },
 }; 

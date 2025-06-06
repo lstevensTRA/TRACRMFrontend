@@ -1,32 +1,42 @@
-import { Configuration, LogLevel } from '@azure/msal-browser';
+import { PublicClientApplication, LogLevel } from '@azure/msal-browser';
 
-export const msalConfig: Configuration = {
+declare global {
+  interface ImportMeta {
+    env: {
+      VITE_AZURE_CLIENT_ID: string;
+      VITE_AZURE_AUTHORITY: string;
+    }
+  }
+}
+
+const clientId = import.meta.env.VITE_AZURE_CLIENT_ID;
+const authority = import.meta.env.VITE_AZURE_AUTHORITY;
+
+export const msalConfig = {
   auth: {
-    clientId: 'b65d8e0b-8c61-40bb-8bc0-33ed4023f2dc',
-    authority: 'https://login.microsoftonline.com/185fc38c-2c1b-4307-a164-24a4072e83e1',
-    redirectUri: 'http://localhost:3000',
-    postLogoutRedirectUri: 'http://localhost:3000'
+    clientId,
+    authority,
+    redirectUri: window.location.origin,
   },
   cache: {
     cacheLocation: 'sessionStorage',
-    storeAuthStateInCookie: false
+    storeAuthStateInCookie: false,
   },
   system: {
     loggerOptions: {
-      loggerCallback: (level, message, containsPii) => {
-        if (containsPii) return;
+      loggerCallback: (message: string) => {
         console.log(message);
       },
-      logLevel: LogLevel.Info
-    }
-  }
+      logLevel: LogLevel.Info,
+      piiLoggingEnabled: false,
+    },
+  },
 };
 
+export const msalInstance = new PublicClientApplication(msalConfig);
+
 export const loginRequest = {
-  scopes: [
-    'https://taxrelief-dev.crm.dynamics.com/user_impersonation',
-    'User.Read'
-  ]
+  scopes: ['User.Read', 'https://taxrelief-dev.crm.dynamics.com/user_impersonation'],
 };
 
 export const dataverseConfig = {

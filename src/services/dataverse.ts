@@ -1,74 +1,69 @@
-import axios, { AxiosInstance, AxiosError } from 'axios';
 import { dataverseConfig } from '../config/msal';
 
-export class DataverseError extends Error {
-  constructor(
-    message: string,
-    public status?: number,
-    public code?: string,
-    public details?: any
-  ) {
-    super(message);
-    this.name = 'DataverseError';
-  }
+interface DataverseResponse<T> {
+  value: T[];
 }
 
 export class DataverseService {
-  private client: AxiosInstance;
+  private baseUrl: string;
+  private token: string;
 
-  constructor(accessToken: string) {
-    this.client = axios.create({
-      baseURL: dataverseConfig.baseUrl,
+  constructor(token: string) {
+    this.baseUrl = dataverseConfig.baseUrl;
+    this.token = token;
+  }
+
+  private async fetch<T>(endpoint: string, options: RequestInit = {}): Promise<T> {
+    const response = await fetch(`${this.baseUrl}${endpoint}`, {
+      ...options,
       headers: {
-        'Authorization': `Bearer ${accessToken}`,
+        'Authorization': `Bearer ${this.token}`,
         'Content-Type': 'application/json',
-        'OData-MaxVersion': '4.0',
-        'OData-Version': '4.0',
-        'Accept': 'application/json'
-      }
+        'Accept': 'application/json',
+        ...options.headers,
+      },
     });
 
-    this.client.interceptors.response.use(
-      response => response,
-      this.handleError
-    );
-  }
-
-  private handleError = (error: AxiosError): Promise<never> => {
-    if (error.response) {
-      const { status, data } = error.response;
-      throw new DataverseError(
-        'Dataverse API Error',
-        status,
-        data.error?.code,
-        data.error?.message
-      );
+    if (!response.ok) {
+      throw new Error(`Dataverse API error: ${response.statusText}`);
     }
-    throw new DataverseError('Network Error');
-  };
 
-  async get<T>(entity: string, id?: string, query?: Record<string, string>) {
-    const url = id ? `${entity}(${id})` : entity;
-    const response = await this.client.get<T>(url, { params: query });
-    return response.data;
+    const data = await response.json() as T;
+    return data;
   }
 
-  async create<T>(entity: string, data: Partial<T>) {
-    const response = await this.client.post<T>(entity, data);
-    return response.data;
+  async get<T>(entity: string, id?: string, params?: Record<string, string>): Promise<T[]> {
+    const endpoint = id ? `${entity}(${id})` : entity;
+    const queryString = params ? '?' + new URLSearchParams(params).toString() : '';
+    const response = await this.fetch<DataverseResponse<T>>(`${endpoint}${queryString}`);
+    return response.value;
   }
 
-  async update<T>(entity: string, id: string, data: Partial<T>) {
-    const response = await this.client.patch<T>(`${entity}(${id})`, data);
-    return response.data;
+  async create<T>(entity: string, data: Partial<T>): Promise<T> {
+    return this.fetch<T>(entity, {
+      method: 'POST',
+      body: JSON.stringify(data),
+    });
   }
 
-  async delete(entity: string, id: string) {
-    await this.client.delete(`${entity}(${id})`);
+  async update<T>(entity: string, id: string, data: Partial<T>): Promise<void> {
+    await this.fetch(`${entity}(${id})`, {
+      method: 'PATCH',
+      body: JSON.stringify(data),
+    });
+  }
+
+  async delete(entity: string, id: string): Promise<void> {
+    await this.fetch(`${entity}(${id})`, {
+      method: 'DELETE',
+    });
   }
 
   async query<T>(entity: string, query: Record<string, string>) {
-    const response = await this.client.get<T>(entity, { params: query });
-    return response.data;
+    const response = await this.fetch<DataverseResponse<T>>(entity, {
+      method: 'GET',
+      params: query,
+    });
+    return response.value;
   }
 } 
