@@ -1,5 +1,9 @@
 import { PublicClientApplication, AccountInfo, AuthenticationResult, InteractionRequiredAuthError } from '@azure/msal-browser';
 import { loginRequest } from '../config/msal';
+import { msalConfig } from '../config/msal';
+
+const clientId = import.meta.env.VITE_AZURE_CLIENT_ID;
+const authority = import.meta.env.VITE_AZURE_AUTHORITY;
 
 // Microsoft Authentication Library (MSAL) configuration
 const msalConfig = {

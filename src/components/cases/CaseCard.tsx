@@ -1,29 +1,18 @@
-import React from 'react';
-import { TRACase } from '../../types/traCase';
+import { Case } from '../../types/case';
 import { StatusBadge } from '../ui/StatusBadge';
 
 interface CaseCardProps {
-  case: TRACase;
+  case: Case;
   onClick?: () => void;
 }
 
-export function CaseCard({ case: caseItem, onClick }: CaseCardProps) {
+export const CaseCard = ({ case: caseItem, onClick }: CaseCardProps) => {
   const formatDate = (dateString: string) => {
     return new Date(dateString).toLocaleDateString('en-US', {
       year: 'numeric',
       month: 'short',
       day: 'numeric'
     });
-  };
-
-  const getStateLabel = (statecode: number) => {
-    switch (statecode) {
-      case 0: return 'Active';
-      case 1: return 'Resolved';
-      case 2: return 'Problem';
-      case 3: return 'Question';
-      default: return 'Unknown';
-    }
   };
 
   return (
@@ -102,4 +91,4 @@ export function CaseCard({ case: caseItem, onClick }: CaseCardProps) {
       </div>
     </div>
   );
-} 
+}; 

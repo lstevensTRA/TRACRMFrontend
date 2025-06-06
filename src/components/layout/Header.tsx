@@ -11,7 +11,7 @@ interface UserProfileProps {
 
 const UserProfile: React.FC<UserProfileProps> = ({ name, email, avatarUrl, onLogout }) => {
   const [open, setOpen] = useState(false);
-  const { theme, toggleTheme } = useTheme();
+  const { isDarkMode, toggleTheme } = useTheme();
 
   return (
     <div className="relative">
@@ -38,7 +38,7 @@ const UserProfile: React.FC<UserProfileProps> = ({ name, email, avatarUrl, onLog
             className="w-full text-left px-2 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 rounded mt-1"
             onClick={toggleTheme}
           >
-            {theme === 'dark' ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
+            {isDarkMode ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
           </button>
           <Button
             variant="secondary"

@@ -1,4 +1,3 @@
-import React from 'react';
 import { useState, useEffect } from 'react';
 import { authService } from '../../services/auth';
 import { DataverseService } from '../../services/dataverse';
