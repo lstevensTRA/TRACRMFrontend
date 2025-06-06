@@ -8,14 +8,11 @@ import { Login } from './components/auth/Login';
 import { ThemeProvider } from './context/ThemeContext';
 import { TRACasesListPage } from './pages/TRACasesListPage';
 import { CasesListBasic } from './components/cases/CasesListBasic';
-import { useTRACases } from './hooks/useTRACases';
 
 const msalInstance = new PublicClientApplication(msalConfig);
 const queryClient = new QueryClient();
 
 function App() {
-  const { data: cases = [] } = useTRACases();
-
   return (
     <ThemeProvider>
       <MsalProvider instance={msalInstance}>
@@ -26,7 +23,7 @@ function App() {
                 <Routes>
                   <Route path="/config-test" element={<ConfigTest />} />
                   <Route path="/tra-cases/list" element={<TRACasesListPage />} />
-                  <Route path="/tra-cases/debug" element={<CasesListBasic cases={cases} />} />
+                  <Route path="/tra-cases/debug" element={<CasesListBasic />} />
                   <Route path="/" element={<Navigate to="/tra-cases/list" replace />} />
                 </Routes>
               </AuthenticatedTemplate>
