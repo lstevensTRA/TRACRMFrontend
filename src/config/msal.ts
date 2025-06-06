@@ -4,6 +4,9 @@ import { Configuration, LogLevel, PublicClientApplication } from '@azure/msal-br
 interface ImportMetaEnv {
   VITE_AZURE_CLIENT_ID: string;
   VITE_AZURE_AUTHORITY: string;
+  VITE_REDIRECT_URI?: string;
+  VITE_POST_LOGOUT_REDIRECT_URI?: string;
+  VITE_API_URL?: string;
 }
 
 // Declare the env property on ImportMeta
@@ -13,12 +16,19 @@ declare global {
   }
 }
 
+const isDevelopment = import.meta.env.DEV;
+
 // MSAL configuration
 export const msalConfig: Configuration = {
   auth: {
     clientId: import.meta.env.VITE_AZURE_CLIENT_ID,
     authority: import.meta.env.VITE_AZURE_AUTHORITY,
-    redirectUri: window.location.origin,
+    redirectUri: isDevelopment 
+      ? window.location.origin 
+      : import.meta.env.VITE_REDIRECT_URI || window.location.origin,
+    postLogoutRedirectUri: isDevelopment 
+      ? window.location.origin 
+      : import.meta.env.VITE_POST_LOGOUT_REDIRECT_URI || window.location.origin,
   },
   cache: {
     cacheLocation: 'sessionStorage',
@@ -47,7 +57,7 @@ export const msalConfig: Configuration = {
             return;
         }
       },
-      logLevel: LogLevel.Verbose,
+      logLevel: isDevelopment ? LogLevel.Verbose : LogLevel.Error,
       piiLoggingEnabled: false
     }
   }
@@ -56,11 +66,9 @@ export const msalConfig: Configuration = {
 export const msalInstance = new PublicClientApplication(msalConfig);
 
 export const loginRequest = {
-  scopes: ['User.Read', 'https://taxrelief-dev.crm.dynamics.com/user_impersonation'],
+  scopes: ['https://taxrelief-dev.crm.dynamics.com/.default']
 };
 
 export const dataverseConfig = {
-  baseUrl: 'https://taxrelief-dev.crm.dynamics.com/api/data/v9.2',
-  version: '9.2',
-  environmentId: 'ff079966-c6d8-e92e-8786-cf4f838bdf04'
+  apiUrl: import.meta.env.VITE_API_URL,
 }; 
