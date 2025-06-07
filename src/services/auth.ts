@@ -1,5 +1,5 @@
 import { PublicClientApplication, AccountInfo } from '@azure/msal-browser';
-import { msalConfig, loginRequest } from '../config/msal';
+import { msalConfig } from '../config/msal';
 
 export const msalInstance = new PublicClientApplication(msalConfig);
 

@@ -3,7 +3,6 @@ import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import { Search, Plus, RefreshCw, Users, Clock, CheckCircle, AlertCircle } from 'lucide-react';
 import { traCasesApi } from '../services/traCasesApi';
 import { TRACase } from '../types/traCase';
-import { StatusBadge } from '../components/ui/StatusBadge';
 import { ViewCaseModal } from '../components/cases/ViewCaseModal';
 import { EditCaseModal } from '../components/cases/EditCaseModal';
 import { DeleteConfirmModal } from '../components/cases/DeleteConfirmModal';
@@ -66,13 +65,10 @@ export const TRACasesListPage: React.FC = () => {
   const filteredCases = cases?.filter(traCase => {
     const matchesSearch = !searchTerm || 
       traCase.title?.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      traCase.casenumber?.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      traCase.ticketnumber?.toLowerCase().includes(searchTerm.toLowerCase());
-    
+      traCase.incidentid?.toLowerCase().includes(searchTerm.toLowerCase());
     const matchesStatus = statusFilter === 'all' || 
       (statusFilter === 'active' && traCase.statecode === 0) ||
       (statusFilter === 'resolved' && traCase.statecode === 1);
-    
     return matchesSearch && matchesStatus;
   });
 
@@ -254,9 +250,6 @@ export const TRACasesListPage: React.FC = () => {
                     Title
                   </th>
                   <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider">
-                    Customer
-                  </th>
-                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider">
                     Status
                   </th>
                   <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider">
@@ -272,7 +265,7 @@ export const TRACasesListPage: React.FC = () => {
                   <tr key={traCase.incidentid} className="hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
                     <td className="px-6 py-4 whitespace-nowrap">
                       <span className="text-sm font-medium text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300">
-                        {traCase.ticketnumber}
+                        {traCase.incidentid}
                       </span>
                     </td>
                     <td className="px-6 py-4">
@@ -281,12 +274,7 @@ export const TRACasesListPage: React.FC = () => {
                       </div>
                     </td>
                     <td className="px-6 py-4">
-                      <span className="text-sm text-gray-600 dark:text-gray-300">
-                        {traCase.customerid_formatted || 'N/A'}
-                      </span>
-                    </td>
-                    <td className="px-6 py-4">
-                      <StatusBadge status={traCase.statecode} />
+                      {traCase.statecode === 0 ? 'Active' : traCase.statecode === 1 ? 'Resolved' : 'Other'}
                     </td>
                     <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 dark:text-gray-400">
                       {new Date(traCase.createdon).toLocaleDateString()}

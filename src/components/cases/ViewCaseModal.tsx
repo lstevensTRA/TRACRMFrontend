@@ -1,8 +1,6 @@
 import React from 'react';
 import { Modal } from '../ui/Modal';
 import { TRACase } from '../../types/traCase';
-import { StatusBadge } from '../ui/StatusBadge';
-import { TeamMemberAvatar } from '../ui/TeamMemberAvatar';
 
 interface ViewCaseModalProps {
   isOpen: boolean;
@@ -12,7 +10,7 @@ interface ViewCaseModalProps {
 
 export const ViewCaseModal: React.FC<ViewCaseModalProps> = ({ isOpen, onClose, case: traCase }) => {
   return (
-    <Modal isOpen={isOpen} onClose={onClose} title={`Case ${traCase.casenumber}`} size="xl">
+    <Modal isOpen={isOpen} onClose={onClose} title={`Case ${traCase.incidentid}`} size="xl">
       <div className="space-y-6">
         {/* Case Details */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -24,13 +22,9 @@ export const ViewCaseModal: React.FC<ViewCaseModalProps> = ({ isOpen, onClose, c
                 <dd className="mt-1 text-sm text-gray-900 dark:text-white">{traCase.title}</dd>
               </div>
               <div>
-                <dt className="text-sm font-medium text-gray-500 dark:text-gray-400">Customer</dt>
-                <dd className="mt-1 text-sm text-gray-900 dark:text-white">{traCase.customerid_formatted}</dd>
-              </div>
-              <div>
                 <dt className="text-sm font-medium text-gray-500 dark:text-gray-400">Status</dt>
-                <dd className="mt-1">
-                  <StatusBadge status={traCase.statecode} />
+                <dd className="mt-1 text-sm text-gray-900 dark:text-white">
+                  {traCase.statecode === 0 ? 'Active' : traCase.statecode === 1 ? 'Resolved' : 'Other'}
                 </dd>
               </div>
               <div>
@@ -47,42 +41,7 @@ export const ViewCaseModal: React.FC<ViewCaseModalProps> = ({ isOpen, onClose, c
               </div>
             </dl>
           </div>
-
-          {/* Team Assignment */}
-          <div>
-            <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-4">Team Assignment</h3>
-            <dl className="space-y-4">
-              {traCase.tra_caseadvocate && (
-                <div>
-                  <dt className="text-sm font-medium text-gray-500 dark:text-gray-400">Case Advocate</dt>
-                  <dd className="mt-1 flex items-center">
-                    <TeamMemberAvatar name={traCase.tra_caseadvocate} size="md" />
-                    <span className="ml-2 text-sm text-gray-900 dark:text-white">{traCase.tra_caseadvocate}</span>
-                  </dd>
-                </div>
-              )}
-              {traCase.tra_offeranalyst && (
-                <div>
-                  <dt className="text-sm font-medium text-gray-500 dark:text-gray-400">Offer Analyst</dt>
-                  <dd className="mt-1 flex items-center">
-                    <TeamMemberAvatar name={traCase.tra_offeranalyst} size="md" />
-                    <span className="ml-2 text-sm text-gray-900 dark:text-white">{traCase.tra_offeranalyst}</span>
-                  </dd>
-                </div>
-              )}
-              {traCase.tra_setofficer && (
-                <div>
-                  <dt className="text-sm font-medium text-gray-500 dark:text-gray-400">SET Officer</dt>
-                  <dd className="mt-1 flex items-center">
-                    <TeamMemberAvatar name={traCase.tra_setofficer} size="md" />
-                    <span className="ml-2 text-sm text-gray-900 dark:text-white">{traCase.tra_setofficer}</span>
-                  </dd>
-                </div>
-              )}
-            </dl>
-          </div>
         </div>
-
         {/* Description */}
         {traCase.description && (
           <div>
@@ -94,7 +53,6 @@ export const ViewCaseModal: React.FC<ViewCaseModalProps> = ({ isOpen, onClose, c
             </div>
           </div>
         )}
-
         {/* Action Buttons */}
         <div className="flex justify-end space-x-3 pt-4 border-t border-gray-200 dark:border-gray-700">
           <button

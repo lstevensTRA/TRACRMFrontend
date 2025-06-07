@@ -1,21 +1,5 @@
 import { Configuration, LogLevel, PublicClientApplication } from '@azure/msal-browser';
 
-// Define the environment variables type
-interface ImportMetaEnv {
-  VITE_AZURE_CLIENT_ID: string;
-  VITE_AZURE_AUTHORITY: string;
-  VITE_REDIRECT_URI?: string;
-  VITE_POST_LOGOUT_REDIRECT_URI?: string;
-  VITE_API_URL?: string;
-}
-
-// Declare the env property on ImportMeta
-declare global {
-  interface ImportMeta {
-    readonly env: ImportMetaEnv;
-  }
-}
-
 const isDevelopment = import.meta.env.DEV;
 
 // MSAL configuration

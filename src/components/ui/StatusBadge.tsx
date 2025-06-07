@@ -1,4 +1,4 @@
-import { CaseStatus } from '../../types/case';
+type CaseStatus = 'active' | 'pending' | 'closed';
 
 interface StatusBadgeProps {
   status: CaseStatus;

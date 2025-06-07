@@ -22,7 +22,7 @@ export const DeleteConfirmModal: React.FC<DeleteConfirmModalProps> = ({
       <div className="space-y-6">
         <div>
           <p className="text-gray-700 dark:text-gray-300">
-            Are you sure you want to delete case {traCase.ticketnumber} - {traCase.title}?
+            Are you sure you want to delete case {traCase.incidentid} - {traCase.title}?
             This action cannot be undone.
           </p>
         </div>
